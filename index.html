@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shaina Shabani — International Business</title>
+<title>Shaina Shabani — International Business & Marketing</title>
 
 <style>
 
@@ -171,7 +171,7 @@ nav {
 .hero-text {
     margin-top: 38px;
 
-    max-width: 600px;
+    max-width: 620px;
 
     font-size: 19px;
     line-height: 1.7;
@@ -324,7 +324,7 @@ nav {
 
 
 /* =========================
-   GENERAL SECTIONS
+   GENERAL
 ========================= */
 
 section {
@@ -447,11 +447,11 @@ section {
 .experience {
     display: grid;
 
-    grid-template-columns: 160px 1fr 100px;
+    grid-template-columns: 165px 1fr 100px;
 
     gap: 30px;
 
-    padding: 35px 0;
+    padding: 38px 0;
 
     border-bottom: 1px solid var(--line);
 
@@ -487,9 +487,9 @@ section {
 
     color: var(--gray);
 
-    max-width: 650px;
+    max-width: 680px;
 
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 .experience-type {
@@ -622,45 +622,109 @@ section {
 
 
 /* =========================
-   SKILLS
+   NEW SKILLS DESIGN
 ========================= */
 
-.skills-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    border-top: 1px solid var(--line);
-
-    border-left: 1px solid var(--line);
+.skills-section {
+    background: var(--cream);
 }
 
-.skill {
-    padding: 35px 25px;
+.skills-wrapper {
+    display: grid;
 
-    border-right: 1px solid var(--line);
+    grid-template-columns: 0.7fr 1.8fr;
+
+    gap: 80px;
+
+    border-top: 1px solid var(--line);
+}
+
+.skills-intro {
+    padding-top: 35px;
+}
+
+.skills-intro h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+
+    line-height: 1.1;
+}
+
+.skills-intro p {
+    margin-top: 20px;
+
+    color: var(--gray);
+
+    line-height: 1.7;
+
+    max-width: 300px;
+}
+
+.skill-category {
+    padding: 35px 0;
 
     border-bottom: 1px solid var(--line);
+
+    display: grid;
+
+    grid-template-columns: 190px 1fr;
+
+    gap: 30px;
 
     transition: 0.3s;
 }
 
-.skill:hover {
-    background: var(--yellow);
+.skill-category:hover {
+    padding-left: 15px;
 }
 
-.skill-number {
-    color: var(--orange);
+.skill-category:last-child {
+    border-bottom: none;
+}
 
-    font-size: 12px;
+.skill-category-name {
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
 
     font-weight: 700;
+
+    color: var(--orange);
 }
 
-.skill h3 {
-    margin-top: 20px;
+.skill-list {
+    display: flex;
 
-    font-size: 20px;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.skill-pill {
+    padding: 10px 16px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 50px;
+
+    background: var(--white);
+
+    font-size: 13px;
+
+    transition: 0.25s;
+}
+
+.skill-pill:hover {
+    background: var(--dark);
+
+    color: white;
+
+    border-color: var(--dark);
+
+    transform: translateY(-2px);
 }
 
 
@@ -880,8 +944,20 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .skills-grid {
-        grid-template-columns: 1fr 1fr;
+    .skills-wrapper {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .skills-intro {
+        padding-bottom: 10px;
+    }
+
+    .skill-category {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
     }
 
     .education-card {
@@ -909,10 +985,6 @@ footer {
         font-size: 55px;
     }
 
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
     .project-card {
         min-height: 330px;
     }
@@ -926,7 +998,9 @@ footer {
 <body>
 
 
-<!-- NAVIGATION -->
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav>
 
@@ -936,39 +1010,28 @@ footer {
 
     <ul class="nav-links">
 
-        <li>
-            <a href="#about">About</a>
-        </li>
+        <li><a href="#about">About</a></li>
 
-        <li>
-            <a href="#experience">Experience</a>
-        </li>
+        <li><a href="#experience">Experience</a></li>
 
-        <li>
-            <a href="#projects">Projects</a>
-        </li>
+        <li><a href="#projects">Projects</a></li>
 
-        <li>
-            <a href="#skills">Skills</a>
-        </li>
+        <li><a href="#skills">Skills</a></li>
 
-        <li>
-            <a href="#education">Education</a>
-        </li>
+        <li><a href="#education">Education</a></li>
 
-        <li>
-            <a href="#contact">Contact</a>
-        </li>
+        <li><a href="#contact">Contact</a></li>
 
     </ul>
 
 </nav>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <header class="hero container">
-
 
     <div class="hero-left">
 
@@ -976,24 +1039,18 @@ footer {
             International Business · Marketing · Growth
         </div>
 
-
         <h1>
-
             Hi, I'm<br>
-
             <span>Shaina.</span>
-
         </h1>
-
 
         <p class="hero-text">
 
-            International Business student interested in marketing,
-            growth and business development, with a strong focus on
-            understanding people and creating better customer experiences.
+            International Business student focused on marketing,
+            growth and business development, with hands-on experience
+            in startup, content and customer-facing environments.
 
         </p>
-
 
         <div class="hero-buttons">
 
@@ -1016,16 +1073,15 @@ footer {
 
             <img
                 src="profile.jpg"
-                alt="Shaina"
+                alt="Shaina Shabani"
                 class="profile-photo"
             >
-
 
             <div class="photo-tag">
 
                 <strong>Based in Finland</strong>
 
-                International Business
+                International Business · Marketing
 
             </div>
 
@@ -1036,34 +1092,36 @@ footer {
 </header>
 
 
-<!-- MARQUEE -->
+<!-- =========================
+     MARQUEE
+========================= -->
 
 <div class="marquee">
 
     <div class="marquee-content">
 
-        BUSINESS
-        <span>✦</span>
-
         MARKETING
         <span>✦</span>
 
+        BUSINESS
+        <span>✦</span>
+
         GROWTH
+        <span>✦</span>
+
+        CONTENT
+        <span>✦</span>
+
+        COMMUNITY
         <span>✦</span>
 
         CUSTOMER EXPERIENCE
         <span>✦</span>
 
-        BUSINESS DEVELOPMENT
-        <span>✦</span>
-
-        BUSINESS
-        <span>✦</span>
-
         MARKETING
         <span>✦</span>
 
-        GROWTH
+        BUSINESS
         <span>✦</span>
 
     </div>
@@ -1071,12 +1129,13 @@ footer {
 </div>
 
 
-<!-- ABOUT -->
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section id="about" class="about-section">
 
     <div class="container">
-
 
         <div class="section-header">
 
@@ -1093,12 +1152,11 @@ footer {
 
             </div>
 
-
             <p class="section-intro">
 
-                A background that combines international business
-                studies, customer-facing experience and a strong
-                interest in marketing.
+                A business-focused background combined with
+                hands-on experience in marketing, startups and
+                customer-facing roles.
 
             </p>
 
@@ -1125,21 +1183,30 @@ footer {
 
                 <p>
 
-                    I am an International Business student at Tampere
-                    University of Applied Sciences. I chose International
-                    Business because I want to understand how businesses
-                    work across different markets and eventually build
-                    something of my own.
+                    I am a Bachelor of International Business
+                    Administration student at Tampere University
+                    of Applied Sciences, specializing in Marketing.
 
                 </p>
 
 
                 <p>
 
-                    I am particularly interested in marketing, growth,
-                    business development and customer experience. I enjoy
-                    learning through practical work, working with people
-                    and finding simple solutions to real problems.
+                    I enjoy working on practical projects where
+                    communication, creativity and business thinking
+                    come together. My experience includes startup
+                    work, digital marketing, content creation,
+                    community engagement and customer service.
+
+                </p>
+
+
+                <p>
+
+                    I am particularly interested in marketing,
+                    growth and business development, and I enjoy
+                    learning through real-world challenges and
+                    working with different people and teams.
 
                 </p>
 
@@ -1153,7 +1220,7 @@ footer {
                             Currently
                         </strong>
 
-                        International Business Student
+                        International Business Administration Student
 
                     </div>
 
@@ -1161,7 +1228,7 @@ footer {
                     <div class="fact">
 
                         <strong>
-                            Interested in
+                            Focus
                         </strong>
 
                         Marketing & Growth
@@ -1183,10 +1250,10 @@ footer {
                     <div class="fact">
 
                         <strong>
-                            Looking for
+                            Languages
                         </strong>
 
-                        Internship & Thesis Opportunities
+                        Persian · English · Finnish
 
                     </div>
 
@@ -1202,12 +1269,13 @@ footer {
 </section>
 
 
-<!-- EXPERIENCE -->
+<!-- =========================
+     EXPERIENCE
+========================= -->
 
 <section id="experience">
 
     <div class="container">
-
 
         <div class="section-header">
 
@@ -1227,8 +1295,10 @@ footer {
 
             <p class="section-intro">
 
-                Experiences that have helped me develop communication,
-                customer service, teamwork and problem-solving skills.
+                From startup and digital marketing work to
+                customer-facing roles, each experience has
+                shaped how I approach people, communication
+                and business.
 
             </p>
 
@@ -1238,29 +1308,74 @@ footer {
         <div class="experience-list">
 
 
-            <!-- CURRENT INTERNSHIP -->
+            <!-- FARMOI -->
 
             <div class="experience">
 
                 <div class="experience-date">
-                    2026
+                    Apr 2025 — May 2026
                 </div>
 
 
                 <div>
 
                     <h3>
-                        Intern
+                        Co-founder
                     </h3>
 
                     <div class="experience-company">
-                        Finland
+                        Farmoi Oy · Tampere, Finland
                     </div>
+
 
                     <p class="experience-description">
 
-                        Add the final internship title and company
-                        information here once you want to publish it.
+                        Led a community voting campaign that secured
+                        grant funding and achieved top-10 finalist
+                        recognition. Developed social media and content
+                        strategy, built brand messaging, created digital
+                        marketing materials and collected customer
+                        feedback to support product communication.
+
+                    </p>
+
+                </div>
+
+
+                <div class="experience-type">
+                    Startup
+                </div>
+
+            </div>
+
+
+            <!-- TRIBE -->
+
+            <div class="experience">
+
+                <div class="experience-date">
+                    Jan 2025 — Aug 2025
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Digital Marketing & Events Coordinator Intern
+                    </h3>
+
+                    <div class="experience-company">
+                        Tribe Tampere · Tampere, Finland
+                    </div>
+
+
+                    <p class="experience-description">
+
+                        Managed social media channels to promote events,
+                        engage audiences and support brand visibility.
+                        Supported marketing activities and collaborated
+                        with internal teams to keep messaging consistent
+                        across events and digital platforms.
 
                     </p>
 
@@ -1279,26 +1394,27 @@ footer {
             <div class="experience">
 
                 <div class="experience-date">
-                    2023
+                    May 2023 — Jun 2023
                 </div>
 
 
                 <div>
 
                     <h3>
-                        Finnish Language Intern
+                        Sales Intern
                     </h3>
 
                     <div class="experience-company">
-                        Honkasen Puutarha Oy
+                        Honkasen Puutarha Oy · Tampere, Finland
                     </div>
 
 
                     <p class="experience-description">
 
-                        Worked in a Finnish-speaking workplace environment
-                        and developed practical communication and
-                        customer-facing skills.
+                        Assisted customers by understanding their needs
+                        and providing suitable product solutions.
+                        Coordinated with the team to support daily
+                        operations, schedules and materials.
 
                     </p>
 
@@ -1317,7 +1433,7 @@ footer {
             <div class="experience">
 
                 <div class="experience-date">
-                    2021 — 2022
+                    May 2021 — Apr 2022
                 </div>
 
 
@@ -1328,15 +1444,17 @@ footer {
                     </h3>
 
                     <div class="experience-company">
-                        Komodaa
+                        Komodaa · Shiraz, Iran
                     </div>
 
 
                     <p class="experience-description">
 
-                        Supported customers, handled questions and
-                        problems, and helped maintain a positive
-                        customer experience on the platform.
+                        Resolved orders, customer requests and
+                        app-related issues while handling high-volume
+                        inquiries through digital channels. Identified
+                        recurring problems and shared customer insights
+                        to help improve the overall customer experience.
 
                     </p>
 
@@ -1350,43 +1468,6 @@ footer {
             </div>
 
 
-            <!-- RICE RESEARCH -->
-
-            <div class="experience">
-
-                <div class="experience-date">
-                    2019
-                </div>
-
-
-                <div>
-
-                    <h3>
-                        Agricultural Engineering Intern
-                    </h3>
-
-                    <div class="experience-company">
-                        Rice Research Institute of Iran
-                    </div>
-
-
-                    <p class="experience-description">
-
-                        Gained practical experience in agricultural
-                        research, field work and laboratory activities.
-
-                    </p>
-
-                </div>
-
-
-                <div class="experience-type">
-                    Internship
-                </div>
-
-            </div>
-
-
         </div>
 
     </div>
@@ -1394,12 +1475,13 @@ footer {
 </section>
 
 
-<!-- PROJECTS -->
+<!-- =========================
+     PROJECTS
+========================= -->
 
 <section id="projects" class="projects-section">
 
     <div class="container">
-
 
         <div class="section-header">
 
@@ -1419,8 +1501,8 @@ footer {
 
             <p class="section-intro">
 
-                This section will showcase my university,
-                marketing and business projects.
+                University and personal projects will be added here
+                as the portfolio develops.
 
             </p>
 
@@ -1432,14 +1514,9 @@ footer {
 
             <article class="project-card">
 
-                <div>
-
-                    <div class="project-number">
-                        01 / PROJECT
-                    </div>
-
+                <div class="project-number">
+                    01 / PROJECT
                 </div>
-
 
                 <div>
 
@@ -1448,22 +1525,18 @@ footer {
                         coming soon.
                     </h3>
 
-
                     <p>
-
                         A real project will be added here.
-
                     </p>
-
 
                     <div class="project-tags">
 
                         <span class="project-tag">
-                            Business
+                            Marketing
                         </span>
 
                         <span class="project-tag">
-                            Marketing
+                            Business
                         </span>
 
                     </div>
@@ -1475,14 +1548,9 @@ footer {
 
             <article class="project-card">
 
-                <div>
-
-                    <div class="project-number">
-                        02 / PROJECT
-                    </div>
-
+                <div class="project-number">
+                    02 / PROJECT
                 </div>
-
 
                 <div>
 
@@ -1491,61 +1559,14 @@ footer {
                         coming soon.
                     </h3>
 
-
                     <p>
-
                         A real project will be added here.
-
                     </p>
 
-
                     <div class="project-tags">
-
-                        <span class="project-tag">
-                            Business
-                        </span>
 
                         <span class="project-tag">
                             Strategy
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <div>
-
-                    <div class="project-number">
-                        03 / PROJECT
-                    </div>
-
-                </div>
-
-
-                <div>
-
-                    <h3>
-                        Project<br>
-                        coming soon.
-                    </h3>
-
-
-                    <p>
-
-                        A real project will be added here.
-
-                    </p>
-
-
-                    <div class="project-tags">
-
-                        <span class="project-tag">
-                            Marketing
                         </span>
 
                         <span class="project-tag">
@@ -1561,14 +1582,9 @@ footer {
 
             <article class="project-card">
 
-                <div>
-
-                    <div class="project-number">
-                        04 / PROJECT
-                    </div>
-
+                <div class="project-number">
+                    03 / PROJECT
                 </div>
-
 
                 <div>
 
@@ -1577,13 +1593,43 @@ footer {
                         coming soon.
                     </h3>
 
-
                     <p>
-
                         A real project will be added here.
-
                     </p>
 
+                    <div class="project-tags">
+
+                        <span class="project-tag">
+                            Content
+                        </span>
+
+                        <span class="project-tag">
+                            Marketing
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-number">
+                    04 / PROJECT
+                </div>
+
+                <div>
+
+                    <h3>
+                        Project<br>
+                        coming soon.
+                    </h3>
+
+                    <p>
+                        A real project will be added here.
+                    </p>
 
                     <div class="project-tags">
 
@@ -1609,12 +1655,13 @@ footer {
 </section>
 
 
-<!-- SKILLS -->
+<!-- =========================
+     SKILLS
+========================= -->
 
-<section id="skills">
+<section id="skills" class="skills-section">
 
     <div class="container">
-
 
         <div class="section-header">
 
@@ -1626,7 +1673,7 @@ footer {
 
                 <h2 class="section-title">
                     What I<br>
-                    bring.
+                    work with.
                 </h2>
 
             </div>
@@ -1634,133 +1681,167 @@ footer {
 
             <p class="section-intro">
 
-                Skills I have developed through my studies,
-                work experience and practical learning.
+                A combination of marketing, communication,
+                content and digital tools developed through
+                work and practical experience.
 
             </p>
 
         </div>
 
 
-        <div class="skills-grid">
+        <div class="skills-wrapper">
 
 
-            <div class="skill">
-
-                <div class="skill-number">
-                    01
-                </div>
+            <div class="skills-intro">
 
                 <h3>
-                    International Business
+                    Skills that turn ideas into action.
                 </h3>
+
+                <p>
+
+                    I combine creative thinking with
+                    organization, communication and
+                    practical digital tools.
+
+                </p>
 
             </div>
 
 
-            <div class="skill">
+            <div class="skills-list">
 
-                <div class="skill-number">
-                    02
+
+                <!-- MARKETING -->
+
+                <div class="skill-category">
+
+                    <div class="skill-category-name">
+                        Marketing
+                    </div>
+
+
+                    <div class="skill-list">
+
+                        <span class="skill-pill">
+                            Social Media Management
+                        </span>
+
+                        <span class="skill-pill">
+                            Campaign Planning
+                        </span>
+
+                        <span class="skill-pill">
+                            Community Engagement
+                        </span>
+
+                        <span class="skill-pill">
+                            Email Marketing
+                        </span>
+
+                        <span class="skill-pill">
+                            Content Strategy
+                        </span>
+
+                        <span class="skill-pill">
+                            Product Strategy
+                        </span>
+
+                    </div>
+
                 </div>
 
-                <h3>
-                    Marketing
-                </h3>
 
-            </div>
+                <!-- CONTENT -->
+
+                <div class="skill-category">
+
+                    <div class="skill-category-name">
+                        Content & Communication
+                    </div>
 
 
-            <div class="skill">
+                    <div class="skill-list">
 
-                <div class="skill-number">
-                    03
+                        <span class="skill-pill">
+                            Content Creation
+                        </span>
+
+                        <span class="skill-pill">
+                            Copywriting
+                        </span>
+
+                        <span class="skill-pill">
+                            Brand Messaging
+                        </span>
+
+                        <span class="skill-pill">
+                            Visual Marketing Materials
+                        </span>
+
+                        <span class="skill-pill">
+                            Information Organization
+                        </span>
+
+                        <span class="skill-pill">
+                            Content Validation
+                        </span>
+
+                    </div>
+
                 </div>
 
-                <h3>
-                    Customer Experience
-                </h3>
 
-            </div>
+                <!-- DIGITAL TOOLS -->
+
+                <div class="skill-category">
+
+                    <div class="skill-category-name">
+                        Tools
+                    </div>
 
 
-            <div class="skill">
+                    <div class="skill-list">
 
-                <div class="skill-number">
-                    04
+                        <span class="skill-pill">
+                            Canva
+                        </span>
+
+                        <span class="skill-pill">
+                            Meta Business Suite
+                        </span>
+
+                        <span class="skill-pill">
+                            Google Analytics
+                        </span>
+
+                        <span class="skill-pill">
+                            HubSpot
+                        </span>
+
+                        <span class="skill-pill">
+                            Microsoft 365
+                        </span>
+
+                        <span class="skill-pill">
+                            PowerPoint
+                        </span>
+
+                        <span class="skill-pill">
+                            Excel
+                        </span>
+
+                        <span class="skill-pill">
+                            AI Tools
+                        </span>
+
+                    </div>
+
                 </div>
 
-                <h3>
-                    Communication
-                </h3>
 
             </div>
-
-
-            <div class="skill">
-
-                <div class="skill-number">
-                    05
-                </div>
-
-                <h3>
-                    Business Development
-                </h3>
-
-            </div>
-
-
-            <div class="skill">
-
-                <div class="skill-number">
-                    06
-                </div>
-
-                <h3>
-                    Customer Service
-                </h3>
-
-            </div>
-
-
-            <div class="skill">
-
-                <div class="skill-number">
-                    07
-                </div>
-
-                <h3>
-                    Microsoft Office
-                </h3>
-
-            </div>
-
-
-            <div class="skill">
-
-                <div class="skill-number">
-                    08
-                </div>
-
-                <h3>
-                    Problem Solving
-                </h3>
-
-            </div>
-
-
-            <div class="skill">
-
-                <div class="skill-number">
-                    09
-                </div>
-
-                <h3>
-                    Teamwork
-                </h3>
-
-            </div>
-
 
         </div>
 
@@ -1769,12 +1850,13 @@ footer {
 </section>
 
 
-<!-- EDUCATION -->
+<!-- =========================
+     EDUCATION
+========================= -->
 
 <section id="education" class="education-section">
 
     <div class="container">
-
 
         <div class="section-header">
 
@@ -1796,19 +1878,18 @@ footer {
         <div class="education-card">
 
             <div class="education-year">
-                2022 — Present
+                2024 — 2027
             </div>
 
 
             <div>
 
                 <h3>
-                    Bachelor of Business Administration
+                    Bachelor of International Business Administration
                 </h3>
 
                 <p>
-                    International Business · Tampere University
-                    of Applied Sciences (TAMK)
+                    Marketing · Tampere University of Applied Sciences (TAMK)
                 </p>
 
             </div>
@@ -1830,7 +1911,7 @@ footer {
                 </h3>
 
                 <p>
-                    Agricultural Engineering · Guilan University
+                    Soil Science Engineering · Guilan University
                 </p>
 
             </div>
@@ -1843,15 +1924,15 @@ footer {
 </section>
 
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section id="contact" class="contact-section">
 
     <div class="container">
 
-
         <div class="contact-content">
-
 
             <div class="eyebrow">
                 06 / GET IN TOUCH
@@ -1878,18 +1959,20 @@ footer {
 
             <div class="contact-buttons">
 
-                <!-- YOUR EMAIL AND LINKEDIN ARE ALREADY ADDED -->
+                <!-- KEEP YOUR EXISTING EMAIL LINK HERE -->
 
                 <a
-                    href="mailto:YOUR-EMAIL"
+                    href="YOUR-EMAIL-LINK"
                     class="button"
                 >
                     Email me
                 </a>
 
 
+                <!-- KEEP YOUR EXISTING LINKEDIN LINK HERE -->
+
                 <a
-                    href="YOUR-LINKEDIN"
+                    href="YOUR-LINKEDIN-LINK"
                     target="_blank"
                     class="button outline"
                 >
@@ -1898,7 +1981,6 @@ footer {
 
             </div>
 
-
         </div>
 
     </div>
@@ -1906,7 +1988,9 @@ footer {
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
