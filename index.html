@@ -1,3128 +1,1376 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Shaina | International Business & Marketing</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
-rel="stylesheet">
-
-
-<style>
-
-/* =========================
-   COLORS
-========================= */
-
-:root {
-
-    --ink: #29272a;
-
-    --muted: #706a6d;
-
-    --cream: #faf7f3;
-
-    --white: #fffdfb;
-
-    --rose: #bd7181;
-
-    --rose-light: #f3e1e4;
-
-    --lavender: #e8e2ef;
-
-    --line: #e6dfe0;
-
-    --shadow:
-        0 16px 40px rgba(45,35,39,.07);
-
-}
-
-
-/* =========================
-   RESET
-========================= */
-
-* {
-
-    box-sizing: border-box;
-
-    margin: 0;
-
-    padding: 0;
-
-}
-
-
-html {
-
-    scroll-behavior: smooth;
-
-}
-
-
-body {
-
-    font-family:
-        "DM Sans",
-        sans-serif;
-
-    background:
-        var(--cream);
-
-    color:
-        var(--ink);
-
-    line-height:
-        1.6;
-
-    overflow-x:
-        hidden;
-
-}
-
-
-a {
-
-    text-decoration:
-        none;
-
-    color:
-        inherit;
-
-}
-
-
-.container {
-
-    width:
-        min(1160px,90%);
-
-    margin:
-        auto;
-
-}
-
-
-/* =========================
-   NAVIGATION
-========================= */
-
-nav {
-
-    position:
-        fixed;
-
-    z-index:
-        1000;
-
-    top:
-        16px;
-
-    left:
-        50%;
-
-    transform:
-        translateX(-50%);
-
-    width:
-        min(1120px,92%);
-
-    padding:
-        14px 20px;
-
-    display:
-        flex;
-
-    justify-content:
-        space-between;
-
-    align-items:
-        center;
-
-    background:
-        rgba(255,253,251,.90);
-
-    backdrop-filter:
-        blur(16px);
-
-    border:
-        1px solid var(--line);
-
-    border-radius:
-        18px;
-
-    box-shadow:
-        0 8px 25px rgba(45,35,39,.05);
-
-}
-
-
-.logo {
-
-    font-size:
-        20px;
-
-    font-weight:
-        700;
-
-    letter-spacing:
-        -.5px;
-
-}
-
-
-.logo span {
-
-    color:
-        var(--rose);
-
-}
-
-
-.nav-links {
-
-    display:
-        flex;
-
-    gap:
-        26px;
-
-    list-style:
-        none;
-
-    font-size:
-        13px;
-
-    font-weight:
-        600;
-
-    color:
-        #5e595c;
-
-}
-
-
-.nav-links a {
-
-    transition:
-        .25s;
-
-}
-
-
-.nav-links a:hover {
-
-    color:
-        var(--rose);
-
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-
-    min-height:
-        100vh;
-
-    padding:
-        145px 0 90px;
-
-    display:
-        grid;
-
-    grid-template-columns:
-        1.1fr .9fr;
-
-    align-items:
-        center;
-
-    gap:
-        70px;
-
-}
-
-
-.eyebrow {
-
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    gap:
-        9px;
-
-    padding:
-        8px 13px;
-
-    border:
-        1px solid #e5cbd0;
-
-    border-radius:
-        999px;
-
-    background:
-        #fbf0f2;
-
-    color:
-        var(--rose);
-
-    font-size:
-        11px;
-
-    font-weight:
-        700;
-
-    letter-spacing:
-        1.3px;
-
-    text-transform:
-        uppercase;
-
-}
-
-
-.eyebrow::before {
-
-    content:
-        "";
-
-    width:
-        7px;
-
-    height:
-        7px;
-
-    background:
-        var(--rose);
-
-    border-radius:
-        50%;
-
-}
-
-
-.hero h1 {
-
-    margin-top:
-        25px;
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size:
-        clamp(70px,9vw,120px);
-
-    line-height:
-        .84;
-
-    letter-spacing:
-        -6px;
-
-    font-weight:
-        600;
-
-}
-
-
-.hero h1 span {
-
-    color:
-        var(--rose);
-
-    font-style:
-        italic;
-
-}
-
-
-.hero-text {
-
-    max-width:
-        610px;
-
-    margin-top:
-        32px;
-
-    color:
-        var(--muted);
-
-    font-size:
-        18px;
-
-    line-height:
-        1.8;
-
-}
-
-
-.hero-buttons {
-
-    display:
-        flex;
-
-    gap:
-        11px;
-
-    flex-wrap:
-        wrap;
-
-    margin-top:
-        30px;
-
-}
-
-
-.button {
-
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    padding:
-        13px 21px;
-
-    border-radius:
-        999px;
-
-    background:
-        var(--ink);
-
-    color:
-        white;
-
-    font-size:
-        13px;
-
-    font-weight:
-        700;
-
-    transition:
-        .3s;
-
-}
-
-
-.button:hover {
-
-    transform:
-        translateY(-3px);
-
-}
-
-
-.button.outline {
-
-    background:
-        transparent;
-
-    color:
-        var(--ink);
-
-    border:
-        1px solid #cfc7c9;
-
-}
-
-
-/* =========================
-   PROFILE PHOTO
-========================= */
-
-.hero-right {
-
-    display:
-        flex;
-
-    justify-content:
-        center;
-
-}
-
-
-.photo-wrapper {
-
-    width:
-        min(400px,100%);
-
-    position:
-        relative;
-
-}
-
-
-.photo-wrapper::before {
-
-    content:
-        "";
-
-    position:
-        absolute;
-
-    inset:
-        18px -13px -13px 13px;
-
-    background:
-        var(--rose-light);
-
-    border-radius:
-        47% 53% 50% 50%;
-
-    transform:
-        rotate(-4deg);
-
-}
-
-
-.photo-wrapper::after {
-
-    content:
-        "MARKETING";
-
-    position:
-        absolute;
-
-    z-index:
-        4;
-
-    right:
-        -25px;
-
-    top:
-        35px;
-
-    padding:
-        9px 13px;
-
-    background:
-        var(--ink);
-
-    color:
-        white;
-
-    border-radius:
-        7px;
-
-    font-size:
-        9px;
-
-    font-weight:
-        700;
-
-    letter-spacing:
-        1.5px;
-
-    transform:
-        rotate(5deg);
-
-}
-
-
-.profile-photo {
-
-    position:
-        relative;
-
-    z-index:
-        2;
-
-    width:
-        100%;
-
-    display:
-        block;
-
-    border:
-        8px solid white;
-
-    border-radius:
-        46% 54% 50% 50%;
-
-    box-shadow:
-        var(--shadow);
-
-}
-
-
-.photo-tag {
-
-    position:
-        absolute;
-
-    z-index:
-        5;
-
-    left:
-        -30px;
-
-    bottom:
-        22px;
-
-    background:
-        white;
-
-    border:
-        1px solid var(--line);
-
-    padding:
-        13px 17px;
-
-    border-radius:
-        14px;
-
-    box-shadow:
-        var(--shadow);
-
-    font-size:
-        11px;
-
-    color:
-        var(--muted);
-
-}
-
-
-.photo-tag strong {
-
-    display:
-        block;
-
-    color:
-        var(--ink);
-
-    font-size:
-        14px;
-
-}
-
-
-/* =========================
-   MARQUEE
-========================= */
-
-.marquee {
-
-    background:
-        var(--ink);
-
-    color:
-        white;
-
-    overflow:
-        hidden;
-
-    white-space:
-        nowrap;
-
-    padding:
-        16px 0;
-
-}
-
-
-.marquee-content {
-
-    display:
-        inline-block;
-
-    animation:
-        marquee 24s linear infinite;
-
-    font-size:
-        11px;
-
-    letter-spacing:
-        2.4px;
-
-    font-weight:
-        700;
-
-}
-
-
-.marquee span {
-
-    color:
-        #d99aa6;
-
-    margin:
-        0 22px;
-
-}
-
-
-/* =========================
-   SECTIONS
-========================= */
-
-section {
-
-    padding:
-        115px 0;
-
-}
-
-
-.section-header {
-
-    display:
-        flex;
-
-    justify-content:
-        space-between;
-
-    align-items:
-        end;
-
-    gap:
-        30px;
-
-    margin-bottom:
-        55px;
-
-}
-
-
-.section-number {
-
-    font-size:
-        11px;
-
-    color:
-        var(--rose);
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        1.8px;
-
-    margin-bottom:
-        8px;
-
-}
-
-
-.section-title {
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size:
-        clamp(48px,6vw,76px);
-
-    line-height:
-        .95;
-
-    letter-spacing:
-        -3px;
-
-}
-
-
-.section-intro {
-
-    max-width:
-        410px;
-
-    color:
-        var(--muted);
-
-    line-height:
-        1.75;
-
-}
-
-
-/* =========================
-   ABOUT
-========================= */
-
-.about-section {
-
-    background:
-        var(--white);
-
-}
-
-
-.about-grid {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        .85fr 1.35fr;
-
-    gap:
-        85px;
-
-}
-
-
-.about-large {
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size:
-        40px;
-
-    line-height:
-        1.2;
-
-}
-
-
-.about-large span {
-
-    color:
-        var(--rose);
-
-}
-
-
-.about-content {
-
-    color:
-        #665f62;
-
-    font-size:
-        16px;
-
-    line-height:
-        1.85;
-
-}
-
-
-.about-content p + p {
-
-    margin-top:
-        20px;
-
-}
-
-
-/* =========================
-   ABOUT FACTS
-========================= */
-
-.about-facts {
-
-    margin-top:
-        34px;
-
-    display:
-        grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap:
-        15px;
-
-}
-
-
-.fact {
-
-    min-height:
-        145px;
-
-    padding:
-        23px;
-
-    background:
-        white;
-
-    border:
-        1px solid var(--line);
-
-    border-radius:
-        18px;
-
-    box-shadow:
-        0 7px 22px rgba(45,35,39,.035);
-
-    transition:
-        .3s;
-
-}
-
-
-.fact:hover {
-
-    transform:
-        translateY(-4px);
-
-    box-shadow:
-        var(--shadow);
-
-}
-
-
-.fact:nth-child(1) {
-
-    background:
-        #fff7f8;
-
-}
-
-
-.fact:nth-child(2) {
-
-    background:
-        #faf8fd;
-
-}
-
-
-.fact:nth-child(3) {
-
-    background:
-        #f7faf7;
-
-}
-
-
-.fact:nth-child(4) {
-
-    background:
-        #fffaf5;
-
-}
-
-
-.fact-icon {
-
-    width:
-        28px;
-
-    height:
-        28px;
-
-    display:
-        grid;
-
-    place-items:
-        center;
-
-    border-radius:
-        8px;
-
-    background:
-        white;
-
-    border:
-        1px solid var(--line);
-
-    color:
-        var(--rose);
-
-    font-size:
-        10px;
-
-    font-weight:
-        800;
-
-    margin-bottom:
-        12px;
-
-}
-
-
-.fact strong {
-
-    display:
-        block;
-
-    font-size:
-        12px;
-
-    text-transform:
-        uppercase;
-
-    letter-spacing:
-        1.2px;
-
-    margin-bottom:
-        7px;
-
-}
-
-
-.fact span {
-
-    display:
-        block;
-
-    color:
-        #5f585c;
-
-    font-size:
-        14px;
-
-    line-height:
-        1.5;
-
-}
-
-
-.fact small {
-
-    display:
-        block;
-
-    margin-top:
-        4px;
-
-    color:
-        var(--rose);
-
-    font-size:
-        11px;
-
-    font-weight:
-        700;
-
-}
-
-
-/* =========================
-   EXPERIENCE
-========================= */
-
-.experience-list {
-
-    border-top:
-        1px solid var(--line);
-
-}
-
-
-.experience {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        155px 1fr auto;
-
-    gap:
-        30px;
-
-    padding:
-        34px 0;
-
-    border-bottom:
-        1px solid var(--line);
-
-}
-
-
-.experience-date {
-
-    font-size:
-        12px;
-
-    color:
-        var(--muted);
-
-}
-
-
-.experience h3 {
-
-    font-size:
-        21px;
-
-}
-
-
-.experience-company {
-
-    color:
-        var(--rose);
-
-    font-size:
-        13px;
-
-    font-weight:
-        700;
-
-}
-
-
-.experience-description {
-
-    margin-top:
-        11px;
-
-    color:
-        var(--muted);
-
-    font-size:
-        14px;
-
-    line-height:
-        1.65;
-
-}
-
-
-.experience-type {
-
-    padding:
-        6px 10px;
-
-    border-radius:
-        999px;
-
-    background:
-        #f7e8eb;
-
-    color:
-        var(--rose);
-
-    font-size:
-        10px;
-
-    font-weight:
-        800;
-
-}
-
-
-/* =========================
-   PROJECTS
-========================= */
-
-.projects-section {
-
-    background:
-        var(--ink);
-
-    color:
-        white;
-
-}
-
-
-.projects-section .section-intro {
-
-    color:
-        #b9b2b5;
-
-}
-
-
-.project-grid {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        1.25fr .75fr;
-
-    gap:
-        20px;
-
-}
-
-
-.project-card {
-
-    min-height:
-        470px;
-
-    padding:
-        30px;
-
-    background:
-        #343034;
-
-    border:
-        1px solid rgba(255,255,255,.08);
-
-    border-radius:
-        24px;
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    justify-content:
-        space-between;
-
-    transition:
-        .35s;
-
-}
-
-
-.project-card.featured {
-
-    grid-row:
-        span 2;
-
-}
-
-
-.project-card:hover {
-
-    transform:
-        translateY(-7px);
-
-}
-
-
-.project-number {
-
-    color:
-        #d99aa6;
-
-    font-size:
-        10px;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        1.5px;
-
-}
-
-
-.project-preview {
-
-    margin:
-        25px -10px;
-
-    height:
-        270px;
-
-    border-radius:
-        17px;
-
-    overflow:
-        hidden;
-
-    background:
-        #252326;
-
-}
-
-
-.project-preview img {
-
-    width:
-        100%;
-
-    height:
-        100%;
-
-    object-fit:
-        cover;
-
-}
-
-
-.project-card h3 {
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size:
-        38px;
-
-    line-height:
-        1.05;
-
-}
-
-
-.project-card p {
-
-    color:
-        #bdb6ba;
-
-    font-size:
-        14px;
-
-    line-height:
-        1.6;
-
-    margin-top:
-        13px;
-
-}
-
-
-.project-tags {
-
-    display:
-        flex;
-
-    gap:
-        7px;
-
-    flex-wrap:
-        wrap;
-
-    margin-top:
-        22px;
-
-}
-
-
-.project-tag {
-
-    padding:
-        6px 10px;
-
-    border:
-        1px solid rgba(255,255,255,.14);
-
-    border-radius:
-        999px;
-
-    font-size:
-        10px;
-
-    color:
-        #d5cfd2;
-
-}
-
-
-.project-link {
-
-    display:
-        inline-block;
-
-    margin-top:
-        22px;
-
-    color:
-        white;
-
-    font-size:
-        12px;
-
-    font-weight:
-        700;
-
-    border-bottom:
-        1px solid #d99aa6;
-
-}
-
-
-/* =========================
-   SKILLS
-========================= */
-
-.skills-section {
-
-    background:
-        #fbf8f5;
-
-}
-
-
-.skills-wrapper {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        .75fr 1.7fr;
-
-    gap:
-        70px;
-
-}
-
-
-.skills-intro {
-
-    padding:
-        30px;
-
-    background:
-        var(--lavender);
-
-    border:
-        1px solid #ddd4e7;
-
-    border-radius:
-        24px;
-
-}
-
-
-.skills-intro h3 {
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size:
-        34px;
-
-}
-
-
-.skills-intro p {
-
-    margin-top:
-        18px;
-
-    color:
-        var(--muted);
-
-}
-
-
-.skill-category {
-
-    padding:
-        27px 0;
-
-    border-bottom:
-        1px solid var(--line);
-
-    display:
-        grid;
-
-    grid-template-columns:
-        180px 1fr;
-
-    gap:
-        25px;
-
-}
-
-
-.skill-category-name {
-
-    color:
-        var(--rose);
-
-    font-size:
-        11px;
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        1.4px;
-
-    text-transform:
-        uppercase;
-
-}
-
-
-.skill-list {
-
-    display:
-        flex;
-
-    flex-wrap:
-        wrap;
-
-    gap:
-        8px;
-
-}
-
-
-.skill-pill {
-
-    padding:
-        9px 13px;
-
-    background:
-        white;
-
-    border:
-        1px solid var(--line);
-
-    border-radius:
-        999px;
-
-    font-size:
-        12px;
-
-}
-
-
-/* =========================
-   EDUCATION
-========================= */
-
-.education-section {
-
-    background:
-        white;
-
-}
-
-
-.education-card {
-
-    display:
-        grid;
-
-    grid-template-columns:
-        150px 1fr;
-
-    gap:
-        40px;
-
-    padding:
-        32px 0;
-
-    border-top:
-        1px solid var(--line);
-
-}
-
-
-.education-year {
-
-    font-size:
-        12px;
-
-    color:
-        var(--rose);
-
-    font-weight:
-        700;
-
-}
-
-
-.education-card h3 {
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size:
-        29px;
-
-}
-
-
-.education-card p {
-
-    color:
-        var(--muted);
-
-    margin-top:
-        7px;
-
-}
-
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact-section {
-
-    background:
-        linear-gradient(
-            135deg,
-            #f0d8dc,
-            #e8e1ed
-        );
-
-}
-
-
-.contact-title {
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size:
-        clamp(60px,9vw,120px);
-
-    line-height:
-        .87;
-
-    letter-spacing:
-        -6px;
-
-}
-
-
-.contact-title span {
-
-    color:
-        #9f5e6d;
-
-    font-style:
-        italic;
-
-}
-
-
-.contact-description {
-
-    max-width:
-        550px;
-
-    margin-top:
-        28px;
-
-    color:
-        #5e565b;
-
-    font-size:
-        17px;
-
-}
-
-
-.contact-buttons {
-
-    margin-top:
-        30px;
-
-    display:
-        flex;
-
-    gap:
-        10px;
-
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-
-    background:
-        var(--ink);
-
-    color:
-        white;
-
-    padding:
-        27px 0;
-
-    font-size:
-        12px;
-
-}
-
-
-.footer-inner {
-
-    display:
-        flex;
-
-    justify-content:
-        space-between;
-
-}
-
-
-/* =========================
-   ANIMATION
-========================= */
-
-@keyframes marquee {
-
-    from {
-        transform:
-            translateX(0);
-    }
-
-    to {
-        transform:
-            translateX(-50%);
-    }
-
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:800px) {
-
-    .nav-links {
-        display:
-            none;
-    }
-
-    .hero {
-
-        grid-template-columns:
-            1fr;
-
-        padding-top:
-            125px;
-
-    }
-
-    .hero h1 {
-        font-size:
-            68px;
-    }
-
-    .about-grid {
-
-        grid-template-columns:
-            1fr;
-
-        gap:
-            40px;
-
-    }
-
-    .about-facts {
-
-        grid-template-columns:
-            1fr;
-
-    }
-
-    .experience {
-
-        grid-template-columns:
-            1fr;
-
-        gap:
-            10px;
-
-    }
-
-    .project-grid {
-
-        grid-template-columns:
-            1fr;
-
-    }
-
-    .project-card.featured {
-
-        grid-row:
-            auto;
-
-    }
-
-    .skills-wrapper {
-
-        grid-template-columns:
-            1fr;
-
-    }
-
-    .skill-category {
-
-        grid-template-columns:
-            1fr;
-
-    }
-
-    .education-card {
-
-        grid-template-columns:
-            1fr;
-
-    }
-
-    .section-header {
-
-        display:
-            block;
-
-    }
-
-    .section-intro {
-
-        margin-top:
-            18px;
-
-    }
-
-    .footer-inner {
-
-        flex-direction:
-            column;
-
-        gap:
-            12px;
-
-    }
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shaina Shabani | International Business & Marketing</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+        :root {
+            --background: #292729;
+            --card: #343033;
+            --card-light: #3b373a;
+            --cream: #f5f0e9;
+            --text: #f8f5f1;
+            --muted: #bdb7b9;
+            --pink: #e8a7b6;
+            --pink-light: #f3c9d3;
+            --border: rgba(255,255,255,0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            font-family: "DM Sans", sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1180px, 90%);
+            margin: auto;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+            width: min(1100px, 90%);
+            margin: 20px auto 0;
+            padding: 18px 28px;
+
+            background: rgba(248, 245, 241, 0.96);
+            border-radius: 22px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            box-shadow: 0 12px 35px rgba(0,0,0,0.16);
+        }
+
+        .nav-name {
+            color: #292729;
+            font-weight: 700;
+            font-size: 19px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: #625d60;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.25s ease;
+        }
+
+        .nav-links a:hover {
+            color: #292729;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 88vh;
+            display: flex;
+            align-items: center;
+            padding: 110px 0 100px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.25fr 0.75fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            color: var(--pink);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(60px, 8vw, 105px);
+            line-height: 0.95;
+            font-weight: 600;
+            letter-spacing: -4px;
+        }
+
+        .hero h1 span {
+            color: var(--pink);
+        }
+
+        .hero-description {
+            margin-top: 32px;
+            max-width: 620px;
+            color: var(--muted);
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            margin-top: 35px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px 22px;
+            border-radius: 100px;
+            border: 1px solid var(--border);
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.25s ease;
+        }
+
+        .button-primary {
+            background: var(--pink);
+            color: #292729;
+            border-color: var(--pink);
+        }
+
+        .button-primary:hover {
+            background: var(--pink-light);
+            transform: translateY(-2px);
+        }
+
+        .button-secondary {
+            color: var(--text);
+        }
+
+        .button-secondary:hover {
+            background: rgba(255,255,255,0.06);
+            transform: translateY(-2px);
+        }
+
+        .profile-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-frame {
+            width: 340px;
+            height: 410px;
+            background: var(--cream);
+            padding: 14px;
+            border-radius: 180px 180px 28px 28px;
+            transform: rotate(2deg);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+        }
+
+        .profile-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 165px 165px 18px 18px;
+            transform: rotate(-2deg);
+        }
+
+        /* =========================
+           SECTION
+        ========================= */
+
+        section {
+            padding: 110px 0;
+        }
+
+        .section-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .section-number {
+            color: var(--pink);
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .section-heading h2 {
+            margin-top: 8px;
+            font-family: "Playfair Display", serif;
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: 1;
+            font-weight: 600;
+        }
+
+        .section-intro {
+            max-width: 470px;
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .info-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 32px;
+            min-height: 190px;
+            transition: 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-4px);
+            background: var(--card-light);
+        }
+
+        .info-card h3 {
+            font-size: 18px;
+            margin-bottom: 22px;
+        }
+
+        .info-card p {
+            color: var(--muted);
+            font-size: 20px;
+        }
+
+        .about-text {
+            margin-top: 35px;
+            max-width: 850px;
+            color: var(--muted);
+            font-size: 18px;
+            line-height: 1.9;
+        }
+
+        /* =========================
+           EXPERIENCE
+        ========================= */
+
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .experience-item {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 50px;
+            padding: 35px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .experience-item:last-child {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .experience-date {
+            color: var(--pink);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .experience-content h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+            margin-bottom: 4px;
+        }
+
+        .experience-company {
+            color: var(--muted);
+            margin-bottom: 15px;
+        }
+
+        .experience-content p {
+            color: var(--muted);
+            max-width: 750px;
+        }
+
+        /* =========================
+           PROJECTS
+        ========================= */
+
+        .projects {
+            display: grid;
+            grid-template-columns: 1.35fr 0.65fr;
+            gap: 22px;
+            align-items: start;
+        }
+
+        .project-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 24px;
+            transition: 0.35s ease;
+            overflow: hidden;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(232,167,182,0.4);
+        }
+
+        .project-label {
+            color: var(--pink);
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin: 10px 10px 20px;
+            text-transform: uppercase;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 390px;
+            background: #242224;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .project-content {
+            padding: 30px 10px 10px;
+        }
+
+        .project-content h3 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(32px, 4vw, 48px);
+            line-height: 1.05;
+            margin-bottom: 18px;
+        }
+
+        .project-content p {
+            color: var(--muted);
+            max-width: 700px;
+            margin-bottom: 24px;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .project-tags span {
+            border: 1px solid var(--border);
+            border-radius: 100px;
+            padding: 7px 12px;
+            font-size: 12px;
+            color: #d8d1d3;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: var(--pink);
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        /* Smaller project cards */
+
+        .project-small {
+            min-height: 430px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        .project-small h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 40px;
+            line-height: 1;
+            margin-bottom: 15px;
+        }
+
+        .project-small p {
+            color: var(--muted);
+            margin-bottom: 22px;
+        }
+
+        .coming {
+            display: inline-block;
+            width: fit-content;
+            border: 1px solid var(--border);
+            padding: 8px 14px;
+            border-radius: 100px;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        /* =========================
+           SKILLS
+        ========================= */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .skill-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 30px;
+            min-height: 190px;
+        }
+
+        .skill-card h3 {
+            font-size: 18px;
+            margin-bottom: 22px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-list span {
+            background: rgba(255,255,255,0.05);
+            border-radius: 100px;
+            padding: 8px 12px;
+            color: #d8d1d3;
+            font-size: 13px;
+        }
+
+        /* =========================
+           EDUCATION
+        ========================= */
+
+        .education-card {
+            background: var(--cream);
+            color: #292729;
+            border-radius: 28px;
+            padding: 45px;
+            display: grid;
+            grid-template-columns: 170px 1fr;
+            gap: 40px;
+        }
+
+        .education-year {
+            font-size: 14px;
+            font-weight: 700;
+            color: #777073;
+        }
+
+        .education-card h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 34px;
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+
+        .education-card p {
+            color: #777073;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-box {
+            background: var(--pink);
+            color: #292729;
+            border-radius: 32px;
+            padding: 60px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: end;
+            gap: 40px;
+        }
+
+        .contact-box .section-number {
+            color: #292729;
+        }
+
+        .contact-box h2 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(45px, 6vw, 75px);
+            line-height: 1;
+            margin-top: 10px;
+        }
+
+        .contact-box p {
+            max-width: 550px;
+            margin-top: 22px;
+            color: #51484b;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            text-align: right;
+        }
+
+        .contact-links a {
+            font-weight: 700;
+            border-bottom: 1px solid rgba(41,39,41,0.35);
+            padding-bottom: 5px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding: 45px 0;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            border-top: 1px solid var(--border);
+            padding-top: 25px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .nav-links a:nth-child(n+4) {
+                display: none;
+            }
+
+            .hero-grid,
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-wrapper {
+                justify-content: flex-start;
+            }
+
+            .about-grid,
+            .skills-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-links {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            nav {
+                padding: 15px 18px;
+            }
+
+            .nav-name {
+                font-size: 16px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            section {
+                padding: 80px 0;
+            }
+
+            .hero {
+                padding-top: 80px;
+            }
+
+            .hero h1 {
+                font-size: 62px;
+                letter-spacing: -2px;
+            }
+
+            .profile-frame {
+                width: 280px;
+                height: 340px;
+            }
+
+            .about-grid,
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-item {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .project-image {
+                height: 280px;
+            }
+
+            .education-card {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 32px;
+            }
+
+            .contact-box {
+                padding: 35px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+            }
+        }
+
+    </style>
 </head>
 
 
 <body>
 
 
-<!-- =========================
-     NAVIGATION
-========================= -->
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
 
-<nav>
+    <nav>
 
-<a href="#" class="logo">
-Shaina Shabani<span></span>
-</a>
+        <a href="#about" class="nav-name">
+            Shaina Shabani
+        </a>
 
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
 
-<ul class="nav-links">
+    </nav>
 
-<li>
-<a href="#about">About</a>
-</li>
 
-<li>
-<a href="#experience">Experience</a>
-</li>
 
-<li>
-<a href="#projects">Projects</a>
-</li>
+    <!-- =========================
+         HERO
+    ========================= -->
 
-<li>
-<a href="#skills">Skills</a>
-</li>
+    <header class="hero">
 
-<li>
-<a href="#education">Education</a>
-</li>
+        <div class="container">
 
-<li>
-<a href="#contact">Contact</a>
-</li>
+            <div class="hero-grid">
 
-</ul>
+                <div>
 
-</nav>
+                    <div class="eyebrow">
+                        International Business · Marketing
+                    </div>
 
+                    <h1>
+                        Shaina<br>
+                        <span>Shabani.</span>
+                    </h1>
 
-<!-- =========================
-     HERO
-========================= -->
+                    <p class="hero-description">
+                        International Business student with an interest in
+                        marketing, communication and creative business ideas.
+                        I enjoy turning ideas into clear, engaging and
+                        visually thoughtful work.
+                    </p>
 
-<header class="hero container">
+                    <div class="hero-buttons">
 
+                        <a href="#projects" class="button button-primary">
+                            Explore my work
+                        </a>
 
-<div>
+                        <a href="mailto:shaina.shabani75@gmail.com"
+                           class="button button-secondary">
+                            Get in touch
+                        </a>
 
-<div class="eyebrow">
+                    </div>
 
-International Business · Marketing · Growth
+                </div>
 
-</div>
 
+                <div class="profile-wrapper">
 
-<h1>
+                    <div class="profile-frame">
 
-Hi, I'm<br>
+                        <img
+                            src="./assets/profile.jpg"
+                            alt="Shaina Shabani"
+                        >
 
-<span>Shaina.</span>
+                    </div>
 
-</h1>
+                </div>
 
+            </div>
 
-<p class="hero-text">
+        </div>
 
-International Business student focused on
-marketing, growth and business development,
-with hands-on experience in startup,
-content and customer-facing environments.
+    </header>
 
-</p>
 
 
-<div class="hero-buttons">
+    <!-- =========================
+         ABOUT
+    ========================= -->
 
-<a href="#projects" class="button">
+    <section id="about">
 
-Explore my work
+        <div class="container">
 
-</a>
+            <div class="section-heading">
 
+                <div>
+                    <div class="section-number">
+                        01 / About
+                    </div>
 
-<a href="#contact" class="button outline">
+                    <h2>
+                        A little<br>about me.
+                    </h2>
+                </div>
 
-Let's connect
+                <p class="section-intro">
+                    A business student building experience across
+                    marketing, communication and creative projects.
+                </p>
 
-</a>
+            </div>
 
-</div>
 
-</div>
+            <div class="about-grid">
 
+                <div class="info-card">
 
-<div class="hero-right">
+                    <h3>Currently</h3>
 
-<div class="photo-wrapper">
+                    <p>
+                        Bachelor of Business Administration
+                        student
+                    </p>
 
+                </div>
 
-<img
 
-src="assets/profile.jpg"
+                <div class="info-card">
 
-alt="Shaina"
+                    <h3>Focus</h3>
 
-class="profile-photo"
+                    <p>
+                        Marketing & Growth
+                    </p>
 
+                </div>
 
->
 
+                <div class="info-card">
 
-<div class="photo-tag">
+                    <h3>Based in</h3>
 
-<strong>
-Based in Finland
-</strong>
+                    <p>
+                        Finland
+                    </p>
 
-International Business · Marketing
+                </div>
 
-</div>
 
+                <div class="info-card">
 
-</div>
+                    <h3>Languages</h3>
 
-</div>
+                    <p>
+                        Persian · English · Finnish
+                    </p>
 
+                </div>
 
-</header>
+            </div>
 
 
-<!-- =========================
-     MARQUEE
-========================= -->
+            <p class="about-text">
 
-<div class="marquee">
+                I am currently studying Business Administration with
+                a focus on International Business and marketing.
+                I am interested in how brands communicate with people,
+                how ideas can become engaging campaigns, and how
+                creative thinking can support business goals.
 
+            </p>
 
-<div class="marquee-content">
+        </div>
 
-MARKETING
+    </section>
 
-<span>•</span>
 
-BUSINESS
 
-<span>•</span>
+    <!-- =========================
+         EXPERIENCE
+    ========================= -->
 
-GROWTH
+    <section id="experience">
 
-<span>•</span>
+        <div class="container">
 
-CONTENT
+            <div class="section-heading">
 
-<span>•</span>
+                <div>
 
-COMMUNITY
+                    <div class="section-number">
+                        02 / Experience
+                    </div>
 
-<span>•</span>
+                    <h2>
+                        Where I've<br>worked.
+                    </h2>
 
-CUSTOMER EXPERIENCE
+                </div>
 
-<span>•</span>
+                <p class="section-intro">
+                    Experience across customer service, business,
+                    communication and practical work environments.
+                </p>
 
-MARKETING
+            </div>
 
-<span>•</span>
 
-BUSINESS
+            <div class="experience-list">
 
-<span>•</span>
 
-</div>
+                <div class="experience-item">
 
+                    <div class="experience-date">
+                        2026
+                    </div>
 
-</div>
+                    <div class="experience-content">
 
+                        <h3>
+                            Marketing & Business Experience
+                        </h3>
 
-<!-- =========================
-     ABOUT
-========================= -->
+                        <div class="experience-company">
+                            Finland
+                        </div>
 
-<section id="about"
-class="about-section">
+                        <p>
+                            Developing practical experience in
+                            marketing, communication and business
+                            through studies and project-based work.
+                        </p>
 
+                    </div>
 
-<div class="container">
+                </div>
 
 
-<div class="section-header">
+                <div class="experience-item">
 
+                    <div class="experience-date">
+                        2021 – 2022
+                    </div>
 
-<div>
+                    <div class="experience-content">
 
-<div class="section-number">
+                        <h3>
+                            Customer Care Specialist
+                        </h3>
 
-01 / ABOUT
+                        <div class="experience-company">
+                            Komodaa · Iran
+                        </div>
 
-</div>
+                        <p>
+                            Worked directly with customers, handled
+                            questions and supported users while
+                            building strong communication and
+                            customer service skills.
+                        </p>
 
+                    </div>
 
-<h2 class="section-title">
+                </div>
 
-A little<br>
 
-about me.
+                <div class="experience-item">
 
-</h2>
+                    <div class="experience-date">
+                        2023
+                    </div>
 
-</div>
+                    <div class="experience-content">
 
+                        <h3>
+                            Finnish Language Intern
+                        </h3>
 
-<p class="section-intro">
+                        <div class="experience-company">
+                            Honkasen Puutarha Oy · Tampere
+                        </div>
 
-A business-focused background combined
-with hands-on experience in marketing,
-startups and customer-facing roles.
+                        <p>
+                            Gained practical experience in a Finnish
+                            workplace while developing communication
+                            and customer-facing skills.
+                        </p>
 
-</p>
+                    </div>
 
+                </div>
 
-</div>
 
+            </div>
 
-<div class="about-grid">
+        </div>
 
+    </section>
 
-<div class="about-large">
 
-I'm interested in
 
-<span>
-people, ideas
-</span>
+    <!-- =========================
+         PROJECTS
+    ========================= -->
 
-and how businesses can turn them
-into meaningful results.
+    <section id="projects">
 
-</div>
+        <div class="container">
 
+            <div class="section-heading">
 
-<div class="about-content">
+                <div>
 
+                    <div class="section-number">
+                        03 / Projects
+                    </div>
 
-<p>
+                    <h2>
+                        Selected<br>work.
+                    </h2>
 
-I’m studying International Business at
-Tampere University of Applied Sciences,
-with a focus on marketing and a growing
-interest in business development and growth.
+                </div>
 
-</p>
+                <p class="section-intro">
+                    Real projects and visual work where marketing,
+                    communication and creative thinking come together.
+                </p>
 
+            </div>
 
-<p>
 
-I enjoy working on practical projects where
-communication, creativity and business
-thinking come together. My experience
-includes startup work, digital marketing,
-content creation, community engagement
-and customer service.
+            <div class="projects">
 
-</p>
 
+                <!-- FARMOI -->
 
-<p>
+                <a href="./farmoi.html" class="project-card">
 
-I’m particularly interested in marketing,
-growth and business development, and I enjoy
-learning through real-world challenges and
-working with different people and teams.
+                    <div class="project-label">
+                        01 / FARMOI
+                    </div>
 
-</p>
 
+                    <div class="project-image">
 
-<div class="about-facts">
+                        <img
+                            src="./assets/farmoi-brochure-1.png"
+                            alt="Farmoi brochure"
+                        >
 
+                    </div>
 
-<div class="fact">
 
-<div class="fact-icon">
-01
-</div>
+                    <div class="project-content">
 
-<strong>
-Currently
-</strong>
+                        <h3>
+                            Farmoi — Visual Marketing
+                            & Brand Communication
+                        </h3>
 
-<span>
-International Business Student
-</span>
+                        <p>
+                            A collection of promotional materials
+                            created for Farmoi across print, events
+                            and promotional channels.
+                        </p>
 
-<small>
-2024 — Present
-</small>
 
-</div>
+                        <div class="project-tags">
 
+                            <span>Visual Design</span>
+                            <span>Marketing</span>
+                            <span>Brand Communication</span>
+                            <span>Campaign Materials</span>
 
-<div class="fact">
+                        </div>
 
-<div class="fact-icon">
-02
-</div>
 
-<strong>
-Focus
-</strong>
+                        <span class="project-link">
+                            View project →
+                        </span>
 
-<span>
-Marketing · Business Development · Growth
-</span>
+                    </div>
 
-</div>
+                </a>
 
 
-<div class="fact">
 
-<div class="fact-icon">
-03
-</div>
+                <!-- RIGHT COLUMN -->
 
-<strong>
-Based in
-</strong>
+                <div>
 
-<span>
-Finland
-</span>
 
-</div>
+                    <!-- FRANTSILA -->
 
+                    <div class="project-card project-small">
 
-<div class="fact">
+                        <div class="project-label">
+                            02 / FRANTSILA
+                        </div>
 
-<div class="fact-icon">
-04
-</div>
+                        <div>
 
-<strong>
-Languages
-</strong>
+                            <h3>
+                                Frantsila
+                            </h3>
 
-<span>
+                            <p>
+                                Project details and visual work
+                                will be added next.
+                            </p>
 
-Persian — Native<br>
+                            <span class="coming">
+                                Coming next
+                            </span>
 
-English — Fluent<br>
+                        </div>
 
-Finnish — A2
+                    </div>
 
-</span>
 
-</div>
 
+                    <!-- EL BARCITO -->
 
-</div>
+                    <div
+                        class="project-card project-small"
+                        style="margin-top: 22px;"
+                    >
 
+                        <div class="project-label">
+                            03 / EL BARCITO
+                        </div>
 
-</div>
+                        <div>
 
-</div>
+                            <h3>
+                                El Barcito
+                            </h3>
 
-</div>
+                            <p>
+                                Project details and visual work
+                                will be added next.
+                            </p>
 
-</section>
+                            <span class="coming">
+                                Coming next
+                            </span>
 
+                        </div>
 
-<!-- =========================
-     EXPERIENCE
-========================= -->
+                    </div>
 
-<section id="experience">
+                </div>
 
+            </div>
 
-<div class="container">
+        </div>
 
+    </section>
 
-<div class="section-header">
 
 
-<div>
+    <!-- =========================
+         SKILLS
+    ========================= -->
 
-<div class="section-number">
+    <section id="skills">
 
-02 / EXPERIENCE
+        <div class="container">
 
-</div>
+            <div class="section-heading">
 
+                <div>
 
-<h2 class="section-title">
+                    <div class="section-number">
+                        04 / Skills
+                    </div>
 
-Where I've<br>
+                    <h2>
+                        What I<br>work with.
+                    </h2>
 
-worked.
+                </div>
 
-</h2>
+                <p class="section-intro">
+                    A combination of business, communication and
+                    creative skills developed through studies and work.
+                </p>
 
-</div>
+            </div>
 
 
-<p class="section-intro">
+            <div class="skills-grid">
 
-Experience across startup, marketing,
-sales and customer-facing environments.
 
-</p>
+                <div class="skill-card">
 
+                    <h3>
+                        Marketing & Business
+                    </h3>
 
-</div>
+                    <div class="skill-list">
 
+                        <span>Marketing</span>
+                        <span>Market Research</span>
+                        <span>Business Communication</span>
+                        <span>Customer Experience</span>
+                        <span>Brand Communication</span>
 
-<div class="experience-list">
+                    </div>
 
+                </div>
 
-<div class="experience">
 
+                <div class="skill-card">
 
-<div class="experience-date">
+                    <h3>
+                        Creative
+                    </h3>
 
-Apr 2025 — May 2026
+                    <div class="skill-list">
 
-</div>
+                        <span>Visual Design</span>
+                        <span>Content Creation</span>
+                        <span>Social Media Content</span>
+                        <span>Presentation Design</span>
 
+                    </div>
 
-<div>
+                </div>
 
-<h3>
-Co-founder
-</h3>
 
+                <div class="skill-card">
 
-<div class="experience-company">
+                    <h3>
+                        Tools
+                    </h3>
 
-Farmoi Oy · Tampere, Finland
+                    <div class="skill-list">
 
-</div>
+                        <span>Figma</span>
+                        <span>Microsoft Office</span>
+                        <span>Google Workspace</span>
 
+                    </div>
 
-<p class="experience-description">
+                </div>
 
-Led community and marketing activities,
-developed campaign materials and supported
-brand communication, customer feedback
-and growth initiatives.
 
-</p>
+            </div>
 
-</div>
+        </div>
 
+    </section>
 
-<div class="experience-type">
 
-Startup
 
-</div>
+    <!-- =========================
+         EDUCATION
+    ========================= -->
 
+    <section id="education">
 
-</div>
+        <div class="container">
 
+            <div class="section-heading">
 
+                <div>
 
-<div class="experience">
+                    <div class="section-number">
+                        05 / Education
+                    </div>
 
+                    <h2>
+                        Learning<br>along the way.
+                    </h2>
 
-<div class="experience-date">
+                </div>
 
-Jan 2025 — Aug 2025
+            </div>
 
-</div>
 
+            <div class="education-card">
 
-<div>
+                <div class="education-year">
+                    2024 — Present
+                </div>
 
-<h3>
+                <div>
 
-Digital Marketing & Events
-Coordinator Intern
+                    <h3>
+                        Bachelor of Business Administration
+                    </h3>
 
-</h3>
+                    <p>
+                        Tampere University of Applied Sciences
+                        (TAMK)
+                    </p>
 
+                    <p style="margin-top: 12px;">
+                        International Business
+                    </p>
 
-<div class="experience-company">
+                </div>
 
-Tribe Tampere · Tampere, Finland
+            </div>
 
-</div>
+        </div>
 
+    </section>
 
-<p class="experience-description">
 
-Supported social media, event promotion,
-audience engagement and marketing
-communication across digital and event
-channels.
 
-</p>
+    <!-- =========================
+         CONTACT
+    ========================= -->
 
-</div>
+    <section id="contact">
 
+        <div class="container">
 
-<div class="experience-type">
+            <div class="contact-box">
 
-Internship
+                <div>
 
-</div>
+                    <div class="section-number">
+                        06 / Contact
+                    </div>
 
+                    <h2>
+                        Let's talk.
+                    </h2>
 
-</div>
+                    <p>
+                        I am currently open to internship, thesis
+                        and business opportunities.
+                    </p>
 
+                </div>
 
 
-<div class="experience">
+                <div class="contact-links">
 
+                    <a href="mailto:shaina.shabani75@gmail.com">
+                        shaina.shabani75@gmail.com
+                    </a>
 
-<div class="experience-date">
+                    <a
+                        href="https://www.linkedin.com/in/shainashabani/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn ↗
+                    </a>
 
-May 2023 — Jun 2023
+                </div>
 
-</div>
+            </div>
 
+        </div>
 
-<div>
+    </section>
 
-<h3>
-Sales Intern
-</h3>
 
 
-<div class="experience-company">
+    <!-- =========================
+         FOOTER
+    ========================= -->
 
-Honkasen Puutarha Oy · Tampere, Finland
+    <footer>
 
-</div>
+        <div class="container">
 
+            <div class="footer-inner">
 
-<p class="experience-description">
+                <span>
+                    © 2026 Shaina Shabani
+                </span>
 
-Supported customers, product communication
-and daily operations in a customer-facing
-retail environment.
+                <span>
+                    International Business · Marketing
+                </span>
 
-</p>
+            </div>
 
-</div>
+        </div>
 
-
-<div class="experience-type">
-
-Internship
-
-</div>
-
-
-</div>
-
-
-
-<div class="experience">
-
-
-<div class="experience-date">
-
-May 2021 — Apr 2022
-
-</div>
-
-
-<div>
-
-<h3>
-Customer Care Specialist
-</h3>
-
-
-<div class="experience-company">
-
-Komodaa · Iran
-
-</div>
-
-
-<p class="experience-description">
-
-Handled customer requests, orders and
-app-related issues through digital channels
-while identifying recurring customer
-problems and feedback.
-
-</p>
-
-</div>
-
-
-<div class="experience-type">
-
-Full-time
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-<!-- =========================
-     PROJECTS
-========================= -->
-
-<section id="projects"
-class="projects-section">
-
-
-<div class="container">
-
-
-<div class="section-header">
-
-
-<div>
-
-<div class="section-number">
-
-03 / PROJECTS
-
-</div>
-
-
-<h2 class="section-title">
-
-Selected<br>
-
-work.
-
-</h2>
-
-</div>
-
-
-<p class="section-intro">
-
-Real projects and visual work where
-marketing, communication and creative
-thinking come together.
-
-</p>
-
-
-</div>
-
-
-<div class="project-grid">
-
-
-<!-- FARMOI -->
-
-<article class="project-card featured">
-
-
-<div>
-
-
-<div class="project-number">
-
-01 / FARMoi
-
-</div>
-
-
-<div class="project-preview">
-
-
-<img
-
-src="assets/farmoi-brochure.png"
-
-alt="Farmoi brochure"
-
->
-
-
-</div>
-
-
-<h3>
-
-Farmoi — Visual Marketing
-& Brand Communication
-
-</h3>
-
-
-<p>
-
-A collection of promotional materials
-created for Farmoi across print,
-events and promotional channels.
-
-</p>
-
-
-<div class="project-tags">
-
-
-<span class="project-tag">
-Visual Design
-</span>
-
-
-<span class="project-tag">
-Marketing
-</span>
-
-
-<span class="project-tag">
-Brand Communication
-</span>
-
-
-<span class="project-tag">
-Campaign Materials
-</span>
-
-
-</div>
-
-
-<a
-
-href="farmoi.html"
-
-class="project-link"
-
->
-
-View full project →
-
-</a>
-
-
-</div>
-
-
-</article>
-
-
-
-<!-- FRANTSILA -->
-
-<article class="project-card">
-
-
-<div class="project-number">
-
-02 / FRANTSILA
-
-</div>
-
-
-<div>
-
-
-<h3>
-Frantsila
-</h3>
-
-
-<p>
-
-Project details and visual work
-will be added next.
-
-</p>
-
-
-<div class="project-tags">
-
-<span class="project-tag">
-
-Coming next
-
-</span>
-
-</div>
-
-
-</div>
-
-
-</article>
-
-
-
-<!-- EL BARCITO -->
-
-<article class="project-card">
-
-
-<div class="project-number">
-
-03 / EL BARCITO
-
-</div>
-
-
-<div>
-
-
-<h3>
-El Barcito
-</h3>
-
-
-<p>
-
-Project details and visual work
-will be added next.
-
-</p>
-
-
-<div class="project-tags">
-
-<span class="project-tag">
-
-Coming next
-
-</span>
-
-</div>
-
-
-</div>
-
-
-</article>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-<!-- =========================
-     SKILLS
-========================= -->
-
-<section id="skills"
-class="skills-section">
-
-
-<div class="container">
-
-
-<div class="section-header">
-
-
-<div>
-
-<div class="section-number">
-
-04 / SKILLS
-
-</div>
-
-
-<h2 class="section-title">
-
-What I<br>
-
-work with.
-
-</h2>
-
-</div>
-
-
-<p class="section-intro">
-
-A combination of marketing,
-communication, content and digital
-tools developed through practical
-experience.
-
-</p>
-
-
-</div>
-
-
-<div class="skills-wrapper">
-
-
-<div class="skills-intro">
-
-
-<h3>
-
-Skills that turn ideas into action.
-
-</h3>
-
-
-<p>
-
-I combine creative thinking with
-organization, communication and
-practical digital tools.
-
-</p>
-
-
-</div>
-
-
-<div>
-
-
-<div class="skill-category">
-
-
-<div class="skill-category-name">
-
-Marketing
-
-</div>
-
-
-<div class="skill-list">
-
-
-<span class="skill-pill">
-Social Media Management
-</span>
-
-
-<span class="skill-pill">
-Campaign Planning
-</span>
-
-
-<span class="skill-pill">
-Community Engagement
-</span>
-
-
-<span class="skill-pill">
-Email Marketing
-</span>
-
-
-<span class="skill-pill">
-Content Strategy
-</span>
-
-
-</div>
-
-
-</div>
-
-
-
-<div class="skill-category">
-
-
-<div class="skill-category-name">
-
-Content & Communication
-
-</div>
-
-
-<div class="skill-list">
-
-
-<span class="skill-pill">
-Content Creation
-</span>
-
-
-<span class="skill-pill">
-Copywriting
-</span>
-
-
-<span class="skill-pill">
-Brand Messaging
-</span>
-
-
-<span class="skill-pill">
-Visual Marketing Materials
-</span>
-
-
-<span class="skill-pill">
-Event Promotion
-</span>
-
-
-</div>
-
-
-</div>
-
-
-
-<div class="skill-category">
-
-
-<div class="skill-category-name">
-
-Tools
-
-</div>
-
-
-<div class="skill-list">
-
-
-<span class="skill-pill">
-Canva
-</span>
-
-
-<span class="skill-pill">
-Meta Business Suite
-</span>
-
-
-<span class="skill-pill">
-Google Analytics
-</span>
-
-
-<span class="skill-pill">
-HubSpot
-</span>
-
-
-<span class="skill-pill">
-Microsoft 365
-</span>
-
-
-<span class="skill-pill">
-PowerPoint
-</span>
-
-
-<span class="skill-pill">
-Excel
-</span>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-<!-- =========================
-     EDUCATION
-========================= -->
-
-<section id="education"
-class="education-section">
-
-
-<div class="container">
-
-
-<div class="section-header">
-
-
-<div>
-
-<div class="section-number">
-
-05 / EDUCATION
-
-</div>
-
-
-<h2 class="section-title">
-
-Education.
-
-</h2>
-
-</div>
-
-
-</div>
-
-
-<div class="education-card">
-
-
-<div class="education-year">
-
-2024 — Present
-
-</div>
-
-
-<div>
-
-
-<h3>
-
-Bachelor of International
-Business Administration
-
-</h3>
-
-
-<p>
-
-Tampere University of Applied Sciences
-(TAMK) · Marketing
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-<div class="education-card">
-
-
-<div class="education-year">
-
-2015 — 2019
-
-</div>
-
-
-<div>
-
-
-<h3>
-
-Bachelor of Science
-
-</h3>
-
-
-<p>
-
-Soil Science Engineering · Guilan University
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-<!-- =========================
-     CONTACT
-========================= -->
-
-<section id="contact"
-class="contact-section">
-
-
-<div class="container">
-
-
-<div class="contact-content">
-
-
-<div class="eyebrow">
-
-06 / GET IN TOUCH
-
-</div>
-
-
-<h2 class="contact-title">
-
-Let's make<br>
-
-something
-
-<span>
-happen.
-</span>
-
-</h2>
-
-
-<p class="contact-description">
-
-I'm interested in opportunities where
-I can learn, contribute and develop
-my skills in international business,
-marketing and growth.
-
-</p>
-
-
-<div class="contact-buttons">
-
-
-<a
-
-href="mailto:shaina.shabani75@gmail.com"
-
-class="button"
-
->
-
-Email me
-
-</a>
-
-
-<a
-
-href="https://www.linkedin.com/in/shainashabani/"
-
-target="_blank"
-
-class="button outline"
-
->
-
-LinkedIn
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-
-<div class="container">
-
-
-<div class="footer-inner">
-
-
-<div>
-
-© 2026 Shaina
-
-</div>
-
-
-<div>
-
-International Business · Marketing
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</footer>
+    </footer>
 
 
 </body>
-
 </html>
