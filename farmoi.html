@@ -16,14 +16,12 @@
 
 :root {
     --dark: #173b35;
-    --dark-light: #234b44;
     --cream: #faf7f2;
     --white: #ffffff;
     --coral: #f36f70;
     --teal: #087f7d;
     --text: #292727;
     --muted: #706a67;
-    --line: #e4ded8;
 }
 
 * {
@@ -45,18 +43,16 @@ body {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 
-/* =========================
-   NAVIGATION
-========================= */
+/* NAV */
 
 .nav {
     position: fixed;
@@ -67,19 +63,19 @@ a {
 
     width: min(1120px, 92%);
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     padding: 14px 20px;
 
-    background: rgba(255,255,255,0.92);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255,255,255,.94);
     backdrop-filter: blur(15px);
 
-    border: 1px solid rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,.08);
     border-radius: 18px;
 
-    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    box-shadow: 0 8px 30px rgba(0,0,0,.06);
 }
 
 .logo {
@@ -102,17 +98,15 @@ a {
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
     min-height: 92vh;
 
-    padding: 155px 7% 100px;
+    padding: 150px 7% 100px;
 
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-columns: 1.15fr .85fr;
 
     gap: 70px;
     align-items: center;
@@ -120,7 +114,7 @@ a {
     background:
         radial-gradient(
             circle at 85% 20%,
-            rgba(243,111,112,0.13),
+            rgba(243,111,112,.13),
             transparent 28%
         ),
         var(--cream);
@@ -143,7 +137,7 @@ a {
 
     font-size: clamp(60px, 8vw, 105px);
 
-    line-height: 0.9;
+    line-height: .9;
     letter-spacing: -5px;
 }
 
@@ -155,7 +149,7 @@ a {
 .hero-text {
     max-width: 650px;
 
-    margin-top: 32px;
+    margin-top: 30px;
 
     color: var(--muted);
 
@@ -170,28 +164,22 @@ a {
 
     border-radius: 25px;
 
-    box-shadow:
-        0 25px 60px rgba(23,59,53,0.13);
+    box-shadow: 0 25px 60px rgba(23,59,53,.13);
 
     transform: rotate(2deg);
 }
 
 .hero-image img {
-    width: 100%;
-
     border-radius: 15px;
 }
 
 
-/* =========================
-   PROJECT INFORMATION
-========================= */
+/* PROJECT INFO */
 
 .info {
     padding: 70px 7%;
 
     background: var(--dark);
-
     color: white;
 }
 
@@ -200,7 +188,7 @@ a {
     margin: auto;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
 
     gap: 30px;
 }
@@ -208,7 +196,7 @@ a {
 .info-item {
     padding-left: 20px;
 
-    border-left: 1px solid rgba(255,255,255,0.22);
+    border-left: 1px solid rgba(255,255,255,.22);
 }
 
 .info-label {
@@ -224,15 +212,13 @@ a {
 .info-value {
     margin-top: 8px;
 
-    color: #eeeeee;
+    color: #eee;
 
     font-size: 14px;
 }
 
 
-/* =========================
-   INTRO
-========================= */
+/* INTRO */
 
 .intro {
     padding: 110px 7%;
@@ -245,7 +231,7 @@ a {
     margin: auto;
 
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: .8fr 1.2fr;
 
     gap: 90px;
 }
@@ -298,9 +284,7 @@ a {
 }
 
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
+/* SECTIONS */
 
 .section {
     padding: 110px 7%;
@@ -330,9 +314,9 @@ a {
 .section-heading h2 {
     font-family: "Playfair Display", serif;
 
-    font-size: clamp(45px, 6vw, 70px);
+    font-size: clamp(45px,6vw,70px);
 
-    line-height: 0.95;
+    line-height: .95;
     letter-spacing: -3px;
 }
 
@@ -345,9 +329,7 @@ a {
 }
 
 
-/* =========================
-   BROCHURE
-========================= */
+/* BROCHURE */
 
 .brochure {
     background: #f1ede7;
@@ -356,7 +338,7 @@ a {
 .brochure-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
 
     gap: 28px;
 }
@@ -368,31 +350,21 @@ a {
 
     border-radius: 20px;
 
-    box-shadow:
-        0 18px 40px rgba(40,35,25,0.08);
+    box-shadow: 0 18px 40px rgba(40,35,25,.08);
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: .3s ease;
 }
 
 .brochure-page:hover {
     transform: translateY(-7px);
-
-    box-shadow:
-        0 25px 50px rgba(40,35,25,0.12);
 }
 
 .brochure-page img {
-    width: 100%;
-
     border-radius: 11px;
 }
 
 
-/* =========================
-   FLYERS
-========================= */
+/* FLYERS */
 
 .flyers {
     background: white;
@@ -401,7 +373,7 @@ a {
 .flyer-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
 
     gap: 30px;
 }
@@ -413,31 +385,21 @@ a {
 
     border-radius: 23px;
 
-    box-shadow:
-        0 18px 40px rgba(30,30,20,0.08);
+    box-shadow: 0 18px 40px rgba(30,30,20,.08);
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: .3s ease;
 }
 
 .flyer:hover {
     transform: translateY(-7px);
-
-    box-shadow:
-        0 25px 50px rgba(30,30,20,0.12);
 }
 
 .flyer img {
-    width: 100%;
-
     border-radius: 13px;
 }
 
 
-/* =========================
-   ADDITIONAL VISUAL WORK
-========================= */
+/* OTHER WORK */
 
 .other-work {
     background: var(--cream);
@@ -446,7 +408,7 @@ a {
 .other-grid {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
 
     gap: 25px;
 }
@@ -458,13 +420,10 @@ a {
 
     border-radius: 22px;
 
-    box-shadow:
-        0 15px 35px rgba(30,30,20,0.07);
+    box-shadow: 0 15px 35px rgba(30,30,20,.07);
 }
 
 .other-card img {
-    width: 100%;
-
     padding: 12px;
 
     border-radius: 20px;
@@ -485,9 +444,7 @@ a {
 }
 
 
-/* =========================
-   CLOSING
-========================= */
+/* CLOSING */
 
 .closing {
     padding: 110px 7%;
@@ -502,7 +459,6 @@ a {
     margin: auto;
 
     display: flex;
-
     justify-content: space-between;
     align-items: flex-end;
 
@@ -512,10 +468,9 @@ a {
 .closing h2 {
     font-family: "Playfair Display", serif;
 
-    font-size: clamp(50px, 7vw, 85px);
+    font-size: clamp(50px,7vw,85px);
 
-    line-height: 0.9;
-
+    line-height: .9;
     letter-spacing: -4px;
 }
 
@@ -537,7 +492,7 @@ a {
 
     padding: 12px 20px;
 
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,.3);
 
     border-radius: 999px;
 
@@ -551,9 +506,7 @@ a {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
     padding: 25px 7%;
@@ -570,20 +523,16 @@ footer {
     margin: auto;
 
     display: flex;
-
     justify-content: space-between;
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
-@media (max-width: 850px) {
+@media (max-width:850px) {
 
     .hero {
         grid-template-columns: 1fr;
-
         padding-top: 125px;
     }
 
@@ -597,7 +546,6 @@ footer {
 
     .intro-grid {
         grid-template-columns: 1fr;
-
         gap: 45px;
     }
 
@@ -619,7 +567,7 @@ footer {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width:550px) {
 
     .info-grid {
         grid-template-columns: 1fr;
@@ -646,9 +594,7 @@ footer {
 <body>
 
 
-<!-- =========================
-     NAVIGATION
-========================= -->
+<!-- NAVIGATION -->
 
 <nav class="nav">
 
@@ -663,9 +609,7 @@ Shaina<span>.</span>
 </nav>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <header class="hero">
 
@@ -702,9 +646,7 @@ alt="Farmoi brochure"
 </header>
 
 
-<!-- =========================
-     PROJECT INFORMATION
-========================= -->
+<!-- PROJECT INFO -->
 
 <section class="info">
 
@@ -766,9 +708,7 @@ Visual & Marketing Work
 </section>
 
 
-<!-- =========================
-     INTRODUCTION
-========================= -->
+<!-- INTRO -->
 
 <section class="intro">
 
@@ -806,28 +746,13 @@ consistent while adapting the communication
 to different formats and audiences.
 </p>
 
-
 <div class="tags">
 
-<span class="tag">
-Visual Communication
-</span>
-
-<span class="tag">
-Marketing Materials
-</span>
-
-<span class="tag">
-Content Creation
-</span>
-
-<span class="tag">
-Brand Communication
-</span>
-
-<span class="tag">
-Promotional Design
-</span>
+<span class="tag">Visual Communication</span>
+<span class="tag">Marketing Materials</span>
+<span class="tag">Content Creation</span>
+<span class="tag">Brand Communication</span>
+<span class="tag">Promotional Design</span>
 
 </div>
 
@@ -868,38 +793,29 @@ visual style.
 
 <div class="brochure-grid">
 
-
 <div class="brochure-page">
 <img
 src="./assets/farmoi-brochure-1.png"
-alt="Farmoi brochure page 1"
->
+alt="Farmoi brochure page 1">
 </div>
-
 
 <div class="brochure-page">
 <img
 src="./assets/farmoi-brochure-2.png"
-alt="Farmoi brochure page 2"
->
+alt="Farmoi brochure page 2">
 </div>
-
 
 <div class="brochure-page">
 <img
 src="./assets/farmoi-brochure-3.png"
-alt="Farmoi brochure page 3"
->
+alt="Farmoi brochure page 3">
 </div>
-
 
 <div class="brochure-page">
 <img
 src="./assets/farmoi-brochure-4.png"
-alt="Farmoi brochure page 4"
->
+alt="Farmoi brochure page 4">
 </div>
-
 
 </div>
 
@@ -936,13 +852,11 @@ for Farmoi communication and promotion.
 
 <div class="flyer-grid">
 
-
 <div class="flyer">
 
 <img
 src="./assets/farmoi-flyer-1.png"
-alt="Farmoi flyer 1"
->
+alt="Farmoi flyer 1">
 
 </div>
 
@@ -951,11 +865,9 @@ alt="Farmoi flyer 1"
 
 <img
 src="./assets/farmoi-flyer-2.png"
-alt="Farmoi flyer 2"
->
+alt="Farmoi flyer 2">
 
 </div>
-
 
 </div>
 
@@ -997,8 +909,7 @@ materials created as part of the Farmoi project.
 
 <img
 src="./assets/Mansen Massit.png"
-alt="Mansen Massit visual"
->
+alt="Mansen Massit visual">
 
 <h3>
 Promotional Material
@@ -1015,8 +926,7 @@ Visual communication material.
 
 <img
 src="./assets/instagram post (2).png"
-alt="Farmoi Instagram post"
->
+alt="Farmoi Instagram post">
 
 <h3>
 Social Media Visual
@@ -1033,8 +943,7 @@ A visual created for digital communication.
 
 <img
 src="./assets/paper bag.png"
-alt="Farmoi paper bag"
->
+alt="Farmoi paper bag">
 
 <h3>
 Branded Packaging
@@ -1054,9 +963,7 @@ Farmoi branded physical material.
 </section>
 
 
-<!-- =========================
-     CLOSING
-========================= -->
+<!-- CLOSING -->
 
 <section class="closing">
 
@@ -1075,8 +982,7 @@ More projects<br>
 
 <a
 href="./index.html#projects"
-class="back-button"
->
+class="back-button">
 ← Back to selected work
 </a>
 
@@ -1094,9 +1000,7 @@ business projects.
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
