@@ -48,7 +48,10 @@ a {
     margin: auto;
 }
 
-/* NAVIGATION */
+
+/* =========================
+   NAVIGATION
+========================= */
 
 nav {
     position: fixed;
@@ -72,7 +75,6 @@ nav {
 .logo {
     font-weight: 700;
     font-size: 20px;
-    letter-spacing: -0.5px;
 }
 
 .logo span {
@@ -106,7 +108,10 @@ nav {
     width: 100%;
 }
 
-/* HERO */
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
     min-height: 100vh;
@@ -115,6 +120,7 @@ nav {
 
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
+
     align-items: center;
     gap: 80px;
 }
@@ -130,6 +136,7 @@ nav {
 
     font-size: 13px;
     font-weight: 600;
+
     text-transform: uppercase;
     letter-spacing: 2px;
 
@@ -147,9 +154,12 @@ nav {
 
 .hero h1 {
     font-family: "Playfair Display", serif;
+
     font-size: clamp(65px, 8vw, 115px);
+
     line-height: 0.88;
     letter-spacing: -5px;
+
     font-weight: 600;
 }
 
@@ -160,15 +170,18 @@ nav {
 
 .hero-text {
     margin-top: 38px;
+
     max-width: 600px;
 
     font-size: 19px;
     line-height: 1.7;
+
     color: #57544f;
 }
 
 .hero-buttons {
     margin-top: 35px;
+
     display: flex;
     gap: 14px;
     flex-wrap: wrap;
@@ -176,6 +189,7 @@ nav {
 
 .button {
     padding: 15px 25px;
+
     border-radius: 50px;
 
     background: var(--dark);
@@ -197,21 +211,27 @@ nav {
     border: 1px solid var(--dark);
 }
 
-/* PHOTO */
+
+/* =========================
+   PHOTO
+========================= */
 
 .hero-right {
     position: relative;
+
     display: flex;
     justify-content: center;
 }
 
 .photo-wrapper {
     width: min(420px, 100%);
+
     position: relative;
 }
 
 .photo-wrapper::before {
     content: "";
+
     position: absolute;
 
     width: 100%;
@@ -229,6 +249,7 @@ nav {
 
 .profile-photo {
     width: 100%;
+
     display: block;
 
     border-radius: 220px 220px 30px 30px;
@@ -241,6 +262,7 @@ nav {
 
 .photo-tag {
     position: absolute;
+
     z-index: 3;
 
     bottom: 25px;
@@ -261,40 +283,49 @@ nav {
 
 .photo-tag strong {
     display: block;
+
     color: var(--yellow);
+
     font-size: 17px;
 }
 
-/* MARQUEE */
+
+/* =========================
+   MARQUEE
+========================= */
 
 .marquee {
     background: var(--dark);
+
     color: white;
 
     overflow: hidden;
     white-space: nowrap;
 
     padding: 18px 0;
-
-    border-top: 1px solid var(--dark);
-    border-bottom: 1px solid var(--dark);
 }
 
 .marquee-content {
     display: inline-block;
+
     animation: marquee 22s linear infinite;
 
     font-size: 14px;
+
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
 .marquee span {
     color: var(--yellow);
+
     margin: 0 25px;
 }
 
-/* GENERAL SECTIONS */
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
 
 section {
     padding: 120px 0;
@@ -302,8 +333,10 @@ section {
 
 .section-header {
     display: flex;
+
     justify-content: space-between;
     align-items: end;
+
     gap: 30px;
 
     margin-bottom: 60px;
@@ -311,24 +344,34 @@ section {
 
 .section-number {
     font-size: 13px;
+
     color: var(--orange);
+
     font-weight: 700;
 }
 
 .section-title {
     font-family: "Playfair Display", serif;
+
     font-size: clamp(45px, 6vw, 75px);
+
     line-height: 1;
+
     letter-spacing: -3px;
 }
 
 .section-intro {
     max-width: 420px;
+
     color: var(--gray);
+
     line-height: 1.7;
 }
 
-/* ABOUT */
+
+/* =========================
+   ABOUT
+========================= */
 
 .about-section {
     background: var(--white);
@@ -336,13 +379,17 @@ section {
 
 .about-grid {
     display: grid;
+
     grid-template-columns: 1fr 1.5fr;
+
     gap: 100px;
 }
 
 .about-large {
     font-family: "Playfair Display", serif;
+
     font-size: 42px;
+
     line-height: 1.2;
 }
 
@@ -352,7 +399,9 @@ section {
 
 .about-content {
     color: #5f5b55;
+
     font-size: 17px;
+
     line-height: 1.9;
 }
 
@@ -364,23 +413,32 @@ section {
     margin-top: 35px;
 
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 20px;
 }
 
 .fact {
     padding: 20px;
+
     border: 1px solid var(--line);
+
     border-radius: 12px;
 }
 
 .fact strong {
     display: block;
+
     color: var(--dark);
+
     margin-bottom: 5px;
 }
 
-/* EXPERIENCE */
+
+/* =========================
+   EXPERIENCE
+========================= */
 
 .experience-list {
     border-top: 1px solid var(--line);
@@ -388,6 +446,7 @@ section {
 
 .experience {
     display: grid;
+
     grid-template-columns: 160px 1fr 100px;
 
     gap: 30px;
@@ -405,37 +464,50 @@ section {
 
 .experience-date {
     color: var(--gray);
+
     font-size: 14px;
 }
 
 .experience h3 {
     font-size: 23px;
+
     margin-bottom: 5px;
 }
 
 .experience-company {
     color: var(--orange);
+
     font-size: 14px;
+
     font-weight: 600;
 }
 
 .experience-description {
     margin-top: 12px;
+
     color: var(--gray);
+
     max-width: 650px;
+
     line-height: 1.6;
 }
 
 .experience-type {
     text-align: right;
+
     color: var(--gray);
+
     font-size: 12px;
 }
 
-/* PROJECTS */
+
+/* =========================
+   PROJECTS
+========================= */
 
 .projects-section {
     background: var(--dark);
+
     color: white;
 }
 
@@ -445,7 +517,9 @@ section {
 
 .project-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 25px;
 }
 
@@ -461,12 +535,15 @@ section {
     border-radius: 20px;
 
     display: flex;
+
     flex-direction: column;
+
     justify-content: space-between;
 
     transition: 0.4s;
 
     position: relative;
+
     overflow: hidden;
 }
 
@@ -474,10 +551,12 @@ section {
     content: "↗";
 
     position: absolute;
+
     right: 30px;
     top: 25px;
 
     font-size: 25px;
+
     color: var(--yellow);
 
     transition: 0.3s;
@@ -485,6 +564,7 @@ section {
 
 .project-card:hover {
     transform: translateY(-8px);
+
     background: #202526;
 }
 
@@ -494,27 +574,37 @@ section {
 
 .project-number {
     color: var(--orange);
+
     font-size: 13px;
+
     font-weight: 700;
 }
 
 .project-card h3 {
     font-family: "Playfair Display", serif;
+
     font-size: 38px;
+
     line-height: 1.05;
+
     margin-bottom: 15px;
 }
 
 .project-card p {
     color: #aaa7a0;
+
     line-height: 1.6;
+
     max-width: 450px;
 }
 
 .project-tags {
     display: flex;
+
     gap: 8px;
+
     flex-wrap: wrap;
+
     margin-top: 25px;
 }
 
@@ -526,16 +616,22 @@ section {
     border-radius: 50px;
 
     font-size: 11px;
+
     color: #ccc;
 }
 
-/* SKILLS */
+
+/* =========================
+   SKILLS
+========================= */
 
 .skills-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
 
     border-top: 1px solid var(--line);
+
     border-left: 1px solid var(--line);
 }
 
@@ -543,6 +639,7 @@ section {
     padding: 35px 25px;
 
     border-right: 1px solid var(--line);
+
     border-bottom: 1px solid var(--line);
 
     transition: 0.3s;
@@ -554,16 +651,22 @@ section {
 
 .skill-number {
     color: var(--orange);
+
     font-size: 12px;
+
     font-weight: 700;
 }
 
 .skill h3 {
     margin-top: 20px;
+
     font-size: 20px;
 }
 
-/* EDUCATION */
+
+/* =========================
+   EDUCATION
+========================= */
 
 .education-section {
     background: var(--white);
@@ -571,7 +674,9 @@ section {
 
 .education-card {
     display: grid;
+
     grid-template-columns: 150px 1fr;
+
     gap: 40px;
 
     padding: 35px 0;
@@ -581,23 +686,30 @@ section {
 
 .education-year {
     color: var(--gray);
+
     font-size: 14px;
 }
 
 .education-card h3 {
     font-family: "Playfair Display", serif;
+
     font-size: 30px;
 }
 
 .education-card p {
     color: var(--gray);
+
     margin-top: 7px;
 }
 
-/* CONTACT */
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact-section {
     background: var(--orange);
+
     color: var(--dark);
 }
 
@@ -611,8 +723,11 @@ section {
 
 .contact-title {
     font-family: "Playfair Display", serif;
+
     font-size: clamp(60px, 9vw, 125px);
+
     line-height: 0.9;
+
     letter-spacing: -5px;
 }
 
@@ -622,32 +737,32 @@ section {
 
 .contact-description {
     max-width: 550px;
+
     margin-top: 30px;
+
     font-size: 18px;
+
     line-height: 1.7;
 }
 
 .contact-buttons {
     margin-top: 35px;
+
     display: flex;
+
     gap: 12px;
+
     flex-wrap: wrap;
 }
 
-.contact-buttons .button {
-    background: var(--dark);
-}
 
-.contact-buttons .button.outline {
-    color: var(--dark);
-    border-color: var(--dark);
-    background: transparent;
-}
-
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background: var(--dark);
+
     color: white;
 
     padding: 30px 0;
@@ -657,12 +772,15 @@ footer {
 
 .footer-inner {
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 }
 
 .footer-links {
     display: flex;
+
     gap: 25px;
 }
 
@@ -670,9 +788,13 @@ footer {
     color: var(--yellow);
 }
 
-/* ANIMATIONS */
+
+/* =========================
+   ANIMATIONS
+========================= */
 
 @keyframes fadeUp {
+
     from {
         opacity: 0;
         transform: translateY(30px);
@@ -682,9 +804,11 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+
 }
 
 @keyframes marquee {
+
     from {
         transform: translateX(0);
     }
@@ -692,9 +816,13 @@ footer {
     to {
         transform: translateX(-50%);
     }
+
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 800px) {
 
@@ -704,6 +832,7 @@ footer {
 
     .hero {
         grid-template-columns: 1fr;
+
         padding-top: 130px;
     }
 
@@ -721,6 +850,7 @@ footer {
 
     .about-grid {
         grid-template-columns: 1fr;
+
         gap: 40px;
     }
 
@@ -738,6 +868,7 @@ footer {
 
     .experience {
         grid-template-columns: 1fr;
+
         gap: 10px;
     }
 
@@ -755,6 +886,7 @@ footer {
 
     .education-card {
         grid-template-columns: 1fr;
+
         gap: 10px;
     }
 
@@ -764,9 +896,12 @@ footer {
 
     .footer-inner {
         flex-direction: column;
+
         gap: 20px;
     }
+
 }
+
 
 @media (max-width: 500px) {
 
@@ -781,6 +916,7 @@ footer {
     .project-card {
         min-height: 330px;
     }
+
 }
 
 </style>
@@ -788,6 +924,7 @@ footer {
 
 
 <body>
+
 
 <!-- NAVIGATION -->
 
@@ -798,11 +935,31 @@ footer {
     </a>
 
     <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+        <li>
+            <a href="#about">About</a>
+        </li>
+
+        <li>
+            <a href="#experience">Experience</a>
+        </li>
+
+        <li>
+            <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+            <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+            <a href="#education">Education</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+
     </ul>
 
 </nav>
@@ -812,21 +969,31 @@ footer {
 
 <header class="hero container">
 
+
     <div class="hero-left">
 
         <div class="eyebrow">
             International Business · Marketing · Growth
         </div>
 
+
         <h1>
+
             Hi, I'm<br>
+
             <span>Shaina.</span>
+
         </h1>
 
+
         <p class="hero-text">
-            International Business student with an interest in marketing,
-            business development and creating meaningful customer experiences.
+
+            International Business student interested in marketing,
+            growth and business development, with a strong focus on
+            understanding people and creating better customer experiences.
+
         </p>
+
 
         <div class="hero-buttons">
 
@@ -849,13 +1016,17 @@ footer {
 
             <img
                 src="profile.jpg"
-                alt="Shaina Shabani"
+                alt="Shaina"
                 class="profile-photo"
             >
 
+
             <div class="photo-tag">
+
                 <strong>Based in Finland</strong>
-                Open to new opportunities
+
+                International Business
+
             </div>
 
         </div>
@@ -870,12 +1041,31 @@ footer {
 <div class="marquee">
 
     <div class="marquee-content">
-        BUSINESS · MARKETING · CUSTOMER EXPERIENCE · GROWTH
+
+        BUSINESS
         <span>✦</span>
-        BUSINESS · MARKETING · CUSTOMER EXPERIENCE · GROWTH
+
+        MARKETING
         <span>✦</span>
-        BUSINESS · MARKETING · CUSTOMER EXPERIENCE · GROWTH
+
+        GROWTH
         <span>✦</span>
+
+        CUSTOMER EXPERIENCE
+        <span>✦</span>
+
+        BUSINESS DEVELOPMENT
+        <span>✦</span>
+
+        BUSINESS
+        <span>✦</span>
+
+        MARKETING
+        <span>✦</span>
+
+        GROWTH
+        <span>✦</span>
+
     </div>
 
 </div>
@@ -887,16 +1077,29 @@ footer {
 
     <div class="container">
 
+
         <div class="section-header">
 
             <div>
-                <div class="section-number">01 / ABOUT</div>
-                <h2 class="section-title">A little<br>about me.</h2>
+
+                <div class="section-number">
+                    01 / ABOUT
+                </div>
+
+                <h2 class="section-title">
+                    A little<br>
+                    about me.
+                </h2>
+
             </div>
 
+
             <p class="section-intro">
-                A multidisciplinary background that combines business,
-                customer experience and continuous learning.
+
+                A background that combines international business
+                studies, customer-facing experience and a strong
+                interest in marketing.
+
             </p>
 
         </div>
@@ -904,11 +1107,16 @@ footer {
 
         <div class="about-grid">
 
+
             <div class="about-large">
 
                 I'm interested in
-                <span>people, ideas</span>
-                and how businesses can turn them into something meaningful.
+
+                <span>
+                    people, ideas
+                </span>
+
+                and how businesses can turn them into meaningful results.
 
             </div>
 
@@ -916,43 +1124,72 @@ footer {
             <div class="about-content">
 
                 <p>
+
                     I am an International Business student at Tampere
-                    University of Applied Sciences. My studies have given
-                    me a broad understanding of business, while my work
-                    experience has taught me how important communication
-                    and customer relationships are.
+                    University of Applied Sciences. I chose International
+                    Business because I want to understand how businesses
+                    work across different markets and eventually build
+                    something of my own.
+
                 </p>
 
+
                 <p>
-                    I enjoy learning by doing. I'm especially interested
-                    in marketing, growth, business development and
-                    customer experience, and I'm looking for opportunities
-                    where I can develop these skills in a real working
-                    environment.
+
+                    I am particularly interested in marketing, growth,
+                    business development and customer experience. I enjoy
+                    learning through practical work, working with people
+                    and finding simple solutions to real problems.
+
                 </p>
 
 
                 <div class="about-facts">
 
+
                     <div class="fact">
-                        <strong>Currently</strong>
+
+                        <strong>
+                            Currently
+                        </strong>
+
                         International Business Student
+
                     </div>
 
+
                     <div class="fact">
-                        <strong>Interested in</strong>
+
+                        <strong>
+                            Interested in
+                        </strong>
+
                         Marketing & Growth
+
                     </div>
 
+
                     <div class="fact">
-                        <strong>Location</strong>
+
+                        <strong>
+                            Based in
+                        </strong>
+
                         Finland
+
                     </div>
 
+
                     <div class="fact">
-                        <strong>Looking for</strong>
-                        Internship & Thesis
+
+                        <strong>
+                            Looking for
+                        </strong>
+
+                        Internship & Thesis Opportunities
+
                     </div>
+
 
                 </div>
 
@@ -971,16 +1208,28 @@ footer {
 
     <div class="container">
 
+
         <div class="section-header">
 
             <div>
-                <div class="section-number">02 / EXPERIENCE</div>
-                <h2 class="section-title">Where I've<br>worked.</h2>
+
+                <div class="section-number">
+                    02 / EXPERIENCE
+                </div>
+
+                <h2 class="section-title">
+                    Where I've<br>
+                    worked.
+                </h2>
+
             </div>
 
+
             <p class="section-intro">
-                Experiences that have shaped how I work with people,
-                solve problems and approach new challenges.
+
+                Experiences that have helped me develop communication,
+                customer service, teamwork and problem-solving skills.
+
             </p>
 
         </div>
@@ -989,26 +1238,34 @@ footer {
         <div class="experience-list">
 
 
+            <!-- CURRENT INTERNSHIP -->
+
             <div class="experience">
 
                 <div class="experience-date">
                     2026
                 </div>
 
+
                 <div>
 
-                    <h3>Internship</h3>
+                    <h3>
+                        Intern
+                    </h3>
 
                     <div class="experience-company">
                         Finland
                     </div>
 
                     <p class="experience-description">
-                        Add your current internship role and the main
-                        responsibilities or projects here.
+
+                        Add the final internship title and company
+                        information here once you want to publish it.
+
                     </p>
 
                 </div>
+
 
                 <div class="experience-type">
                     Internship
@@ -1016,6 +1273,8 @@ footer {
 
             </div>
 
+
+            <!-- HONKASEN -->
 
             <div class="experience">
 
@@ -1023,21 +1282,28 @@ footer {
                     2023
                 </div>
 
+
                 <div>
 
-                    <h3>Language Intern</h3>
+                    <h3>
+                        Finnish Language Intern
+                    </h3>
 
                     <div class="experience-company">
                         Honkasen Puutarha Oy
                     </div>
 
+
                     <p class="experience-description">
-                        Worked in a Finnish-speaking customer environment
-                        and developed communication skills through
-                        practical workplace experience.
+
+                        Worked in a Finnish-speaking workplace environment
+                        and developed practical communication and
+                        customer-facing skills.
+
                     </p>
 
                 </div>
+
 
                 <div class="experience-type">
                     Internship
@@ -1046,27 +1312,36 @@ footer {
             </div>
 
 
+            <!-- KOMODAA -->
+
             <div class="experience">
 
                 <div class="experience-date">
                     2021 — 2022
                 </div>
 
+
                 <div>
 
-                    <h3>Customer Care Specialist</h3>
+                    <h3>
+                        Customer Care Specialist
+                    </h3>
 
                     <div class="experience-company">
                         Komodaa
                     </div>
 
+
                     <p class="experience-description">
+
                         Supported customers, handled questions and
-                        problems, and helped create a positive experience
-                        throughout the platform.
+                        problems, and helped maintain a positive
+                        customer experience on the platform.
+
                     </p>
 
                 </div>
+
 
                 <div class="experience-type">
                     Full-time
@@ -1075,32 +1350,42 @@ footer {
             </div>
 
 
+            <!-- RICE RESEARCH -->
+
             <div class="experience">
 
                 <div class="experience-date">
                     2019
                 </div>
 
+
                 <div>
 
-                    <h3>Agricultural Engineering Intern</h3>
+                    <h3>
+                        Agricultural Engineering Intern
+                    </h3>
 
                     <div class="experience-company">
                         Rice Research Institute of Iran
                     </div>
 
+
                     <p class="experience-description">
-                        Gained practical research and laboratory experience
-                        while working on agricultural research activities.
+
+                        Gained practical experience in agricultural
+                        research, field work and laboratory activities.
+
                     </p>
 
                 </div>
+
 
                 <div class="experience-type">
                     Internship
                 </div>
 
             </div>
+
 
         </div>
 
@@ -1115,6 +1400,7 @@ footer {
 
     <div class="container">
 
+
         <div class="section-header">
 
             <div>
@@ -1124,14 +1410,18 @@ footer {
                 </div>
 
                 <h2 class="section-title">
-                    Selected<br>work.
+                    Selected<br>
+                    work.
                 </h2>
 
             </div>
 
+
             <p class="section-intro">
-                A selection of university projects, personal work and
-                practical business ideas. More projects will be added.
+
+                This section will showcase my university,
+                marketing and business projects.
+
             </p>
 
         </div>
@@ -1143,27 +1433,39 @@ footer {
             <article class="project-card">
 
                 <div>
+
                     <div class="project-number">
-                        01 / BUSINESS
+                        01 / PROJECT
                     </div>
+
                 </div>
+
 
                 <div>
 
                     <h3>
-                        Marketing<br>Project
+                        Project<br>
+                        coming soon.
                     </h3>
 
+
                     <p>
-                        Add one of your strongest marketing or business
-                        projects here and explain the problem, your approach
-                        and the result.
+
+                        A real project will be added here.
+
                     </p>
 
+
                     <div class="project-tags">
-                        <span class="project-tag">Marketing</span>
-                        <span class="project-tag">Strategy</span>
-                        <span class="project-tag">Research</span>
+
+                        <span class="project-tag">
+                            Business
+                        </span>
+
+                        <span class="project-tag">
+                            Marketing
+                        </span>
+
                     </div>
 
                 </div>
@@ -1174,25 +1476,39 @@ footer {
             <article class="project-card">
 
                 <div>
+
                     <div class="project-number">
-                        02 / BUSINESS
+                        02 / PROJECT
                     </div>
+
                 </div>
+
 
                 <div>
 
                     <h3>
-                        Business<br>Analysis
+                        Project<br>
+                        coming soon.
                     </h3>
 
+
                     <p>
-                        Add a university or personal business analysis
-                        project here.
+
+                        A real project will be added here.
+
                     </p>
 
+
                     <div class="project-tags">
-                        <span class="project-tag">Business</span>
-                        <span class="project-tag">Analysis</span>
+
+                        <span class="project-tag">
+                            Business
+                        </span>
+
+                        <span class="project-tag">
+                            Strategy
+                        </span>
+
                     </div>
 
                 </div>
@@ -1203,25 +1519,39 @@ footer {
             <article class="project-card">
 
                 <div>
+
                     <div class="project-number">
-                        03 / CUSTOMER
+                        03 / PROJECT
                     </div>
+
                 </div>
+
 
                 <div>
 
                     <h3>
-                        Customer<br>Experience
+                        Project<br>
+                        coming soon.
                     </h3>
 
+
                     <p>
-                        Showcase a project involving customer needs,
-                        service improvement or customer experience.
+
+                        A real project will be added here.
+
                     </p>
 
+
                     <div class="project-tags">
-                        <span class="project-tag">Customer Experience</span>
-                        <span class="project-tag">Research</span>
+
+                        <span class="project-tag">
+                            Marketing
+                        </span>
+
+                        <span class="project-tag">
+                            Growth
+                        </span>
+
                     </div>
 
                 </div>
@@ -1232,24 +1562,39 @@ footer {
             <article class="project-card">
 
                 <div>
+
                     <div class="project-number">
-                        04 / OTHER
+                        04 / PROJECT
                     </div>
+
                 </div>
+
 
                 <div>
 
                     <h3>
-                        More<br>to come.
+                        Project<br>
+                        coming soon.
                     </h3>
 
+
                     <p>
-                        This space can become another case study,
-                        university project or personal business project.
+
+                        A real project will be added here.
+
                     </p>
 
+
                     <div class="project-tags">
-                        <span class="project-tag">Coming soon</span>
+
+                        <span class="project-tag">
+                            Business
+                        </span>
+
+                        <span class="project-tag">
+                            Customer Experience
+                        </span>
+
                     </div>
 
                 </div>
@@ -1270,6 +1615,7 @@ footer {
 
     <div class="container">
 
+
         <div class="section-header">
 
             <div>
@@ -1279,14 +1625,18 @@ footer {
                 </div>
 
                 <h2 class="section-title">
-                    What I<br>bring.
+                    What I<br>
+                    bring.
                 </h2>
 
             </div>
 
+
             <p class="section-intro">
-                A growing combination of business knowledge, communication
-                and practical digital skills.
+
+                Skills I have developed through my studies,
+                work experience and practical learning.
+
             </p>
 
         </div>
@@ -1297,83 +1647,120 @@ footer {
 
             <div class="skill">
 
-                <div class="skill-number">01</div>
+                <div class="skill-number">
+                    01
+                </div>
 
-                <h3>International Business</h3>
-
-            </div>
-
-
-            <div class="skill">
-
-                <div class="skill-number">02</div>
-
-                <h3>Marketing</h3>
+                <h3>
+                    International Business
+                </h3>
 
             </div>
 
 
             <div class="skill">
 
-                <div class="skill-number">03</div>
+                <div class="skill-number">
+                    02
+                </div>
 
-                <h3>Customer Experience</h3>
-
-            </div>
-
-
-            <div class="skill">
-
-                <div class="skill-number">04</div>
-
-                <h3>Communication</h3>
+                <h3>
+                    Marketing
+                </h3>
 
             </div>
 
 
             <div class="skill">
 
-                <div class="skill-number">05</div>
+                <div class="skill-number">
+                    03
+                </div>
 
-                <h3>Business Development</h3>
-
-            </div>
-
-
-            <div class="skill">
-
-                <div class="skill-number">06</div>
-
-                <h3>Microsoft Office</h3>
+                <h3>
+                    Customer Experience
+                </h3>
 
             </div>
 
 
             <div class="skill">
 
-                <div class="skill-number">07</div>
+                <div class="skill-number">
+                    04
+                </div>
 
-                <h3>Digital Tools</h3>
-
-            </div>
-
-
-            <div class="skill">
-
-                <div class="skill-number">08</div>
-
-                <h3>Figma</h3>
+                <h3>
+                    Communication
+                </h3>
 
             </div>
 
 
             <div class="skill">
 
-                <div class="skill-number">09</div>
+                <div class="skill-number">
+                    05
+                </div>
 
-                <h3>Problem Solving</h3>
+                <h3>
+                    Business Development
+                </h3>
 
             </div>
+
+
+            <div class="skill">
+
+                <div class="skill-number">
+                    06
+                </div>
+
+                <h3>
+                    Customer Service
+                </h3>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-number">
+                    07
+                </div>
+
+                <h3>
+                    Microsoft Office
+                </h3>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-number">
+                    08
+                </div>
+
+                <h3>
+                    Problem Solving
+                </h3>
+
+            </div>
+
+
+            <div class="skill">
+
+                <div class="skill-number">
+                    09
+                </div>
+
+                <h3>
+                    Teamwork
+                </h3>
+
+            </div>
+
 
         </div>
 
@@ -1384,9 +1771,10 @@ footer {
 
 <!-- EDUCATION -->
 
-<section class="education-section">
+<section id="education" class="education-section">
 
     <div class="container">
+
 
         <div class="section-header">
 
@@ -1411,6 +1799,7 @@ footer {
                 2022 — Present
             </div>
 
+
             <div>
 
                 <h3>
@@ -1418,7 +1807,8 @@ footer {
                 </h3>
 
                 <p>
-                    International Business · Tampere University of Applied Sciences (TAMK)
+                    International Business · Tampere University
+                    of Applied Sciences (TAMK)
                 </p>
 
             </div>
@@ -1431,6 +1821,7 @@ footer {
             <div class="education-year">
                 2015 — 2019
             </div>
+
 
             <div>
 
@@ -1458,40 +1849,47 @@ footer {
 
     <div class="container">
 
+
         <div class="contact-content">
+
 
             <div class="eyebrow">
                 06 / GET IN TOUCH
             </div>
 
+
             <h2 class="contact-title">
+
                 Let's make<br>
+
                 something <span>happen.</span>
+
             </h2>
 
+
             <p class="contact-description">
-                I'm currently interested in internship, thesis and
-                business opportunities where I can learn, contribute
-                and grow.
+
+                I'm interested in opportunities where I can learn,
+                contribute and develop my skills in international
+                business, marketing and growth.
+
             </p>
 
 
             <div class="contact-buttons">
 
-                <!-- Replace with your real email -->
+                <!-- YOUR EMAIL AND LINKEDIN ARE ALREADY ADDED -->
 
                 <a
-                    href="mailto:shaina.shabani75"gmail.com"
+                    href="mailto:YOUR-EMAIL"
                     class="button"
                 >
                     Email me
                 </a>
 
 
-                <!-- Replace with your real LinkedIn -->
-
                 <a
-                    href="https://www.linkedin.com/in/shainashabani/"
+                    href="YOUR-LINKEDIN"
                     target="_blank"
                     class="button outline"
                 >
@@ -1499,6 +1897,7 @@ footer {
                 </a>
 
             </div>
+
 
         </div>
 
@@ -1519,13 +1918,20 @@ footer {
                 © 2026 Shaina Shabani
             </div>
 
+
             <div class="footer-links">
 
-                <a href="#about">About</a>
+                <a href="#about">
+                    About
+                </a>
 
-                <a href="#projects">Projects</a>
+                <a href="#projects">
+                    Projects
+                </a>
 
-                <a href="#contact">Contact</a>
+                <a href="#contact">
+                    Contact
+                </a>
 
             </div>
 
