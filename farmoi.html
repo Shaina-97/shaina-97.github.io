@@ -1,1 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Farmoi — Shaina</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --dark: #173b35;
+    --dark-2: #214942;
+    --cream: #faf7f2;
+    --white: #ffffff;
+    --coral: #f56f70;
+    --teal: #087f7d;
+    --text: #292727;
+    --muted: #716b68;
+    --line: #e6dfd8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav {
+    position: fixed;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+
+    width: min(1120px, 92%);
+
+    padding: 14px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 18px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--coral);
+}
+
+.back {
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+}
+
+.back:hover {
+    color: var(--teal);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 90vh;
+    padding: 160px 6% 100px;
+
+    background:
+        radial-gradient(circle at 85% 25%, rgba(245,111,112,.12), transparent 25%),
+        var(--cream);
+
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.project-number {
+    color: var(--teal);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(60px, 8vw, 105px);
+    line-height: .9;
+    letter-spacing: -5px;
+}
+
+.hero h1 span {
+    color: var(--teal);
+    font-style: italic;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin-top: 30px;
+    font-size: 18px;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.hero-image {
+    background: white;
+    padding: 15px;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(20,40,35,.10);
+    transform: rotate(2deg);
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* =========================
+   INFO
+========================= */
+
+.info {
+    background: var(--dark);
+    color: white;
+    padding: 70px 7%;
+}
+
+.info-grid {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.info-item {
+    border-left: 1px solid rgba(255,255,255,.2);
+    padding-left: 22px;
+}
+
+.info-label {
+    color: #f5a0a0;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.info-value {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #eee;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+    padding: 110px 7%;
+    background: white;
+}
+
+.intro-grid {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 90px;
+}
+
+.intro h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 55px;
+    line-height: 1;
+}
+
+.intro h2 span {
+    color: var(--teal);
+}
+
+.intro-content {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.intro-content p + p {
+    margin-top: 20px;
+}
+
+.tags {
+    margin-top: 28px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    padding: 8px 13px;
+    border-radius: 999px;
+
+    background: #edf5f2;
+    border: 1px solid #d4e5df;
+
+    color: var(--teal);
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+    padding: 110px 7%;
+}
+
+.section-inner {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.section-heading {
+    margin-bottom: 50px;
+}
+
+.section-small {
+    color: var(--teal);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(45px, 6vw, 70px);
+    line-height: .95;
+    letter-spacing: -3px;
+}
+
+.section-heading p {
+    max-width: 570px;
+    margin-top: 18px;
+    color: var(--muted);
+}
+
+/* =========================
+   BROCHURE
+========================= */
+
+.brochure {
+    background: #f2eee8;
+}
+
+.brochure-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.brochure-page {
+    background: white;
+    padding: 12px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(30,30,20,.08);
+    transition: transform .3s ease;
+}
+
+.brochure-page:hover {
+    transform: translateY(-6px);
+}
+
+.brochure-page img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* =========================
+   FLYERS
+========================= */
+
+.flyers {
+    background: white;
+}
+
+.flyer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.flyer {
+    background: #f5f2ed;
+    padding: 15px;
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(30,30,20,.07);
+}
+
+.flyer img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* =========================
+   OTHER VISUALS
+========================= */
+
+.other-work {
+    background: var(--cream);
+}
+
+.other-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.other-card {
+    background: white;
+    border-radius: 22px;
+    padding: 15px;
+    box-shadow: 0 15px 35px rgba(30,30,20,.07);
+}
+
+.other-card img {
+    width: 100%;
+    border-radius: 13px;
+}
+
+.other-card h3 {
+    margin: 18px 5px 4px;
+    font-size: 17px;
+}
+
+.other-card p {
+    margin: 0 5px 8px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* =========================
+   CLOSING
+========================= */
+
+.closing {
+    background: var(--dark);
+    color: white;
+    padding: 110px 7%;
+}
+
+.closing-inner {
+    max-width: 1150px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 50px;
+}
+
+.closing h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(50px, 7vw, 85px);
+    line-height: .9;
+    letter-spacing: -4px;
+}
+
+.closing h2 span {
+    color: #f59a9a;
+    font-style: italic;
+}
+
+.closing p {
+    max-width: 400px;
+    color: #c9d1cf;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 25px;
+
+    padding: 12px 20px;
+
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.back-button:hover {
+    background: white;
+    color: var(--dark);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #102c27;
+    color: white;
+    padding: 25px 7%;
+    font-size: 12px;
+}
+
+.footer-inner {
+    max-width: 1150px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 125px;
+    }
+
+    .hero-image {
+        transform: none;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .brochure-grid,
+    .flyer-grid,
+    .other-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .closing-inner {
+        display: block;
+    }
+
+    .closing p {
+        margin-top: 25px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav class="nav">
+
+<a href="index.html" class="back">
+← Back to portfolio
+</a>
+
+<a href="index.html" class="logo">
+Shaina<span>.</span>
+</a>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero">
+
+<div>
+
+<div class="project-number">
+01 / SELECTED PROJECT
+</div>
+
+<h1>
+Farmoi<br>
+<span>Visual Work.</span>
+</h1>
+
+<p class="hero-text">
+A collection of visual marketing and communication
+materials created for Farmoi, bringing the brand
+into different promotional and customer-facing
+contexts.
+</p>
+
+</div>
+
+
+<div class="hero-image">
+
+<img
+src="assets/farmoi-brochure-1.png"
+alt="Farmoi brochure"
+>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     PROJECT INFO
+========================= -->
+
+<section class="info">
+
+<div class="info-grid">
+
+<div class="info-item">
+
+<div class="info-label">
+Project
+</div>
+
+<div class="info-value">
+Farmoi Oy
+</div>
+
+</div>
+
+
+<div class="info-item">
+
+<div class="info-label">
+Focus
+</div>
+
+<div class="info-value">
+Marketing & Visual Communication
+</div>
+
+</div>
+
+
+<div class="info-item">
+
+<div class="info-label">
+Deliverables
+</div>
+
+<div class="info-value">
+Brochure, flyers, posters & promotional materials
+</div>
+
+</div>
+
+
+<div class="info-item">
+
+<div class="info-label">
+Role
+</div>
+
+<div class="info-value">
+Visual & Marketing Work
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     INTRODUCTION
+========================= -->
+
+<section class="intro">
+
+<div class="intro-grid">
+
+<div>
+
+<h2>
+Building a<br>
+<span>visual presence.</span>
+</h2>
+
+</div>
+
+
+<div class="intro-content">
+
+<p>
+For Farmoi, I worked on visual marketing
+materials designed to communicate the brand
+and its message across different promotional
+formats.
+</p>
+
+<p>
+The project includes a four-page brochure,
+promotional flyers and additional visual
+materials created for different marketing
+and communication purposes.
+</p>
+
+<p>
+The goal was to keep the materials visually
+consistent while adapting the communication
+to different formats and audiences.
+</p>
+
+
+<div class="tags">
+
+<span class="tag">
+Visual Communication
+</span>
+
+<span class="tag">
+Marketing Materials
+</span>
+
+<span class="tag">
+Content Creation
+</span>
+
+<span class="tag">
+Brand Communication
+</span>
+
+<span class="tag">
+Promotional Design
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     BROCHURE
+========================= -->
+
+<section class="section brochure">
+
+<div class="section-inner">
+
+<div class="section-heading">
+
+<div class="section-small">
+01 / BROCHURE
+</div>
+
+<h2>
+Four-page brochure
+</h2>
+
+<p>
+A four-page Farmoi brochure designed to
+communicate the brand, its message and
+contact information through a consistent
+visual style.
+</p>
+
+</div>
+
+
+<div class="brochure-grid">
+
+
+<div class="brochure-page">
+<img
+src="assets/farmoi-brochure-1.png"
+alt="Farmoi brochure page 1"
+>
+</div>
+
+
+<div class="brochure-page">
+<img
+src="assets/farmoi-brochure-2.png"
+alt="Farmoi brochure page 2"
+>
+</div>
+
+
+<div class="brochure-page">
+<img
+src="assets/farmoi-brochure-3.png"
+alt="Farmoi brochure page 3"
+>
+</div>
+
+
+<div class="brochure-page">
+<img
+src="assets/farmoi-brochure-4.png"
+alt="Farmoi brochure page 4"
+>
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FLYERS
+========================= -->
+
+<section class="section flyers">
+
+<div class="section-inner">
+
+<div class="section-heading">
+
+<div class="section-small">
+02 / FLYERS
+</div>
+
+<h2>
+Promotional flyers
+</h2>
+
+<p>
+Two promotional flyer designs created
+for Farmoi communication and promotion.
+</p>
+
+</div>
+
+
+<div class="flyer-grid">
+
+
+<div class="flyer">
+
+<img
+src="assets/farmoi-flyer-1.png"
+alt="Farmoi flyer 1"
+>
+
+</div>
+
+
+<div class="flyer">
+
+<img
+src="assets/farmoi-flyer-2.png"
+alt="Farmoi flyer 2"
+>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     OTHER VISUAL WORK
+========================= -->
+
+<section class="section other-work">
+
+<div class="section-inner">
+
+<div class="section-heading">
+
+<div class="section-small">
+03 / ADDITIONAL WORK
+</div>
+
+<h2>
+More visual work
+</h2>
+
+<p>
+Additional promotional and communication
+materials created as part of the Farmoi
+project.
+</p>
+
+</div>
+
+
+<div class="other-grid">
+
+
+<div class="other-card">
+
+<img
+src="assets/Mansen Massit.png"
+alt="Farmoi visual"
+>
+
+<h3>
+Promotional Material
+</h3>
+
+<p>
+Farmoi visual communication material.
+</p>
+
+</div>
+
+
+<div class="other-card">
+
+<img
+src="assets/instagram post (2).png"
+alt="Farmoi Instagram post"
+>
+
+<h3>
+Social Media Visual
+</h3>
+
+<p>
+A visual created for digital communication.
+</p>
+
+</div>
+
+
+<div class="other-card">
+
+<img
+src="assets/paper bag.png"
+alt="Farmoi paper bag"
+>
+
+<h3>
+Branded Packaging
+</h3>
+
+<p>
+Farmoi branded physical material.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CLOSING
+========================= -->
+
+<section class="closing">
+
+<div class="closing-inner">
+
+<div>
+
+<div class="project-number">
+NEXT
+</div>
+
+<h2>
+More projects<br>
+<span>coming soon.</span>
+</h2>
+
+<a
+href="index.html#projects"
+class="back-button"
+>
+← Back to selected work
+</a>
+
+</div>
+
+
+<p>
+This project is part of a growing collection
+of practical marketing, communication and
+business projects.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="footer-inner">
+
+<div>
+© 2026 Shaina
+</div>
+
+<div>
+International Business · Marketing
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
