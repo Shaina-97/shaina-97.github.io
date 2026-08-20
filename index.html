@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaghayegh Shabani | International Business</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8f7f4;
+      color: #1f1f1f;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* Navigation */
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 5%;
+      position: sticky;
+      top: 0;
+      background: rgba(248,247,244,0.95);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+      border-bottom: 1px solid #e5e2dc;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.5;
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 0;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .small-title {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+      color: #777;
+    }
+
+    h1 {
+      font-size: clamp(50px, 8vw, 95px);
+      line-height: 0.95;
+      letter-spacing: -4px;
+      margin-bottom: 35px;
+    }
+
+    .hero-description {
+      max-width: 650px;
+      font-size: 21px;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #1f1f1f;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 30px;
+      margin-right: 10px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      opacity: 0.85;
+    }
+
+    .button-light {
+      background: transparent;
+      color: #1f1f1f;
+      border: 1px solid #1f1f1f;
+    }
+
+    /* Sections */
+
+    section {
+      padding: 100px 0;
+      border-top: 1px solid #dedbd5;
+    }
+
+    .section-title {
+      font-size: 45px;
+      letter-spacing: -2px;
+      margin-bottom: 50px;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 70px;
+    }
+
+    .about-text {
+      font-size: 21px;
+      color: #555;
+    }
+
+    /* Experience */
+
+    .experience-item {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 40px;
+      padding: 30px 0;
+      border-bottom: 1px solid #dedbd5;
+    }
+
+    .date {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .experience-item h3 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .company {
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    /* Skills */
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      padding: 12px 18px;
+      border: 1px solid #cfcac2;
+      border-radius: 30px;
+      background: white;
+    }
+
+    /* Projects */
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .project {
+      background: white;
+      padding: 35px;
+      min-height: 250px;
+      border: 1px solid #e3dfd8;
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-number {
+      color: #999;
+      font-size: 13px;
+      margin-bottom: 45px;
+    }
+
+    .project h3 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #666;
+    }
+
+    /* Education */
+
+    .education-item {
+      padding: 25px 0;
+      border-bottom: 1px solid #dedbd5;
+    }
+
+    .education-item h3 {
+      font-size: 23px;
+    }
+
+    /* Contact */
+
+    .contact {
+      text-align: center;
+      padding: 130px 0;
+    }
+
+    .contact h2 {
+      font-size: clamp(45px, 7vw, 80px);
+      letter-spacing: -3px;
+      margin-bottom: 25px;
+    }
+
+    .contact p {
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid #dedbd5;
+      color: #777;
+      font-size: 13px;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 700px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      h1 {
+        font-size: 55px;
+        letter-spacing: -3px;
+      }
+
+      .hero-description {
+        font-size: 18px;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .experience-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 38px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+
+  <nav>
+    <div class="logo">Shaghayegh Shabani</div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Hero -->
+
+  <header class="hero container">
+
+    <div class="hero-content">
+
+      <div class="small-title">
+        International Business · Marketing · Growth
+      </div>
+
+      <h1>
+        Hi, I'm<br>
+        Shaghayegh.
+      </h1>
+
+      <p class="hero-description">
+        International Business student interested in marketing,
+        business development and creating meaningful customer experiences.
+      </p>
+
+      <a href="#projects" class="button">
+        View my work
+      </a>
+
+      <a href="#contact" class="button button-light">
+        Get in touch
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- About -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <h2 class="section-title">About me</h2>
+
+      <div class="about">
+
+        <div>
+          <p class="small-title">A little about me</p>
+        </div>
+
+        <div class="about-text">
+
+          <p>
+            I am an International Business student at Tampere University
+            of Applied Sciences with an interest in marketing, business
+            development and customer experience.
+          </p>
+
+          <br>
+
+          <p>
+            My background includes customer service, international business
+            studies and hands-on work experience. I enjoy learning new
+            things, working with people and finding practical solutions
+            to business challenges.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Experience -->
+
+  <section id="experience">
+
+    <div class="container">
+
+      <h2 class="section-title">Experience</h2>
+
+      <div class="experience-item">
+
+        <div class="date">
+          2026
+        </div>
+
+        <div>
+          <h3>Internship</h3>
+          <p class="company">Finland</p>
+          <p>
+            Add a short description of your internship responsibilities,
+            projects and achievements here.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="experience-item">
+
+        <div class="date">
+          2021 – 2022
+        </div>
+
+        <div>
+          <h3>Customer Care Specialist</h3>
+          <p class="company">Komodaa</p>
+          <p>
+            Customer communication, problem solving and supporting
+            customers throughout their experience with the platform.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="experience-item">
+
+        <div class="date">
+          2023
+        </div>
+
+        <div>
+          <h3>Language Intern</h3>
+          <p class="company">Honkasen Puutarha Oy</p>
+          <p>
+            Finnish-language internship in a customer-facing working
+            environment in Tampere.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Projects -->
+
+  <section id="projects">
+
+    <div class="container">
+
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects">
+
+        <div class="project">
+
+          <div class="project-number">
+            PROJECT 01
+          </div>
+
+          <h3>Marketing Project</h3>
+
+          <p>
+            Add your university or personal marketing project here.
+            Explain the challenge, your approach and the result.
+          </p>
+
+        </div>
+
+
+        <div class="project">
+
+          <div class="project-number">
+            PROJECT 02
+          </div>
+
+          <h3>Business Project</h3>
+
+          <p>
+            Add a business, strategy or entrepreneurship project here.
+          </p>
+
+        </div>
+
+
+        <div class="project">
+
+          <div class="project-number">
+            PROJECT 03
+          </div>
+
+          <h3>Customer Experience</h3>
+
+          <p>
+            Add a project related to customer experience,
+            communication or service development.
+          </p>
+
+        </div>
+
+
+        <div class="project">
+
+          <div class="project-number">
+            PROJECT 04
+          </div>
+
+          <h3>Other Work</h3>
+
+          <p>
+            Add another project, case study or achievement here.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Skills -->
+
+  <section id="skills">
+
+    <div class="container">
+
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills">
+
+        <div class="skill">International Business</div>
+        <div class="skill">Marketing</div>
+        <div class="skill">Customer Experience</div>
+        <div class="skill">Communication</div>
+        <div class="skill">Business Development</div>
+        <div class="skill">Microsoft Office</div>
+        <div class="skill">Figma</div>
+        <div class="skill">Google UX Certificate</div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Education -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">Education</h2>
+
+      <div class="education-item">
+
+        <h3>Bachelor of Business Administration — International Business</h3>
+
+        <p>
+          Tampere University of Applied Sciences (TAMK)
+        </p>
+
+      </div>
+
+
+      <div class="education-item">
+
+        <h3>Bachelor of Science — Agricultural Engineering</h3>
+
+        <p>
+          Guilan University
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Contact -->
+
+  <section id="contact" class="contact">
+
+    <div class="container">
+
+      <p class="small-title">Let's connect</p>
+
+      <h2>Let's talk.</h2>
+
+      <p>
+        I'm currently open to internship, thesis and business opportunities.
+      </p>
+
+      <a href="mailto:YOUR-EMAIL@example.com" class="button">
+        Email me
+      </a>
+
+      <a href="https://www.linkedin.com/" class="button button-light">
+        LinkedIn
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    <div class="container">
+      © 2026 Shaghayegh Shabani
+    </div>
+
+  </footer>
+
+</body>
+</html>
