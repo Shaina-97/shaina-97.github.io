@@ -1,4 +1,4 @@
-```html
+```html id="kq8w2p"
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -622,7 +622,7 @@ section {
 
 
 /* =========================
-   NEW SKILLS DESIGN
+   SKILLS
 ========================= */
 
 .skills-section {
@@ -764,6 +764,57 @@ section {
     color: var(--gray);
 
     margin-top: 7px;
+}
+
+
+/* =========================
+   LANGUAGES
+========================= */
+
+.languages-section {
+    background: var(--cream);
+}
+
+.languages-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.language-card {
+    padding: 30px;
+
+    border: 1px solid var(--line);
+
+    background: var(--white);
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.language-card:hover {
+    transform: translateY(-5px);
+
+    background: var(--yellow);
+}
+
+.language-name {
+    font-family: "Playfair Display", serif;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.language-level {
+    color: var(--gray);
+
+    font-size: 14px;
+
+    font-weight: 600;
 }
 
 
@@ -966,6 +1017,10 @@ footer {
         gap: 10px;
     }
 
+    .languages-grid {
+        grid-template-columns: 1fr;
+    }
+
     .contact-title {
         font-size: 65px;
     }
@@ -998,9 +1053,7 @@ footer {
 <body>
 
 
-<!-- =========================
-     NAVIGATION
-========================= -->
+<!-- NAVIGATION -->
 
 <nav>
 
@@ -1027,9 +1080,7 @@ footer {
 </nav>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <header class="hero container">
 
@@ -1092,9 +1143,7 @@ footer {
 </header>
 
 
-<!-- =========================
-     MARQUEE
-========================= -->
+<!-- MARQUEE -->
 
 <div class="marquee">
 
@@ -1129,9 +1178,7 @@ footer {
 </div>
 
 
-<!-- =========================
-     ABOUT
-========================= -->
+<!-- ABOUT -->
 
 <section id="about" class="about-section">
 
@@ -1269,9 +1316,7 @@ footer {
 </section>
 
 
-<!-- =========================
-     EXPERIENCE
-========================= -->
+<!-- EXPERIENCE -->
 
 <section id="experience">
 
@@ -1307,8 +1352,6 @@ footer {
 
         <div class="experience-list">
 
-
-            <!-- FARMOI -->
 
             <div class="experience">
 
@@ -1349,8 +1392,6 @@ footer {
             </div>
 
 
-            <!-- TRIBE -->
-
             <div class="experience">
 
                 <div class="experience-date">
@@ -1389,8 +1430,6 @@ footer {
             </div>
 
 
-            <!-- HONKASEN -->
-
             <div class="experience">
 
                 <div class="experience-date">
@@ -1427,8 +1466,6 @@ footer {
 
             </div>
 
-
-            <!-- KOMODAA -->
 
             <div class="experience">
 
@@ -1475,9 +1512,7 @@ footer {
 </section>
 
 
-<!-- =========================
-     PROJECTS
-========================= -->
+<!-- PROJECTS -->
 
 <section id="projects" class="projects-section">
 
@@ -1655,9 +1690,7 @@ footer {
 </section>
 
 
-<!-- =========================
-     SKILLS
-========================= -->
+<!-- SKILLS -->
 
 <section id="skills" class="skills-section">
 
@@ -1713,8 +1746,6 @@ footer {
             <div class="skills-list">
 
 
-                <!-- MARKETING -->
-
                 <div class="skill-category">
 
                     <div class="skill-category-name">
@@ -1753,8 +1784,6 @@ footer {
                 </div>
 
 
-                <!-- CONTENT -->
-
                 <div class="skill-category">
 
                     <div class="skill-category-name">
@@ -1792,8 +1821,6 @@ footer {
 
                 </div>
 
-
-                <!-- DIGITAL TOOLS -->
 
                 <div class="skill-category">
 
@@ -1850,9 +1877,7 @@ footer {
 </section>
 
 
-<!-- =========================
-     EDUCATION
-========================= -->
+<!-- EDUCATION -->
 
 <section id="education" class="education-section">
 
@@ -1924,9 +1949,87 @@ footer {
 </section>
 
 
-<!-- =========================
-     CONTACT
-========================= -->
+<!-- LANGUAGES -->
+
+<section id="languages" class="languages-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div>
+
+                <div class="section-number">
+                    06 / LANGUAGES
+                </div>
+
+                <h2 class="section-title">
+                    Languages.
+                </h2>
+
+            </div>
+
+
+            <p class="section-intro">
+
+                Languages I use for communication, study and
+                everyday life.
+
+            </p>
+
+        </div>
+
+
+        <div class="languages-grid">
+
+
+            <div class="language-card">
+
+                <div class="language-name">
+                    Persian
+                </div>
+
+                <div class="language-level">
+                    Native
+                </div>
+
+            </div>
+
+
+            <div class="language-card">
+
+                <div class="language-name">
+                    English
+                </div>
+
+                <div class="language-level">
+                    Fluent
+                </div>
+
+            </div>
+
+
+            <div class="language-card">
+
+                <div class="language-name">
+                    Finnish
+                </div>
+
+                <div class="language-level">
+                    A2 · Basic
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
 
 <section id="contact" class="contact-section">
 
@@ -1935,7 +2038,7 @@ footer {
         <div class="contact-content">
 
             <div class="eyebrow">
-                06 / GET IN TOUCH
+                07 / GET IN TOUCH
             </div>
 
 
@@ -1959,21 +2062,18 @@ footer {
 
             <div class="contact-buttons">
 
-                <!-- KEEP YOUR EXISTING EMAIL LINK HERE -->
-
                 <a
-                    href="shaina.shabani75@gmail.com"
+                    href="mailto:shaina.shabani75@gmail.com"
                     class="button"
                 >
                     Email me
                 </a>
 
 
-                <!-- KEEP YOUR EXISTING LINKEDIN LINK HERE -->
-
                 <a
                     href="https://www.linkedin.com/in/shainashabani/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="button outline"
                 >
                     LinkedIn
@@ -1988,9 +2088,7 @@ footer {
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
