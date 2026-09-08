@@ -1,769 +1,1076 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>El Barcito — Digital Marketing Strategy | Shaina Shabani</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f7f3ef;
-            color: #292729;
-            line-height: 1.6;
-        }
-
-        .container {
-            width: min(1100px, 90%);
-            margin: 0 auto;
-        }
-
-        /* NAVIGATION */
-
-        nav {
-            position: sticky;
-            top: 20px;
-            z-index: 10;
-
-            width: min(1100px, 90%);
-            margin: 20px auto;
-
-            background: #ffffff;
-            border-radius: 22px;
-            padding: 18px 28px;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
-        }
-
-        nav a {
-            color: #292729;
-            text-decoration: none;
-            font-weight: 600;
-            margin-left: 25px;
-            font-size: 14px;
-        }
-
-        nav .logo {
-            font-size: 18px;
-            font-weight: 700;
-        }
-
-        /* HERO */
-
-        .hero {
-            padding: 100px 0 80px;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 70px;
-            align-items: center;
-        }
-
-        .eyebrow {
-            color: #b65f73;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 3px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        h1 {
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: clamp(55px, 8vw, 95px);
-            line-height: 0.95;
-            font-weight: 400;
-            margin-bottom: 30px;
-        }
-
-        .hero h1 span {
-            color: #b65f73;
-        }
-
-        .hero-description {
-            font-size: 19px;
-            max-width: 650px;
-            color: #686367;
-        }
-
-        .logo-box {
-            background: white;
-            border-radius: 28px;
-            padding: 45px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .logo-box img {
-            width: 100%;
-            max-width: 360px;
-            height: auto;
-            display: block;
-        }
-
-        /* SECTIONS */
-
-        section {
-            padding: 90px 0;
-        }
-
-        .section-label {
-            color: #b65f73;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
-
-        h2 {
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: clamp(42px, 6vw, 70px);
-            line-height: 1;
-            font-weight: 400;
-            margin-bottom: 35px;
-        }
-
-        h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-        p {
-            color: #686367;
-            font-size: 17px;
-        }
-
-        .intro-text {
-            max-width: 800px;
-            font-size: 23px;
-            color: #4f4b4e;
-        }
-
-        /* ROLE */
-
-        .role-grid {
-            display: grid;
-            grid-template-columns: 0.8fr 1.2fr;
-            gap: 80px;
-            align-items: start;
-        }
-
-        .role-list {
-            list-style: none;
-            border-top: 1px solid #ddd5d0;
-        }
-
-        .role-list li {
-            padding: 18px 0;
-            border-bottom: 1px solid #ddd5d0;
-            font-size: 18px;
-        }
-
-        .role-list li::before {
-            content: "→";
-            margin-right: 15px;
-            color: #b65f73;
-        }
-
-        /* AUDIT */
-
-        .audit-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-top: 45px;
-        }
-
-        .audit-card {
-            background: white;
-            border-radius: 24px;
-            padding: 35px;
-            min-height: 190px;
-        }
-
-        .audit-number {
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        .audit-title {
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        /* STRATEGY */
-
-        .strategy-section {
-            background: #292729;
-            color: white;
-        }
-
-        .strategy-section p {
-            color: #c9c3c6;
-        }
-
-        .strategy-section .section-label {
-            color: #e69aaa;
-        }
-
-        .pillars {
-            margin-top: 45px;
-        }
-
-        .pillar {
-            display: grid;
-            grid-template-columns: 1fr 100px;
-            gap: 30px;
-            padding: 25px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.15);
-            align-items: center;
-        }
-
-        .pillar-name {
-            font-size: 20px;
-        }
-
-        .percentage {
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: 38px;
-            text-align: right;
-        }
-
-        /* CONTENT SYSTEM */
-
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-top: 45px;
-        }
-
-        .content-card {
-            background: white;
-            border-radius: 24px;
-            padding: 35px;
-            min-height: 180px;
-        }
-
-        .content-card h3 {
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: 30px;
-            font-weight: 400;
-        }
-
-        .journey {
-            margin-top: 50px;
-            padding: 35px;
-            border: 1px solid #d9d0cb;
-            border-radius: 24px;
-            text-align: center;
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: clamp(25px, 4vw, 42px);
-        }
-
-        .journey span {
-            color: #b65f73;
-            margin: 0 10px;
-        }
-
-        /* CAMPAIGNS */
-
-        .campaign-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-top: 45px;
-        }
-
-        .campaign {
-            background: white;
-            border-radius: 24px;
-            padding: 40px;
-            min-height: 230px;
-        }
-
-        .campaign-number {
-            color: #b65f73;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            margin-bottom: 25px;
-        }
-
-        .campaign h3 {
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: 32px;
-            font-weight: 400;
-        }
-
-        /* LEARNING */
-
-        .learning {
-            background: #eee7e2;
-        }
-
-        .learning-quote {
-            max-width: 900px;
-            font-family: Georgia, "Times New Roman", serif;
-            font-size: clamp(30px, 4vw, 48px);
-            line-height: 1.2;
-            color: #292729;
-        }
-
-        /* FOOTER */
-
-        footer {
-            background: #292729;
-            color: white;
-            padding: 60px 0;
-        }
-
-        footer p {
-            color: #bbb5b8;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-top: 25px;
-            color: white;
-            text-decoration: none;
-            border-bottom: 1px solid #aaa;
-            padding-bottom: 5px;
-        }
-
-        /* MOBILE */
-
-        @media (max-width: 800px) {
-
-            nav {
-                padding: 16px 20px;
-            }
-
-            nav .nav-links {
-                display: none;
-            }
-
-            .hero-grid,
-            .role-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero {
-                padding-top: 70px;
-            }
-
-            .logo-box {
-                padding: 30px;
-            }
-
-            .audit-grid,
-            .content-grid,
-            .campaign-grid {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 65px 0;
-            }
-
-            .pillar {
-                grid-template-columns: 1fr 70px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>El Barcito — Digital Marketing Strategy | Shaina Shabani</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: #292329;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #eee7e8;
+    }
+
+    .nav-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 23px;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .nav-links a {
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.55;
+    }
+
+    /* GENERAL */
+
+    section {
+      padding: 95px 30px;
+    }
+
+    .section-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #a36b78;
+      margin-bottom: 18px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Playfair Display", serif;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.1;
+      margin-bottom: 35px;
+    }
+
+    p {
+      color: #625960;
+    }
+
+    /* 01 PROJECT */
+
+    .project-section {
+      background: #f8f0f1;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .project-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(52px, 8vw, 88px);
+      line-height: 0.95;
+      margin-bottom: 12px;
+    }
+
+    .project-subtitle {
+      font-size: 22px;
+      color: #a36b78;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .project-description {
+      max-width: 680px;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .logo-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 45px;
+      min-height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 18px 50px rgba(73, 45, 52, 0.08);
+    }
+
+    .logo-card img {
+      width: 100%;
+      max-width: 300px;
+      max-height: 230px;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* 02 MY ROLE */
+
+    .role-section {
+      background: #ffffff;
+    }
+
+    .role-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      counter-reset: role;
+    }
+
+    .role-item {
+      counter-increment: role;
+      background: #f8f0f1;
+      border-radius: 16px;
+      padding: 22px 25px 22px 62px;
+      position: relative;
+      font-weight: 500;
+    }
+
+    .role-item::before {
+      content: counter(role, decimal-leading-zero);
+      position: absolute;
+      left: 24px;
+      top: 22px;
+      font-size: 12px;
+      color: #a36b78;
+      font-weight: 700;
+    }
+
+    /* 03 RESEARCH */
+
+    .research-section {
+      background: #f8f0f1;
+    }
+
+    .audit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 35px;
+    }
+
+    .audit-card {
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 32px;
+      min-height: 190px;
+      box-shadow: 0 12px 35px rgba(73, 45, 52, 0.06);
+    }
+
+    .audit-label {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #a36b78;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .audit-number {
+      font-family: "Playfair Display", serif;
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .audit-text {
+      font-size: 16px;
+    }
+
+    .instagram-note {
+      margin-top: 25px;
+      background: #ffffff;
+      border-radius: 22px;
+      padding: 25px 30px;
+      border: 1px dashed #d8c2c7;
+    }
+
+    .instagram-note strong {
+      color: #292329;
+    }
+
+    /* 04 STRATEGY */
+
+    .strategy-section {
+      background: #ffffff;
+    }
+
+    .pillars {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      max-width: 900px;
+    }
+
+    .pillar {
+      display: grid;
+      grid-template-columns: 220px 1fr 70px;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .pillar-name {
+      font-weight: 600;
+    }
+
+    .pillar-bar {
+      height: 16px;
+      background: #eee4e6;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .pillar-fill {
+      height: 100%;
+      background: #b9828e;
+      border-radius: 999px;
+    }
+
+    .pillar-percent {
+      text-align: right;
+      font-weight: 700;
+      color: #a36b78;
+    }
+
+    /* 05 CONTENT SYSTEM */
+
+    .content-section {
+      background: #f8f0f1;
+    }
+
+    .content-system {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+      margin-bottom: 55px;
+    }
+
+    .content-card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 25px 20px;
+      min-height: 125px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(73, 45, 52, 0.05);
+    }
+
+    .journey {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 35px;
+    }
+
+    .journey-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #a36b78;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .journey-flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .journey-step {
+      background: #f8f0f1;
+      border-radius: 999px;
+      padding: 14px 23px;
+      font-weight: 600;
+    }
+
+    .journey-arrow {
+      color: #a36b78;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    /* 06 CAMPAIGNS */
+
+    .campaign-section {
+      background: #ffffff;
+    }
+
+    .campaign-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .campaign-card {
+      border: 1px solid #eadfe1;
+      border-radius: 22px;
+      padding: 32px;
+      min-height: 210px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .campaign-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(73, 45, 52, 0.08);
+    }
+
+    .campaign-number {
+      font-size: 13px;
+      color: #a36b78;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .campaign-card h3 {
+      font-size: 27px;
+      margin-bottom: 12px;
+    }
+
+    .campaign-card p {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* 07 LEARNING */
+
+    .learning-section {
+      background: #f8f0f1;
+    }
+
+    .learning-box {
+      max-width: 900px;
+      background: #ffffff;
+      border-radius: 25px;
+      padding: 50px;
+      box-shadow: 0 15px 40px rgba(73, 45, 52, 0.06);
+    }
+
+    .learning-box p {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(23px, 3vw, 32px);
+      line-height: 1.55;
+      color: #342c31;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #292329;
+      color: #ffffff;
+      padding: 35px 30px;
+    }
+
+    .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .back-link {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .back-link:hover {
+      opacity: 0.7;
+    }
+
+    .copyright {
+      color: #cfc5c8;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+
+      .project-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .audit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .content-system {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .pillar {
+        grid-template-columns: 170px 1fr 55px;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      section {
+        padding: 70px 20px;
+      }
+
+      .nav-inner {
+        padding: 16px 20px;
+      }
+
+      .nav-links {
+        gap: 14px;
+        font-size: 12px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .project-title {
+        font-size: 58px;
+      }
+
+      .project-description {
+        font-size: 16px;
+      }
+
+      .role-list {
+        grid-template-columns: 1fr;
+      }
+
+      .content-system {
+        grid-template-columns: 1fr;
+      }
+
+      .campaign-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pillar {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .pillar-percent {
+        text-align: left;
+      }
+
+      .learning-box {
+        padding: 30px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+  <!-- NAVIGATION -->
 
-<nav>
-    <div class="logo">Shaina Shabani</div>
+  <nav>
+    <div class="nav-inner">
 
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#contact">Contact</a>
+      <a href="index.html" class="logo">
+        Shaina Shabani
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
     </div>
-</nav>
+  </nav>
 
 
-<!-- HERO -->
+  <!-- 01 — PROJECT -->
 
-<header class="hero">
-    <div class="container">
+  <section class="project-section">
+    <div class="section-inner">
 
-        <div class="hero-grid">
+      <div class="section-label">
+        01 — Project
+      </div>
 
-            <div>
-                <div class="eyebrow">01 / Project</div>
+      <div class="project-grid">
 
-                <h1>
-                    El<br>
-                    <span>Barcito.</span>
-                </h1>
+        <div>
 
-                <p class="hero-description">
-                    Digital Marketing Strategy
-                    <br><br>
-                    Helping a local Spanish tapas bar strengthen its
-                    digital presence and turn social media attention
-                    into restaurant visits.
-                </p>
-            </div>
+          <h1 class="project-title">
+            El Barcito
+          </h1>
 
-            <div class="logo-box">
-                <img
-                    src="assets/el-barcito-logo.png"
-                    alt="El Barcito tapas & bar logo">
-            </div>
+          <div class="project-subtitle">
+            Digital Marketing Strategy
+          </div>
+
+          <p class="project-description">
+            Helping a local Spanish tapas bar strengthen its digital presence and turn social media attention into restaurant visits.
+          </p>
 
         </div>
 
-    </div>
-</header>
+        <div class="logo-card">
 
-
-<!-- MY ROLE -->
-
-<section>
-    <div class="container">
-
-        <div class="section-label">02 / My Role</div>
-
-        <div class="role-grid">
-
-            <div>
-                <h2>
-                    What I<br>
-                    worked on.
-                </h2>
-            </div>
-
-            <div>
-                <p class="intro-text">
-                    I worked on developing a digital marketing strategy
-                    focused on strengthening El Barcito's social media
-                    presence and connecting content with business goals.
-                </p>
-
-                <ul class="role-list">
-                    <li>Digital marketing research</li>
-                    <li>Social media analysis</li>
-                    <li>Competitor analysis</li>
-                    <li>SWOT analysis</li>
-                    <li>Target audience research</li>
-                    <li>Social media strategy</li>
-                    <li>Content strategy</li>
-                    <li>Instagram optimization ideas</li>
-                    <li>Content calendar planning</li>
-                    <li>Reel and Story concepts</li>
-                    <li>Campaign ideas</li>
-                    <li>UGC and community engagement ideas</li>
-                    <li>Marketing KPIs and implementation planning</li>
-                </ul>
-            </div>
+          <img
+            src="assets/el-barcito-logo.png"
+            alt="El Barcito tapas & bar"
+          >
 
         </div>
 
+      </div>
+
     </div>
-</section>
+  </section>
 
 
-<!-- RESEARCH -->
+  <!-- 02 — MY ROLE -->
 
-<section>
-    <div class="container">
+  <section class="role-section">
+    <div class="section-inner">
 
-        <div class="section-label">03 / Research</div>
+      <div class="section-label">
+        02 — My Role
+      </div>
 
-        <h2>Digital audit.</h2>
+      <h2>
+        My Role
+      </h2>
 
-        <p class="intro-text">
-            The research identified a gap between having an existing
-            social media audience and effectively converting that
-            audience into customers.
-        </p>
+      <div class="role-list">
 
-        <div class="audit-grid">
+        <div class="role-item">
+          Digital marketing research
+        </div>
 
-            <div class="audit-card">
-                <div class="audit-number">1,785</div>
-                <div class="audit-title">Instagram followers</div>
-                <p>Existing audience on Instagram.</p>
-            </div>
+        <div class="role-item">
+          Social media analysis
+        </div>
 
-            <div class="audit-card">
-                <div class="audit-number">54</div>
-                <div class="audit-title">Posts</div>
-                <p>Existing content on the profile.</p>
-            </div>
+        <div class="role-item">
+          Competitor analysis
+        </div>
 
-            <div class="audit-card">
-                <div class="audit-number">01</div>
-                <div class="audit-title">Main issue</div>
-                <p>
-                    Low consistency and a weak conversion path
-                    from social media to restaurant visits.
-                </p>
-            </div>
+        <div class="role-item">
+          SWOT analysis
+        </div>
+
+        <div class="role-item">
+          Target audience research
+        </div>
+
+        <div class="role-item">
+          Social media strategy
+        </div>
+
+        <div class="role-item">
+          Content strategy
+        </div>
+
+        <div class="role-item">
+          Instagram optimization ideas
+        </div>
+
+        <div class="role-item">
+          Content calendar planning
+        </div>
+
+        <div class="role-item">
+          Reel and Story concepts
+        </div>
+
+        <div class="role-item">
+          Campaign ideas
+        </div>
+
+        <div class="role-item">
+          UGC and community engagement ideas
+        </div>
+
+        <div class="role-item">
+          Marketing KPIs and implementation planning
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 03 — RESEARCH -->
+
+  <section class="research-section">
+    <div class="section-inner">
+
+      <div class="section-label">
+        03 — Research
+      </div>
+
+      <h2>
+        Digital Audit
+      </h2>
+
+      <div class="audit-grid">
+
+        <div class="audit-card">
+
+          <div class="audit-label">
+            Instagram
+          </div>
+
+          <div class="audit-number">
+            1,785
+          </div>
+
+          <div class="audit-text">
+            followers
+          </div>
 
         </div>
 
-    </div>
-</section>
 
+        <div class="audit-card">
 
-<!-- STRATEGY -->
+          <div class="audit-label">
+            Posts
+          </div>
 
-<section class="strategy-section">
-    <div class="container">
+          <div class="audit-number">
+            54
+          </div>
 
-        <div class="section-label">04 / Strategy</div>
-
-        <h2>Content pillars.</h2>
-
-        <p class="intro-text">
-            A structured content mix designed to balance product,
-            atmosphere, people and engagement.
-        </p>
-
-        <div class="pillars">
-
-            <div class="pillar">
-                <div class="pillar-name">🥘 Food & Drinks</div>
-                <div class="percentage">35%</div>
-            </div>
-
-            <div class="pillar">
-                <div class="pillar-name">🍷 Atmosphere</div>
-                <div class="percentage">25%</div>
-            </div>
-
-            <div class="pillar">
-                <div class="pillar-name">👩‍🍳 Behind the Scenes</div>
-                <div class="percentage">20%</div>
-            </div>
-
-            <div class="pillar">
-                <div class="pillar-name">💬 UGC & Interaction</div>
-                <div class="percentage">15%</div>
-            </div>
-
-            <div class="pillar">
-                <div class="pillar-name">🎉 Events & Promotions</div>
-                <div class="percentage">5%</div>
-            </div>
+          <div class="audit-text">
+            posts
+          </div>
 
         </div>
 
-    </div>
-</section>
 
+        <div class="audit-card">
 
-<!-- CONTENT SYSTEM -->
+          <div class="audit-label">
+            Main issue
+          </div>
 
-<section>
-    <div class="container">
-
-        <div class="section-label">05 / Content System</div>
-
-        <h2>From content<br>to action.</h2>
-
-        <div class="content-grid">
-
-            <div class="content-card">
-                <h3>Instagram Reels</h3>
-                <p>
-                    Short-form video concepts designed to showcase
-                    food, atmosphere and the restaurant experience.
-                </p>
-            </div>
-
-            <div class="content-card">
-                <h3>Stories</h3>
-                <p>
-                    Structured Story sequences designed to encourage
-                    interaction and guide followers toward action.
-                </p>
-            </div>
-
-            <div class="content-card">
-                <h3>CTAs</h3>
-                <p>
-                    Action-oriented calls to action connecting
-                    social media engagement with restaurant visits
-                    and bookings.
-                </p>
-            </div>
-
-            <div class="content-card">
-                <h3>Content Calendar</h3>
-                <p>
-                    A structured approach to maintaining consistency
-                    across different content types and themes.
-                </p>
-            </div>
-
-            <div class="content-card">
-                <h3>Campaign Concepts</h3>
-                <p>
-                    Campaign ideas designed around customer
-                    engagement, experiences and weekday traffic.
-                </p>
-            </div>
-
-            <div class="content-card">
-                <h3>Community & UGC</h3>
-                <p>
-                    Ideas for encouraging customers to participate,
-                    interact and share their own experiences.
-                </p>
-            </div>
+          <div class="audit-text">
+            <strong>Low consistency & weak conversion path</strong>
+          </div>
 
         </div>
 
-        <div class="journey">
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 04 — STRATEGY -->
+
+  <section class="strategy-section">
+    <div class="section-inner">
+
+      <div class="section-label">
+        04 — Strategy
+      </div>
+
+      <h2>
+        Content Pillars
+      </h2>
+
+      <div class="pillars">
+
+        <div class="pillar">
+
+          <div class="pillar-name">
+            Food & Drinks
+          </div>
+
+          <div class="pillar-bar">
+            <div
+              class="pillar-fill"
+              style="width: 35%;"
+            ></div>
+          </div>
+
+          <div class="pillar-percent">
+            35%
+          </div>
+
+        </div>
+
+
+        <div class="pillar">
+
+          <div class="pillar-name">
+            Atmosphere
+          </div>
+
+          <div class="pillar-bar">
+            <div
+              class="pillar-fill"
+              style="width: 25%;"
+            ></div>
+          </div>
+
+          <div class="pillar-percent">
+            25%
+          </div>
+
+        </div>
+
+
+        <div class="pillar">
+
+          <div class="pillar-name">
+            Behind the Scenes
+          </div>
+
+          <div class="pillar-bar">
+            <div
+              class="pillar-fill"
+              style="width: 20%;"
+            ></div>
+          </div>
+
+          <div class="pillar-percent">
+            20%
+          </div>
+
+        </div>
+
+
+        <div class="pillar">
+
+          <div class="pillar-name">
+            UGC & Interaction
+          </div>
+
+          <div class="pillar-bar">
+            <div
+              class="pillar-fill"
+              style="width: 15%;"
+            ></div>
+          </div>
+
+          <div class="pillar-percent">
+            15%
+          </div>
+
+        </div>
+
+
+        <div class="pillar">
+
+          <div class="pillar-name">
+            Events & Promotions
+          </div>
+
+          <div class="pillar-bar">
+            <div
+              class="pillar-fill"
+              style="width: 5%;"
+            ></div>
+          </div>
+
+          <div class="pillar-percent">
+            5%
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 05 — CONTENT SYSTEM -->
+
+  <section class="content-section">
+    <div class="section-inner">
+
+      <div class="section-label">
+        05 — Content System
+      </div>
+
+      <h2>
+        Content System
+      </h2>
+
+      <div class="content-system">
+
+        <div class="content-card">
+          Instagram Reels
+        </div>
+
+        <div class="content-card">
+          Stories
+        </div>
+
+        <div class="content-card">
+          CTAs
+        </div>
+
+        <div class="content-card">
+          Content Calendar
+        </div>
+
+        <div class="content-card">
+          Campaign Concepts
+        </div>
+
+      </div>
+
+
+      <div class="journey">
+
+        <div class="journey-title">
+          Customer Journey
+        </div>
+
+        <div class="journey-flow">
+
+          <div class="journey-step">
             Food
-            <span>→</span>
+          </div>
+
+          <div class="journey-arrow">
+            →
+          </div>
+
+          <div class="journey-step">
             Story
-            <span>→</span>
+          </div>
+
+          <div class="journey-arrow">
+            →
+          </div>
+
+          <div class="journey-step">
             Engagement
-            <span>→</span>
+          </div>
+
+          <div class="journey-arrow">
+            →
+          </div>
+
+          <div class="journey-step">
             Booking
-        </div>
-
-    </div>
-</section>
-
-
-<!-- CAMPAIGNS -->
-
-<section>
-    <div class="container">
-
-        <div class="section-label">06 / Campaign Concepts</div>
-
-        <h2>Ideas built<br>for action.</h2>
-
-        <div class="campaign-grid">
-
-            <div class="campaign">
-
-                <div class="campaign-number">01 / WEEKDAY EXPERIENCE</div>
-
-                <h3>Wine Discovery Wednesday</h3>
-
-                <p>
-                    Drive weekday traffic through wine-focused
-                    experiences and discovery.
-                </p>
-
-            </div>
-
-
-            <div class="campaign">
-
-                <div class="campaign-number">02 / CULTURE & FOOD</div>
-
-                <h3>Spanish Nights</h3>
-
-                <p>
-                    Create an experience around Spanish culture,
-                    food and the atmosphere of El Barcito.
-                </p>
-
-            </div>
-
-
-            <div class="campaign">
-
-                <div class="campaign-number">03 / LOCAL AUDIENCE</div>
-
-                <h3>Afterwork @ El Barcito</h3>
-
-                <p>
-                    Target nearby workers during quieter weekday
-                    periods and encourage afterwork visits.
-                </p>
-
-            </div>
-
-
-            <div class="campaign">
-
-                <div class="campaign-number">04 / COMMUNITY</div>
-
-                <h3>Share Your Moment</h3>
-
-                <p>
-                    Encourage customers to create and share
-                    their own El Barcito experiences.
-                </p>
-
-            </div>
+          </div>
 
         </div>
 
-    </div>
-</section>
-
-
-<!-- WHAT I LEARNED -->
-
-<section class="learning">
-    <div class="container">
-
-        <div class="section-label">07 / What I Learned</div>
-
-        <h2>Connecting creativity<br>with business.</h2>
-
-        <p class="learning-quote">
-            “This project taught me how to connect creative content
-            with business objectives. Rather than treating social
-            media as only a visual channel, I learned to consider
-            the full customer journey — from discovering a restaurant,
-            to engaging with its content, to making a reservation.”
-        </p>
+      </div>
 
     </div>
-</section>
+  </section>
 
 
-<!-- FOOTER -->
+  <!-- 06 — CAMPAIGN CONCEPTS -->
 
-<footer>
-    <div class="container">
+  <section class="campaign-section">
+    <div class="section-inner">
 
-        <h3>El Barcito</h3>
+      <div class="section-label">
+        06 — Campaign Concepts
+      </div>
+
+      <h2>
+        Campaign Concepts
+      </h2>
+
+      <div class="campaign-grid">
+
+
+        <article class="campaign-card">
+
+          <div class="campaign-number">
+            01
+          </div>
+
+          <h3>
+            Wine Discovery Wednesday
+          </h3>
+
+          <p>
+            Drive weekday traffic through wine-focused experiences.
+          </p>
+
+        </article>
+
+
+        <article class="campaign-card">
+
+          <div class="campaign-number">
+            02
+          </div>
+
+          <h3>
+            Spanish Nights
+          </h3>
+
+          <p>
+            Create an experience around Spanish culture and food.
+          </p>
+
+        </article>
+
+
+        <article class="campaign-card">
+
+          <div class="campaign-number">
+            03
+          </div>
+
+          <h3>
+            Afterwork @ El Barcito
+          </h3>
+
+          <p>
+            Target nearby workers during quieter weekday periods.
+          </p>
+
+        </article>
+
+
+        <article class="campaign-card">
+
+          <div class="campaign-number">
+            04
+          </div>
+
+          <h3>
+            Share Your Moment
+          </h3>
+
+          <p>
+            Encourage customers to create and share UGC.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 07 — WHAT I LEARNED -->
+
+  <section class="learning-section">
+    <div class="section-inner">
+
+      <div class="section-label">
+        07 — What I Learned
+      </div>
+
+      <h2>
+        What I Learned
+      </h2>
+
+      <div class="learning-box">
 
         <p>
-            Digital Marketing Strategy · Marketing · Social Media
+          This project taught me how to connect creative content with business objectives. Rather than treating social media as only a visual channel, I learned to consider the full customer journey — from discovering a restaurant, to engaging with its content, to making a reservation.
         </p>
 
-        <a class="back-link" href="index.html#projects">
-            ← Back to selected work
-        </a>
+      </div>
 
     </div>
-</footer>
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <a
+        href="index.html#projects"
+        class="back-link"
+      >
+        ← Back to Projects
+      </a>
+
+      <div class="copyright">
+        © 2026 Shaina Shabani
+      </div>
+
+    </div>
+
+  </footer>
 
 </body>
 </html>
