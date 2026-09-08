@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -38,7 +40,9 @@
       text-decoration: none;
     }
 
-    /* NAVIGATION */
+    /* =========================
+       NAVIGATION
+    ========================= */
 
     nav {
       position: sticky;
@@ -80,7 +84,10 @@
       opacity: 0.55;
     }
 
-    /* GENERAL */
+
+    /* =========================
+       GENERAL
+    ========================= */
 
     section {
       padding: 95px 30px;
@@ -110,14 +117,17 @@
     h2 {
       font-size: clamp(34px, 5vw, 52px);
       line-height: 1.1;
-      margin-bottom: 35px;
+      margin-bottom: 28px;
     }
 
     p {
       color: #625960;
     }
 
-    /* PROJECT */
+
+    /* =========================
+       PROJECT
+    ========================= */
 
     .project-section {
       background: #f8f0f1;
@@ -169,14 +179,17 @@
       display: block;
     }
 
-    /* MY ROLE */
+
+    /* =========================
+       MY ROLE
+    ========================= */
 
     .role-section {
       background: #ffffff;
     }
 
     .role-intro {
-      max-width: 720px;
+      max-width: 760px;
       font-size: 18px;
       line-height: 1.8;
       margin-bottom: 45px;
@@ -184,19 +197,15 @@
 
     .role-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 18px;
     }
 
     .role-card {
       background: #f8f0f1;
-      border-radius: 20px;
-      padding: 28px 25px;
-      min-height: 120px;
-      display: flex;
-      align-items: flex-end;
+      border-radius: 18px;
+      padding: 26px 28px;
       position: relative;
-      overflow: hidden;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
@@ -205,31 +214,42 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 42px;
+      width: 38px;
       height: 4px;
       background: #b9828e;
       border-radius: 0 0 8px 0;
     }
 
     .role-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 15px 35px rgba(73, 45, 52, 0.08);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(73, 45, 52, 0.07);
     }
 
-    .role-card span {
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 1.45;
+    .role-card h3 {
+      font-family: "DM Sans", sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #292329;
     }
 
-    /* CONTENT SYSTEM */
+    .role-card p {
+      font-size: 14px;
+      line-height: 1.65;
+      color: #625960;
+    }
+
+
+    /* =========================
+       CONTENT SYSTEM
+    ========================= */
 
     .content-section {
       background: #f8f0f1;
     }
 
     .content-intro {
-      max-width: 720px;
+      max-width: 760px;
       font-size: 18px;
       line-height: 1.8;
       margin-bottom: 45px;
@@ -291,14 +311,17 @@
       font-size: 20px;
     }
 
-    /* CAMPAIGNS */
+
+    /* =========================
+       CAMPAIGNS
+    ========================= */
 
     .campaign-section {
       background: #ffffff;
     }
 
     .campaign-intro {
-      max-width: 720px;
+      max-width: 760px;
       font-size: 18px;
       line-height: 1.8;
       margin-bottom: 45px;
@@ -314,7 +337,7 @@
       border: 1px solid #eadfe1;
       border-radius: 22px;
       padding: 32px;
-      min-height: 210px;
+      min-height: 190px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
@@ -333,7 +356,10 @@
       line-height: 1.7;
     }
 
-    /* WHAT I LEARNED */
+
+    /* =========================
+       WHAT I LEARNED
+    ========================= */
 
     .learning-section {
       background: #f8f0f1;
@@ -354,7 +380,10 @@
       color: #342c31;
     }
 
-    /* FOOTER */
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
       background: #292329;
@@ -385,7 +414,10 @@
       font-size: 13px;
     }
 
-    /* RESPONSIVE */
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
 
     @media (max-width: 900px) {
 
@@ -403,6 +435,7 @@
       }
 
     }
+
 
     @media (max-width: 650px) {
 
@@ -455,13 +488,17 @@
     }
 
   </style>
+
 </head>
 
+
 <body>
+
 
   <!-- NAVIGATION -->
 
   <nav>
+
     <div class="nav-inner">
 
       <a href="index.html" class="logo">
@@ -469,14 +506,37 @@
       </a>
 
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#experience">Experience</a></li>
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#experience">
+            Experience
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#projects">
+            Projects
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#contact">
+            Contact
+          </a>
+        </li>
+
       </ul>
 
     </div>
+
   </nav>
+
 
 
   <!-- PROJECT -->
@@ -491,6 +551,7 @@
 
       <div class="project-grid">
 
+
         <div>
 
           <h1 class="project-title">
@@ -502,10 +563,12 @@
           </div>
 
           <p class="project-description">
-            Helping a local Spanish tapas bar strengthen its digital presence and turn social media attention into restaurant visits.
+            Helping a local Spanish tapas bar strengthen its digital presence
+            and turn social media attention into restaurant visits.
           </p>
 
         </div>
+
 
         <div class="logo-card">
 
@@ -516,11 +579,13 @@
 
         </div>
 
+
       </div>
 
     </div>
 
   </section>
+
 
 
   <!-- MY ROLE -->
@@ -538,68 +603,203 @@
       </h2>
 
       <p class="role-intro">
-        I worked across the research, strategy and planning stages of the project, focusing on how El Barcito could use digital marketing to build stronger engagement and encourage visits.
+        I worked across the research, strategy and planning stages of the
+        project, focusing on how El Barcito could strengthen its digital
+        presence, improve engagement and encourage restaurant visits.
       </p>
+
 
       <div class="role-grid">
 
-        <div class="role-card">
-          <span>Digital marketing research</span>
-        </div>
 
         <div class="role-card">
-          <span>Social media analysis</span>
+
+          <h3>
+            Digital Marketing Research
+          </h3>
+
+          <p>
+            Researched digital marketing approaches relevant to restaurants
+            and identified opportunities to strengthen El Barcito's online presence.
+          </p>
+
         </div>
 
-        <div class="role-card">
-          <span>Competitor analysis</span>
-        </div>
 
         <div class="role-card">
-          <span>SWOT analysis</span>
+
+          <h3>
+            Social Media Analysis
+          </h3>
+
+          <p>
+            Reviewed the restaurant's existing social media presence to understand
+            its content, communication style and areas for improvement.
+          </p>
+
         </div>
 
-        <div class="role-card">
-          <span>Target audience research</span>
-        </div>
 
         <div class="role-card">
-          <span>Social media strategy</span>
+
+          <h3>
+            Competitor Analysis
+          </h3>
+
+          <p>
+            Looked at competing restaurants and their digital activities to identify
+            useful ideas, gaps and opportunities for differentiation.
+          </p>
+
         </div>
 
-        <div class="role-card">
-          <span>Content strategy</span>
-        </div>
 
         <div class="role-card">
-          <span>Instagram optimization ideas</span>
+
+          <h3>
+            SWOT Analysis
+          </h3>
+
+          <p>
+            Analysed El Barcito's strengths, weaknesses, opportunities and threats
+            to support the development of the marketing strategy.
+          </p>
+
         </div>
 
-        <div class="role-card">
-          <span>Content calendar planning</span>
-        </div>
 
         <div class="role-card">
-          <span>Reel and Story concepts</span>
+
+          <h3>
+            Target Audience Research
+          </h3>
+
+          <p>
+            Considered the audience the restaurant wanted to reach and how their
+            interests and behaviour could shape the content strategy.
+          </p>
+
         </div>
 
-        <div class="role-card">
-          <span>Campaign ideas</span>
-        </div>
 
         <div class="role-card">
-          <span>UGC and community engagement ideas</span>
+
+          <h3>
+            Social Media Strategy
+          </h3>
+
+          <p>
+            Developed ideas for using social media more strategically to increase
+            awareness, engagement and potential restaurant visits.
+          </p>
+
         </div>
 
+
         <div class="role-card">
-          <span>Marketing KPIs and implementation planning</span>
+
+          <h3>
+            Content Strategy
+          </h3>
+
+          <p>
+            Planned different types of content that could communicate the food,
+            atmosphere and experience of El Barcito.
+          </p>
+
         </div>
+
+
+        <div class="role-card">
+
+          <h3>
+            Instagram Optimisation
+          </h3>
+
+          <p>
+            Suggested ways to make the Instagram presence clearer, more engaging
+            and better connected to customer actions.
+          </p>
+
+        </div>
+
+
+        <div class="role-card">
+
+          <h3>
+            Content Calendar Planning
+          </h3>
+
+          <p>
+            Planned how content could be organised consistently across different
+            formats and campaigns.
+          </p>
+
+        </div>
+
+
+        <div class="role-card">
+
+          <h3>
+            Reel & Story Concepts
+          </h3>
+
+          <p>
+            Developed ideas for Reels and Stories designed to showcase the
+            restaurant and encourage interaction.
+          </p>
+
+        </div>
+
+
+        <div class="role-card">
+
+          <h3>
+            Campaign Ideas
+          </h3>
+
+          <p>
+            Created campaign concepts aimed at increasing weekday traffic
+            and giving customers more reasons to visit El Barcito.
+          </p>
+
+        </div>
+
+
+        <div class="role-card">
+
+          <h3>
+            UGC & Community Engagement
+          </h3>
+
+          <p>
+            Developed ideas for encouraging customers to share their experiences
+            and become part of the restaurant's online community.
+          </p>
+
+        </div>
+
+
+        <div class="role-card">
+
+          <h3>
+            KPIs & Implementation Planning
+          </h3>
+
+          <p>
+            Considered relevant marketing KPIs and how the proposed strategy
+            could be implemented and evaluated.
+          </p>
+
+        </div>
+
 
       </div>
 
     </div>
 
   </section>
+
 
 
   <!-- CONTENT SYSTEM -->
@@ -608,85 +808,110 @@
 
     <div class="section-inner">
 
+
       <div class="section-label">
         Content System
       </div>
+
 
       <h2>
         Content System
       </h2>
 
+
       <p class="content-intro">
-        The strategy focused on creating a more structured social media presence and guiding people from discovering the restaurant to taking action.
+        The strategy focused on creating a more structured social media
+        presence and guiding people from discovering the restaurant to
+        taking action.
       </p>
 
+
       <div class="content-system">
+
 
         <div class="content-card">
           Instagram Reels
         </div>
 
+
         <div class="content-card">
           Stories
         </div>
+
 
         <div class="content-card">
           CTAs
         </div>
 
+
         <div class="content-card">
           Content Calendar
         </div>
+
 
         <div class="content-card">
           Campaign Concepts
         </div>
 
+
       </div>
 
+
       <div class="journey">
+
 
         <div class="journey-title">
           Customer Journey
         </div>
 
+
         <div class="journey-flow">
+
 
           <div class="journey-step">
             Food
           </div>
 
+
           <div class="journey-arrow">
             →
           </div>
+
 
           <div class="journey-step">
             Story
           </div>
 
+
           <div class="journey-arrow">
             →
           </div>
+
 
           <div class="journey-step">
             Engagement
           </div>
 
+
           <div class="journey-arrow">
             →
           </div>
+
 
           <div class="journey-step">
             Booking
           </div>
 
+
         </div>
 
       </div>
 
+
     </div>
 
   </section>
+
 
 
   <!-- CAMPAIGN CONCEPTS -->
@@ -695,19 +920,25 @@
 
     <div class="section-inner">
 
+
       <div class="section-label">
         Campaign Concepts
       </div>
+
 
       <h2>
         Campaign Concepts
       </h2>
 
+
       <p class="campaign-intro">
-        The campaign ideas were designed to create reasons for people to visit, engage with the restaurant and share their experience online.
+        The campaign ideas were designed to create reasons for people to visit,
+        engage with the restaurant and share their experience online.
       </p>
 
+
       <div class="campaign-grid">
+
 
         <article class="campaign-card">
 
@@ -760,11 +991,13 @@
 
         </article>
 
+
       </div>
 
     </div>
 
   </section>
+
 
 
   <!-- WHAT I LEARNED -->
@@ -773,25 +1006,33 @@
 
     <div class="section-inner">
 
+
       <div class="section-label">
         What I Learned
       </div>
+
 
       <h2>
         What I Learned
       </h2>
 
+
       <div class="learning-box">
 
         <p>
-          This project taught me how to connect creative content with business objectives. Rather than treating social media as only a visual channel, I learned to consider the full customer journey — from discovering a restaurant, to engaging with its content, to making a reservation.
+          This project taught me how to connect creative content with business
+          objectives. Rather than treating social media as only a visual channel,
+          I learned to consider the full customer journey — from discovering a
+          restaurant, to engaging with its content, to making a reservation.
         </p>
 
       </div>
 
+
     </div>
 
   </section>
+
 
 
   <!-- FOOTER -->
@@ -800,6 +1041,7 @@
 
     <div class="footer-inner">
 
+
       <a
         href="index.html#projects"
         class="back-link"
@@ -807,13 +1049,17 @@
         ← Back to Projects
       </a>
 
+
       <div class="copyright">
         © 2026 Shaina Shabani
       </div>
+
 
     </div>
 
   </footer>
 
+
 </body>
+
 </html>
