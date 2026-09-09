@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,7 +11,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  rel="stylesheet"
+>
 
 <style>
 
@@ -19,15 +23,15 @@
 ========================= */
 
 :root {
-    --ink: #29272a;
-    --muted: #706a6d;
-    --cream: #faf7f3;
-    --white: #fffdfb;
-    --rose: #bd7181;
-    --rose-light: #f3e1e4;
-    --lavender: #e8e2ef;
-    --line: #e6dfe0;
-    --dark-card: #343034;
+  --ink: #29272a;
+  --muted: #706a6d;
+  --cream: #faf7f3;
+  --white: #fffdfb;
+  --rose: #bd7181;
+  --rose-light: #f3e1e4;
+  --lavender: #e8e2ef;
+  --line: #e6dfe0;
+  --dark-card: #343034;
 }
 
 
@@ -36,31 +40,31 @@
 ========================= */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "DM Sans", sans-serif;
-    background: var(--cream);
-    color: var(--ink);
-    line-height: 1.6;
-    overflow-x: hidden;
+  font-family: "DM Sans", sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
-    width: min(1160px, 90%);
-    margin: auto;
+  width: min(1160px, 90%);
+  margin: auto;
 }
 
 
@@ -69,56 +73,54 @@ a {
 ========================= */
 
 nav {
-    position: fixed;
-    z-index: 1000;
-    top: 18px;
-    left: 50%;
-    transform: translateX(-50%);
+  position: fixed;
+  z-index: 1000;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
 
-    width: min(1120px, 92%);
+  width: min(1120px, 92%);
 
-    padding: 14px 22px;
+  padding: 14px 22px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    background: rgba(255, 253, 251, 0.93);
-    backdrop-filter: blur(16px);
+  background: rgba(255, 253, 251, 0.93);
+  backdrop-filter: blur(16px);
 
-    border: 1px solid var(--line);
-    border-radius: 20px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
 
-    box-shadow: 0 8px 25px rgba(45,35,39,.05);
+  box-shadow: 0 8px 25px rgba(45, 35, 39, .05);
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: -.5px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -.5px;
 }
 
 .logo span {
-    color: var(--rose);
+  color: var(--rose);
 }
 
 .nav-links {
-    display: flex;
-    gap: 26px;
-    list-style: none;
-
-    font-size: 13px;
-    font-weight: 600;
-
-    color: #5e595c;
+  display: flex;
+  gap: 26px;
+  list-style: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #5e595c;
 }
 
 .nav-links a {
-    transition: .25s;
+  transition: .25s;
 }
 
 .nav-links a:hover {
-    color: var(--rose);
+  color: var(--rose);
 }
 
 
@@ -127,107 +129,107 @@ nav {
 ========================= */
 
 .hero {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    padding: 145px 0 90px;
+  padding: 145px 0 90px;
 
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
 
-    align-items: center;
-    gap: 70px;
+  align-items: center;
+  gap: 70px;
 }
 
 .eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
 
-    padding: 8px 13px;
+  padding: 8px 13px;
 
-    border: 1px solid #e5cbd0;
-    border-radius: 999px;
+  border: 1px solid #e5cbd0;
+  border-radius: 999px;
 
-    background: #fbf0f2;
-    color: var(--rose);
+  background: #fbf0f2;
+  color: var(--rose);
 
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.3px;
-    text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
 }
 
 .eyebrow::before {
-    content: "";
+  content: "";
 
-    width: 7px;
-    height: 7px;
+  width: 7px;
+  height: 7px;
 
-    background: var(--rose);
-    border-radius: 50%;
+  background: var(--rose);
+  border-radius: 50%;
 }
 
 .hero h1 {
-    margin-top: 25px;
+  margin-top: 25px;
 
-    font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
 
-    font-size: clamp(70px, 9vw, 120px);
-    line-height: .84;
+  font-size: clamp(70px, 9vw, 120px);
+  line-height: .84;
 
-    letter-spacing: -6px;
-    font-weight: 600;
+  letter-spacing: -6px;
+  font-weight: 600;
 }
 
 .hero h1 span {
-    color: var(--rose);
-    font-style: italic;
+  color: var(--rose);
+  font-style: italic;
 }
 
 .hero-text {
-    max-width: 610px;
-    margin-top: 32px;
+  max-width: 610px;
+  margin-top: 32px;
 
-    color: var(--muted);
+  color: var(--muted);
 
-    font-size: 18px;
-    line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
 .hero-buttons {
-    display: flex;
-    gap: 11px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 11px;
+  flex-wrap: wrap;
 
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-    padding: 13px 21px;
+  padding: 13px 21px;
 
-    border-radius: 999px;
+  border-radius: 999px;
 
-    background: var(--ink);
-    color: white;
+  background: var(--ink);
+  color: white;
 
-    font-size: 13px;
-    font-weight: 700;
+  font-size: 13px;
+  font-weight: 700;
 
-    transition: .3s;
+  transition: .3s;
 }
 
 .button:hover {
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 .button.outline {
-    background: transparent;
-    color: var(--ink);
-    border: 1px solid #cfc7c9;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid #cfc7c9;
 }
 
 
@@ -236,92 +238,92 @@ nav {
 ========================= */
 
 .hero-right {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .photo-wrapper {
-    width: min(400px, 100%);
-    position: relative;
+  width: min(400px, 100%);
+  position: relative;
 }
 
 .photo-wrapper::before {
-    content: "";
+  content: "";
 
-    position: absolute;
+  position: absolute;
 
-    inset: 18px -13px -13px 13px;
+  inset: 18px -13px -13px 13px;
 
-    background: var(--rose-light);
+  background: var(--rose-light);
 
-    border-radius: 47% 53% 50% 50%;
+  border-radius: 47% 53% 50% 50%;
 
-    transform: rotate(-4deg);
+  transform: rotate(-4deg);
 }
 
 .photo-wrapper::after {
-    content: "MARKETING";
+  content: "MARKETING";
 
-    position: absolute;
-    z-index: 4;
+  position: absolute;
+  z-index: 4;
 
-    right: -25px;
-    top: 35px;
+  right: -25px;
+  top: 35px;
 
-    padding: 9px 13px;
+  padding: 9px 13px;
 
-    background: var(--ink);
-    color: white;
+  background: var(--ink);
+  color: white;
 
-    border-radius: 7px;
+  border-radius: 7px;
 
-    font-size: 9px;
-    font-weight: 700;
+  font-size: 9px;
+  font-weight: 700;
 
-    letter-spacing: 1.5px;
+  letter-spacing: 1.5px;
 
-    transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 
 .profile-photo {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 
-    border: 8px solid white;
-    border-radius: 46% 54% 50% 50%;
+  border: 8px solid white;
+  border-radius: 46% 54% 50% 50%;
 
-    box-shadow: 0 16px 40px rgba(45,35,39,.07);
+  box-shadow: 0 16px 40px rgba(45, 35, 39, .07);
 }
 
 .photo-tag {
-    position: absolute;
-    z-index: 5;
+  position: absolute;
+  z-index: 5;
 
-    left: -30px;
-    bottom: 22px;
+  left: -30px;
+  bottom: 22px;
 
-    background: white;
+  background: white;
 
-    border: 1px solid var(--line);
+  border: 1px solid var(--line);
 
-    padding: 13px 17px;
+  padding: 13px 17px;
 
-    border-radius: 14px;
+  border-radius: 14px;
 
-    box-shadow: 0 16px 40px rgba(45,35,39,.07);
+  box-shadow: 0 16px 40px rgba(45, 35, 39, .07);
 
-    font-size: 11px;
-    color: var(--muted);
+  font-size: 11px;
+  color: var(--muted);
 }
 
 .photo-tag strong {
-    display: block;
+  display: block;
 
-    color: var(--ink);
-    font-size: 14px;
+  color: var(--ink);
+  font-size: 14px;
 }
 
 
@@ -330,38 +332,38 @@ nav {
 ========================= */
 
 .marquee {
-    background: var(--ink);
-    color: white;
+  background: var(--ink);
+  color: white;
 
-    overflow: hidden;
-    white-space: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
 
-    padding: 16px 0;
+  padding: 16px 0;
 }
 
 .marquee-content {
-    display: inline-block;
+  display: inline-block;
 
-    animation: marquee 24s linear infinite;
+  animation: marquee 24s linear infinite;
 
-    font-size: 11px;
-    letter-spacing: 2.4px;
-    font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2.4px;
+  font-weight: 700;
 }
 
 .marquee span {
-    color: #d99aa6;
-    margin: 0 22px;
+  color: #d99aa6;
+  margin: 0 22px;
 }
 
 @keyframes marquee {
-    from {
-        transform: translateX(0);
-    }
+  from {
+    transform: translateX(0);
+  }
 
-    to {
-        transform: translateX(-50%);
-    }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 
@@ -370,46 +372,46 @@ nav {
 ========================= */
 
 section {
-    padding: 115px 0;
+  padding: 115px 0;
 }
 
 .section-header {
-    display: flex;
+  display: flex;
 
-    justify-content: space-between;
-    align-items: end;
+  justify-content: space-between;
+  align-items: end;
 
-    gap: 30px;
+  gap: 30px;
 
-    margin-bottom: 55px;
+  margin-bottom: 55px;
 }
 
 .section-number {
-    font-size: 11px;
+  font-size: 11px;
 
-    color: var(--rose);
+  color: var(--rose);
 
-    font-weight: 800;
-    letter-spacing: 1.8px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
 
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .section-title {
-    font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
 
-    font-size: clamp(48px, 6vw, 76px);
+  font-size: clamp(48px, 6vw, 76px);
 
-    line-height: .95;
-    letter-spacing: -3px;
+  line-height: .95;
+  letter-spacing: -3px;
 }
 
 .section-intro {
-    max-width: 410px;
+  max-width: 410px;
 
-    color: var(--muted);
+  color: var(--muted);
 
-    line-height: 1.75;
+  line-height: 1.75;
 }
 
 
@@ -418,110 +420,112 @@ section {
 ========================= */
 
 .about-section {
-    background: var(--white);
+  background: var(--white);
 }
 
 .about-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: .85fr 1.35fr;
+  grid-template-columns: .85fr 1.35fr;
 
-    gap: 85px;
+  gap: 85px;
 }
 
 .about-large {
-    font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
 
-    font-size: 40px;
-    line-height: 1.2;
+  font-size: 40px;
+  line-height: 1.2;
 }
 
 .about-large span {
-    color: var(--rose);
+  color: var(--rose);
 }
 
 .about-content {
-    color: #665f62;
+  color: #665f62;
 
-    font-size: 16px;
-    line-height: 1.85;
+  font-size: 16px;
+  line-height: 1.85;
 }
 
 .about-content p + p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 
 /* =========================
-   ABOUT FACTS
+   ABOUT ICONS
 ========================= */
 
 .about-facts {
-    margin-top: 34px;
+  margin-top: 38px;
 
-    display: grid;
+  display: grid;
 
-    grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
-    gap: 15px;
+  gap: 28px 35px;
 }
 
 .fact {
-    min-height: 145px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
 
-    padding: 23px;
-
-    background: white;
-
-    border: 1px solid var(--line);
-
-    border-radius: 18px;
-
-    transition: .3s;
+  padding: 4px 0;
 }
 
-.fact:hover {
-    transform: translateY(-4px);
+.fact-icon {
+  width: 42px;
+  height: 42px;
 
-    box-shadow: 0 16px 40px rgba(45,35,39,.07);
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--rose-light);
+
+  border-radius: 12px;
+
+  color: var(--rose);
 }
 
-.fact:nth-child(1) {
-    background: #fff7f8;
+.fact-icon svg {
+  width: 21px;
+  height: 21px;
+
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-.fact:nth-child(2) {
-    background: #faf8fd;
+.fact-content strong {
+  display: block;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.1px;
+
+  margin-bottom: 4px;
+
+  color: var(--ink);
 }
 
-.fact:nth-child(3) {
-    background: #f7faf7;
-}
+.fact-content span {
+  display: block;
 
-.fact:nth-child(4) {
-    background: #fffaf5;
-}
+  color: #5f585c;
 
-.fact strong {
-    display: block;
+  font-size: 14px;
 
-    font-size: 12px;
-
-    text-transform: uppercase;
-
-    letter-spacing: 1.2px;
-
-    margin-bottom: 7px;
-}
-
-.fact span {
-    display: block;
-
-    color: #5f585c;
-
-    font-size: 14px;
-
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 
@@ -530,55 +534,57 @@ section {
 ========================= */
 
 .experience-list {
-    border-top: 1px solid var(--line);
+  border-top: 1px solid var(--line);
 }
 
 .experience {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: 155px 1fr;
+  grid-template-columns: 170px 1fr;
 
-    gap: 30px;
+  gap: 30px;
 
-    padding: 38px 0;
+  padding: 42px 0;
 
-    border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .experience-date {
-    font-size: 12px;
+  font-size: 12px;
 
-    color: var(--muted);
+  color: var(--muted);
 
-    padding-top: 4px;
+  padding-top: 4px;
+
+  line-height: 1.5;
 }
 
 .experience h3 {
-    font-size: 21px;
+  font-size: 22px;
 
-    font-weight: 700;
+  font-weight: 700;
 
-    margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 .experience-company {
-    color: var(--rose);
+  color: var(--rose);
 
-    font-size: 13px;
+  font-size: 13px;
 
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .experience-description {
-    max-width: 850px;
+  max-width: 850px;
 
-    margin-top: 12px;
+  margin-top: 13px;
 
-    color: var(--muted);
+  color: var(--muted);
 
-    font-size: 14px;
+  font-size: 14px;
 
-    line-height: 1.7;
+  line-height: 1.8;
 }
 
 
@@ -587,138 +593,138 @@ section {
 ========================= */
 
 .projects-section {
-    background: var(--white);
-    color: var(--ink);
+  background: var(--white);
+  color: var(--ink);
 }
 
 .projects-section .section-intro {
-    color: var(--muted);
+  color: var(--muted);
 }
 
 .project-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: 1.25fr .75fr;
+  grid-template-columns: 1.25fr .75fr;
 
-    gap: 20px;
+  gap: 20px;
 }
 
 .project-card {
-    min-height: 470px;
+  min-height: 470px;
 
-    padding: 30px;
+  padding: 30px;
 
-    background: var(--cream);
+  background: var(--cream);
 
-    border: 1px solid var(--line);
+  border: 1px solid var(--line);
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
+  flex-direction: column;
 
-    justify-content: space-between;
+  justify-content: space-between;
 
-    transition: .35s;
+  transition: .35s;
 }
 
 .project-card.featured {
-    grid-row: span 2;
+  grid-row: span 2;
 }
 
 .project-card:hover {
-    transform: translateY(-7px);
+  transform: translateY(-7px);
 }
 
 .project-number {
-    color: #d99aa6;
+  color: #d99aa6;
 
-    font-size: 10px;
-    font-weight: 800;
+  font-size: 10px;
+  font-weight: 800;
 
-    letter-spacing: 1.5px;
+  letter-spacing: 1.5px;
 }
 
 .project-preview {
-    margin: 25px -10px;
+  margin: 25px -10px;
 
-    height: 300px;
+  height: 300px;
 
-    border-radius: 17px;
+  border-radius: 17px;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    background: #f3efeb;
+  background: #f3efeb;
 }
 
 .project-preview img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    object-fit: cover;
+  object-fit: cover;
 
-    display: block;
+  display: block;
 }
 
 .project-card h3 {
-    font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
 
-    font-size: 38px;
+  font-size: 38px;
 
-    line-height: 1.05;
+  line-height: 1.05;
 }
 
 .project-card p {
-    color: var(--muted);
+  color: var(--muted);
 
-    font-size: 14px;
+  font-size: 14px;
 
-    line-height: 1.6;
+  line-height: 1.6;
 
-    margin-top: 13px;
+  margin-top: 13px;
 }
 
 .project-tags {
-    display: flex;
+  display: flex;
 
-    gap: 7px;
+  gap: 7px;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    margin-top: 22px;
+  margin-top: 22px;
 }
 
 .project-tag {
-    padding: 6px 10px;
+  padding: 6px 10px;
 
-    border: 1px solid var(--line);
+  border: 1px solid var(--line);
 
-    border-radius: 999px;
+  border-radius: 999px;
 
-    font-size: 11px;
+  font-size: 11px;
 
-    color: var(--muted);
+  color: var(--muted);
 }
 
 .project-link {
-    display: inline-block;
+  display: inline-block;
 
-    margin-top: 25px;
+  margin-top: 25px;
 
-    color: var(--ink);
+  color: var(--ink);
 
-    font-size: 13px;
+  font-size: 13px;
 
-    font-weight: 700;
+  font-weight: 700;
 
-    border-bottom: 1px solid rgba(41,39,42,.35);
+  border-bottom: 1px solid rgba(41, 39, 42, .35);
 
-    padding-bottom: 4px;
+  padding-bottom: 4px;
 }
 
 .project-link:hover {
-    color: var(--rose);
+  color: var(--rose);
 }
 
 
@@ -727,73 +733,73 @@ section {
 ========================= */
 
 .skills-section {
-    background: var(--cream);
+  background: var(--cream);
 }
 
 .skills-wrapper {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: .8fr 1.2fr;
+  grid-template-columns: .8fr 1.2fr;
 
-    gap: 80px;
+  gap: 80px;
 }
 
 .skills-intro h3 {
-    font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
 
-    font-size: 34px;
+  font-size: 34px;
 
-    line-height: 1.15;
+  line-height: 1.15;
 }
 
 .skills-intro p {
-    margin-top: 18px;
+  margin-top: 18px;
 
-    color: var(--muted);
+  color: var(--muted);
 
-    line-height: 1.7;
+  line-height: 1.7;
 }
 
 .skill-category {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: 190px 1fr;
+  grid-template-columns: 190px 1fr;
 
-    gap: 25px;
+  gap: 25px;
 
-    padding: 24px 0;
+  padding: 24px 0;
 
-    border-top: 1px solid var(--line);
+  border-top: 1px solid var(--line);
 }
 
 .skill-category-name {
-    font-size: 13px;
+  font-size: 13px;
 
-    font-weight: 700;
+  font-weight: 700;
 
-    color: var(--ink);
+  color: var(--ink);
 }
 
 .skill-list {
-    display: flex;
+  display: flex;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 8px;
+  gap: 8px;
 }
 
 .skill-pill {
-    padding: 8px 12px;
+  padding: 8px 12px;
 
-    background: white;
+  background: white;
 
-    border: 1px solid var(--line);
+  border: 1px solid var(--line);
 
-    border-radius: 999px;
+  border-radius: 999px;
 
-    font-size: 12px;
+  font-size: 12px;
 
-    color: #5f585c;
+  color: #5f585c;
 }
 
 
@@ -802,47 +808,47 @@ section {
 ========================= */
 
 .education-section {
-    background: var(--white);
+  background: var(--white);
 }
 
 .education-card {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: 190px 1fr;
+  grid-template-columns: 190px 1fr;
 
-    gap: 35px;
+  gap: 35px;
 
-    padding: 32px 0;
+  padding: 32px 0;
 
-    border-top: 1px solid var(--line);
+  border-top: 1px solid var(--line);
 }
 
 .education-card:last-child {
-    border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .education-year {
-    font-size: 13px;
+  font-size: 13px;
 
-    color: var(--rose);
+  color: var(--rose);
 
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .education-card h3 {
-    font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
 
-    font-size: 28px;
+  font-size: 28px;
 
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 .education-card p {
-    margin-top: 8px;
+  margin-top: 8px;
 
-    color: var(--muted);
+  color: var(--muted);
 
-    font-size: 14px;
+  font-size: 14px;
 }
 
 
@@ -851,57 +857,57 @@ section {
 ========================= */
 
 .contact-section {
-    background: var(--cream);
+  background: var(--cream);
 
-    text-align: center;
+  text-align: center;
 
-    padding: 140px 0;
+  padding: 140px 0;
 }
 
 .contact-content {
-    max-width: 760px;
+  max-width: 760px;
 
-    margin: auto;
+  margin: auto;
 }
 
 .contact-title {
-    margin-top: 25px;
+  margin-top: 25px;
 
-    font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
 
-    font-size: clamp(55px, 8vw, 95px);
+  font-size: clamp(55px, 8vw, 95px);
 
-    line-height: .95;
+  line-height: .95;
 
-    letter-spacing: -4px;
+  letter-spacing: -4px;
 }
 
 .contact-title span {
-    color: var(--rose);
+  color: var(--rose);
 
-    font-style: italic;
+  font-style: italic;
 }
 
 .contact-description {
-    max-width: 570px;
+  max-width: 570px;
 
-    margin: 28px auto 0;
+  margin: 28px auto 0;
 
-    color: var(--muted);
+  color: var(--muted);
 
-    line-height: 1.8;
+  line-height: 1.8;
 }
 
 .contact-buttons {
-    display: flex;
+  display: flex;
 
-    justify-content: center;
+  justify-content: center;
 
-    gap: 12px;
+  gap: 12px;
 
-    margin-top: 32px;
+  margin-top: 32px;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 
@@ -910,21 +916,21 @@ section {
 ========================= */
 
 footer {
-    background: var(--ink);
+  background: var(--ink);
 
-    color: #bdb6ba;
+  color: #bdb6ba;
 
-    padding: 25px 0;
+  padding: 25px 0;
 
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .footer-inner {
-    display: flex;
+  display: flex;
 
-    justify-content: space-between;
+  justify-content: space-between;
 
-    align-items: center;
+  align-items: center;
 }
 
 
@@ -934,152 +940,147 @@ footer {
 
 @media (max-width: 850px) {
 
-    nav {
-        padding: 13px 17px;
-    }
+  nav {
+    padding: 13px 17px;
+  }
 
-    .nav-links {
-        gap: 13px;
+  .nav-links {
+    gap: 13px;
 
-        font-size: 11px;
-    }
+    font-size: 11px;
+  }
 
-    .hero {
-        grid-template-columns: 1fr;
+  .hero {
+    grid-template-columns: 1fr;
 
-        padding-top: 150px;
+    padding-top: 150px;
 
-        gap: 60px;
-    }
+    gap: 60px;
+  }
 
-    .hero-right {
-        max-width: 390px;
+  .hero-right {
+    max-width: 390px;
 
-        margin: auto;
-    }
+    margin: auto;
+  }
 
-    .about-grid {
-        grid-template-columns: 1fr;
+  .about-grid {
+    grid-template-columns: 1fr;
 
-        gap: 45px;
-    }
+    gap: 45px;
+  }
 
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .project-card.featured {
-        grid-row: auto;
-    }
+  .project-card.featured {
+    grid-row: auto;
+  }
 
-    .skills-wrapper {
-        grid-template-columns: 1fr;
+  .skills-wrapper {
+    grid-template-columns: 1fr;
 
-        gap: 45px;
-    }
+    gap: 45px;
+  }
 
-    .skill-category {
-        grid-template-columns: 1fr;
+  .skill-category {
+    grid-template-columns: 1fr;
 
-        gap: 15px;
-    }
+    gap: 15px;
+  }
 
-    .experience {
-        grid-template-columns: 1fr;
+  .experience {
+    grid-template-columns: 1fr;
 
-        gap: 10px;
-    }
+    gap: 10px;
+  }
 
-    .education-card {
-        grid-template-columns: 1fr;
+  .education-card {
+    grid-template-columns: 1fr;
 
-        gap: 10px;
-    }
+    gap: 10px;
+  }
 
-    .section-header {
-        display: block;
-    }
+  .section-header {
+    display: block;
+  }
 
-    .section-intro {
-        margin-top: 18px;
-    }
+  .section-intro {
+    margin-top: 18px;
+  }
 
-    .footer-inner {
-        flex-direction: column;
-
-        gap: 10px;
-
-        text-align: center;
-    }
 }
 
 
 @media (max-width: 560px) {
 
-    nav {
-        width: 94%;
-    }
+  nav {
+    width: 94%;
+  }
 
-    .logo {
-        font-size: 17px;
-    }
+  .logo {
+    font-size: 17px;
+  }
 
-    .nav-links {
-        display: none;
-    }
+  .nav-links {
+    display: none;
+  }
 
-    .hero h1 {
-        font-size: 72px;
+  .hero h1 {
+    font-size: 72px;
 
-        letter-spacing: -4px;
-    }
+    letter-spacing: -4px;
+  }
 
-    .hero-text {
-        font-size: 16px;
-    }
+  .hero-text {
+    font-size: 16px;
+  }
 
-    .photo-tag {
-        left: -5px;
-    }
+  .photo-tag {
+    left: -5px;
+  }
 
-    .photo-wrapper::after {
-        right: -5px;
-    }
+  .photo-wrapper::after {
+    right: -5px;
+  }
 
-    section {
-        padding: 80px 0;
-    }
+  section {
+    padding: 80px 0;
+  }
 
-    .about-large {
-        font-size: 32px;
-    }
+  .about-large {
+    font-size: 32px;
+  }
 
-    .about-facts {
-        grid-template-columns: 1fr;
-    }
+  .about-facts {
+    grid-template-columns: 1fr;
+  }
 
-    .project-card {
-        padding: 22px;
+  .project-card {
+    padding: 22px;
 
-        min-height: auto;
-    }
+    min-height: auto;
+  }
 
-    .project-preview {
-        height: 260px;
-    }
+  .project-preview {
+    height: 260px;
+  }
 
-    .project-card h3 {
-        font-size: 32px;
-    }
+  .project-card h3 {
+    font-size: 32px;
+  }
 
-    .contact-title {
-        font-size: 58px;
+  .contact-title {
+    font-size: 58px;
 
-        letter-spacing: -3px;
-    }
+    letter-spacing: -3px;
+  }
+
 }
 
 </style>
+
 </head>
 
 
@@ -1092,37 +1093,37 @@ footer {
 
 <nav>
 
-<a href="#" class="logo">
+  <a href="#" class="logo">
     Shaina<span>.</span>
-</a>
+  </a>
 
-<ul class="nav-links">
+  <ul class="nav-links">
 
-<li>
-    <a href="#about">About</a>
-</li>
+    <li>
+      <a href="#about">About</a>
+    </li>
 
-<li>
-    <a href="#experience">Experience</a>
-</li>
+    <li>
+      <a href="#experience">Experience</a>
+    </li>
 
-<li>
-    <a href="#projects">Projects</a>
-</li>
+    <li>
+      <a href="#projects">Projects</a>
+    </li>
 
-<li>
-    <a href="#skills">Skills</a>
-</li>
+    <li>
+      <a href="#skills">Skills</a>
+    </li>
 
-<li>
-    <a href="#education">Education</a>
-</li>
+    <li>
+      <a href="#education">Education</a>
+    </li>
 
-<li>
-    <a href="#contact">Contact</a>
-</li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
 
-</ul>
+  </ul>
 
 </nav>
 
@@ -1133,61 +1134,61 @@ footer {
 
 <header class="hero container">
 
-<div>
+  <div>
 
-<div class="eyebrow">
-    International Business · Marketing
-</div>
+    <div class="eyebrow">
+      International Business · Marketing
+    </div>
 
-<h1>
-    Shaina<br>
-    <span>Shabani.</span>
-</h1>
+    <h1>
+      Shaina<br>
+      <span>Shabani</span>
+    </h1>
 
-<p class="hero-text">
-    International Business student with an interest in marketing,
-    communication and creative business ideas. I enjoy turning ideas
-    into clear, engaging and visually thoughtful work.
-</p>
+    <p class="hero-text">
+      International Business student with an interest in marketing,
+      communication and creative business ideas I enjoy turning ideas
+      into clear, engaging and visually thoughtful work
+    </p>
 
-<div class="hero-buttons">
+    <div class="hero-buttons">
 
-<a href="#projects" class="button">
-    Explore my work
-</a>
+      <a href="#projects" class="button">
+        Explore my work
+      </a>
 
-<a href="#contact" class="button outline">
-    Get in touch
-</a>
+      <a href="#contact" class="button outline">
+        Get in touch
+      </a>
 
-</div>
+    </div>
 
-</div>
+  </div>
 
 
-<div class="hero-right">
+  <div class="hero-right">
 
-<div class="photo-wrapper">
+    <div class="photo-wrapper">
 
-<img
-    src="assets/profile.jpg"
-    alt="Shaina Shabani"
-    class="profile-photo"
->
+      <img
+        src="assets/profile.jpg"
+        alt="Shaina Shabani"
+        class="profile-photo"
+      >
 
-<div class="photo-tag">
+      <div class="photo-tag">
 
-<strong>
-    Based in Finland
-</strong>
+        <strong>
+          Based in Finland
+        </strong>
 
-International Business · Marketing
+        International Business · Marketing
 
-</div>
+      </div>
 
-</div>
+    </div>
 
-</div>
+  </div>
 
 </header>
 
@@ -1198,36 +1199,36 @@ International Business · Marketing
 
 <div class="marquee">
 
-<div class="marquee-content">
+  <div class="marquee-content">
 
-MARKETING
-<span>•</span>
+    MARKETING
+    <span>•</span>
 
-BUSINESS
-<span>•</span>
+    BUSINESS
+    <span>•</span>
 
-GROWTH
-<span>•</span>
+    GROWTH
+    <span>•</span>
 
-CONTENT
-<span>•</span>
+    CONTENT
+    <span>•</span>
 
-COMMUNICATION
-<span>•</span>
+    COMMUNICATION
+    <span>•</span>
 
-CUSTOMER EXPERIENCE
-<span>•</span>
+    CUSTOMER EXPERIENCE
+    <span>•</span>
 
-MARKETING
-<span>•</span>
+    MARKETING
+    <span>•</span>
 
-BUSINESS
-<span>•</span>
+    BUSINESS
+    <span>•</span>
 
-GROWTH
-<span>•</span>
+    GROWTH
+    <span>•</span>
 
-</div>
+  </div>
 
 </div>
 
@@ -1238,130 +1239,200 @@ GROWTH
 
 <section id="about" class="about-section">
 
-<div class="container">
+  <div class="container">
 
-<div class="section-header">
+    <div class="section-header">
 
-<div>
+      <div>
 
-<div class="section-number">
-    01 / ABOUT
-</div>
+        <div class="section-number">
+          01 / ABOUT
+        </div>
 
-<h2 class="section-title">
-    A little<br>
-    about me.
-</h2>
+        <h2 class="section-title">
+          A little<br>
+          about me
+        </h2>
 
-</div>
+      </div>
 
-<p class="section-intro">
-    A business-focused background combined with
-    practical experience in marketing, communication,
-    customer service and creative projects.
-</p>
+      <p class="section-intro">
+        A business-focused background combined with
+        practical experience in marketing, communication,
+        customer service and creative projects
+      </p>
 
-</div>
-
-
-<div class="about-grid">
-
-<div class="about-large">
-
-I'm interested in
-<span>
-    people, ideas
-</span>
-and how businesses can turn them into meaningful results.
-
-</div>
+    </div>
 
 
-<div class="about-content">
-
-<p>
-    I'm studying International Business Administration
-    at Tampere University of Applied Sciences, with a focus
-    on marketing and a growing interest in business development
-    and growth.
-</p>
-
-<p>
-    I enjoy working on practical projects where communication,
-    creativity and business thinking come together. My experience
-    includes customer service, marketing-related activities,
-    content, community engagement and practical business projects.
-</p>
-
-<p>
-    I'm particularly interested in marketing, growth and business
-    development, and I enjoy learning through real-world challenges
-    and working with different people and teams.
-</p>
+    <div class="about-grid">
 
 
-<div class="about-facts">
+      <div class="about-large">
+
+        I'm interested in
+        <span>
+          people, ideas
+        </span>
+        and how businesses can turn them into meaningful results
+
+      </div>
 
 
-<div class="fact">
+      <div class="about-content">
 
-<strong>
-    Currently
-</strong>
+        <p>
+          I'm studying International Business Administration
+          at Tampere University of Applied Sciences, with a focus
+          on marketing and a growing interest in business development
+          and growth
+        </p>
 
-<span>
-    International Business Administration Student
-</span>
+        <p>
+          I enjoy working on practical projects where communication,
+          creativity and business thinking come together My experience
+          includes customer service, marketing-related activities,
+          content, community engagement and practical business projects
+        </p>
 
-</div>
-
-
-<div class="fact">
-
-<strong>
-    Focus
-</strong>
-
-<span>
-    Marketing & Growth
-</span>
-
-</div>
+        <p>
+          I'm particularly interested in marketing, growth and business
+          development, and I enjoy learning through real-world challenges
+          and working with different people and teams
+        </p>
 
 
-<div class="fact">
+        <!-- ABOUT ICONS -->
 
-<strong>
-    Based in
-</strong>
-
-<span>
-    Finland
-</span>
-
-</div>
+        <div class="about-facts">
 
 
-<div class="fact">
+          <!-- CURRENTLY -->
 
-<strong>
-    Languages
-</strong>
+          <div class="fact">
 
-<span>
-    Persian · English · Finnish
-</span>
+            <div class="fact-icon">
 
-</div>
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="4" width="18" height="17" rx="2"></rect>
+                <path d="M8 2v4"></path>
+                <path d="M16 2v4"></path>
+                <path d="M3 9h18"></path>
+                <path d="M8 13h3"></path>
+              </svg>
+
+            </div>
+
+            <div class="fact-content">
+
+              <strong>
+                Currently
+              </strong>
+
+              <span>
+                International Business Administration Student
+              </span>
+
+            </div>
+
+          </div>
 
 
-</div>
+          <!-- FOCUS -->
 
-</div>
+          <div class="fact">
 
-</div>
+            <div class="fact-icon">
 
-</div>
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="8"></circle>
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M12 4V2"></path>
+                <path d="M12 22v-2"></path>
+              </svg>
+
+            </div>
+
+            <div class="fact-content">
+
+              <strong>
+                Focus
+              </strong>
+
+              <span>
+                Marketing & Growth
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- LOCATION -->
+
+          <div class="fact">
+
+            <div class="fact-icon">
+
+              <svg viewBox="0 0 24 24">
+                <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="2.5"></circle>
+              </svg>
+
+            </div>
+
+            <div class="fact-content">
+
+              <strong>
+                Based in
+              </strong>
+
+              <span>
+                Finland
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- LANGUAGES -->
+
+          <div class="fact">
+
+            <div class="fact-icon">
+
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M3 12h18"></path>
+                <path d="M12 3c3 3 3 15 0 18"></path>
+                <path d="M12 3c-3 3-3 15 0 18"></path>
+              </svg>
+
+            </div>
+
+            <div class="fact-content">
+
+              <strong>
+                Languages
+              </strong>
+
+              <span>
+                English — Fluent · Finnish — A2 · Persian — Native
+              </span>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -1372,125 +1443,129 @@ and how businesses can turn them into meaningful results.
 
 <section id="experience">
 
-<div class="container">
+  <div class="container">
 
-<div class="section-header">
+    <div class="section-header">
 
-<div>
+      <div>
 
-<div class="section-number">
-    02 / EXPERIENCE
-</div>
+        <div class="section-number">
+          02 / EXPERIENCE
+        </div>
 
-<h2 class="section-title">
-    Where I've<br>
-    worked.
-</h2>
+        <h2 class="section-title">
+          Where I've<br>
+          worked
+        </h2>
 
-</div>
+      </div>
 
-<p class="section-intro">
-    Experience across marketing, sales, customer service
-    and practical business environments.
-</p>
+      <p class="section-intro">
+        Experience across marketing, business, sales,
+        customer service and practical work environments
+      </p>
 
-</div>
-
-
-<div class="experience-list">
+    </div>
 
 
-<!-- FARMOI -->
-
-<div class="experience">
-
-<div class="experience-date">
-    2026
-</div>
-
-<div>
-
-<h3>
-    Marketing & Business
-</h3>
-
-<div class="experience-company">
-    Farmoi Oy
-</div>
-
-<p class="experience-description">
-    Worked on marketing-related activities, promotional
-    materials and communication, supporting the company's
-    customer-facing and business activities.
-</p>
-
-</div>
-
-</div>
+    <div class="experience-list">
 
 
-<!-- HONKASEN -->
+      <!-- FARMOI -->
 
-<div class="experience">
+      <div class="experience">
 
-<div class="experience-date">
-    2023
-</div>
+        <div class="experience-date">
+          Apr 2025 — May 2026
+        </div>
 
-<div>
+        <div>
 
-<h3>
-    Sales Intern
-</h3>
+          <h3>
+            Co-founder
+          </h3>
 
-<div class="experience-company">
-    Honkasen Puutarha Oy
-</div>
+          <div class="experience-company">
+            Farmoi Oy
+          </div>
 
-<p class="experience-description">
-    Supported sales and customer service activities
-    in a Finnish-speaking garden centre environment,
-    helping customers and assisting with daily shop
-    operations.
-</p>
+          <p class="experience-description">
+            Worked on customer feedback, communication and marketing-related
+            activities while supporting the development of customer-facing
+            materials and onboarding communication Worked closely with the
+            business to understand customer needs and turn feedback into
+            clearer communication and practical improvements
+          </p>
 
-</div>
+        </div>
 
-</div>
-
-
-<!-- KOMODAA -->
-
-<div class="experience">
-
-<div class="experience-date">
-    2021 — 2022
-</div>
-
-<div>
-
-<h3>
-    Customer Care Specialist
-</h3>
-
-<div class="experience-company">
-    Komodaa
-</div>
-
-<p class="experience-description">
-    Handled customer inquiries, provided support
-    and helped create a positive customer experience
-    in a social e-commerce environment.
-</p>
-
-</div>
-
-</div>
+      </div>
 
 
-</div>
+      <!-- HONKASEN -->
 
-</div>
+      <div class="experience">
+
+        <div class="experience-date">
+          May 2023 — Jun 2023
+        </div>
+
+        <div>
+
+          <h3>
+            Sales Intern
+          </h3>
+
+          <div class="experience-company">
+            Honkasen Puutarha Oy
+          </div>
+
+          <p class="experience-description">
+            Supported customers in a Finnish-speaking garden centre environment
+            and assisted with daily sales activities Helped customers find
+            suitable products, answered questions and supported the day-to-day
+            shop operations while developing practical communication skills
+            in a Finnish working environment
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- KOMODAA -->
+
+      <div class="experience">
+
+        <div class="experience-date">
+          May 2021 — Apr 2022
+        </div>
+
+        <div>
+
+          <h3>
+            Customer Care Specialist
+          </h3>
+
+          <div class="experience-company">
+            Komodaa
+          </div>
+
+          <p class="experience-description">
+            Managed customer inquiries and provided support in a social
+            e-commerce environment Built positive customer relationships,
+            handled questions and problems, followed up on customer needs
+            and contributed to a smooth customer experience
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -1501,171 +1576,179 @@ and how businesses can turn them into meaningful results.
 
 <section id="projects" class="projects-section">
 
-<div class="container">
+  <div class="container">
 
 
-<div class="section-header">
+    <div class="section-header">
 
-<div>
+      <div>
 
-<div class="section-number">
-    03 / PROJECTS
-</div>
+        <div class="section-number">
+          03 / PROJECTS
+        </div>
 
-<h2 class="section-title">
-    Selected<br>
-    work.
-</h2>
+        <h2 class="section-title">
+          Selected<br>
+          work
+        </h2>
 
-</div>
+      </div>
 
-<p class="section-intro">
-    Real projects and visual work where marketing,
-    communication and creative thinking come together.
-</p>
+      <p class="section-intro">
+        Real projects and visual work where marketing,
+        communication and creative thinking come together
+      </p>
 
-</div>
-
-
-<div class="project-grid">
+    </div>
 
 
-<!-- FARMOI -->
-
-<article class="project-card featured">
-
-<div>
-
-<div class="project-number">
-    01 / FARMOI
-</div>
+    <div class="project-grid">
 
 
-<div class="project-preview">
+      <!-- FARMOI -->
 
-<img
-    src="assets/farmoi-brochure-1.png"
-    alt="Farmoi brochure"
->
+      <article class="project-card featured">
 
-</div>
+        <div>
 
-
-<h3>
-    Farmoi — Visual Marketing
-    & Brand Communication
-</h3>
+          <div class="project-number">
+            01 / FARMOI
+          </div>
 
 
-<p>
-    A collection of promotional materials created for
-    Farmoi across print, events and promotional channels.
-</p>
+          <div class="project-preview">
+
+            <img
+              src="assets/farmoi-brochure-1.png"
+              alt="Farmoi brochure"
+            >
+
+          </div>
 
 
-<div class="project-tags">
-
-<span class="project-tag">
-    Visual Design
-</span>
-
-<span class="project-tag">
-    Marketing
-</span>
-
-<span class="project-tag">
-    Brand Communication
-</span>
-
-<span class="project-tag">
-    Campaign Materials
-</span>
-
-</div>
+          <h3>
+            Farmoi — Visual Marketing
+            & Brand Communication
+          </h3>
 
 
-<a href="farmoi.html" class="project-link">
-    View full project →
-</a>
-
-</div>
-
-</article>
+          <p>
+            A collection of promotional materials created for
+            Farmoi across print, events and promotional channels
+          </p>
 
 
-<!-- FRANTSILA -->
+          <div class="project-tags">
 
-<article class="project-card">
+            <span class="project-tag">
+              Visual Design
+            </span>
 
-<div class="project-number">
-    <!-- EL BARCITO -->
+            <span class="project-tag">
+              Marketing
+            </span>
 
-<article class="project-card">
+            <span class="project-tag">
+              Brand Communication
+            </span>
 
-  <div class="project-number">
-    02 / EL BARCITO
+            <span class="project-tag">
+              Campaign Materials
+            </span>
+
+          </div>
+
+
+          <a href="farmoi.html" class="project-link">
+            View full project →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- EL BARCITO -->
+
+      <article class="project-card">
+
+        <div>
+
+          <div class="project-number">
+            02 / EL BARCITO
+          </div>
+
+
+          <div
+            style="
+              width: 100%;
+              height: 180px;
+              border-radius: 18px;
+              overflow: hidden;
+              margin: 25px -0px 28px;
+              background: #ffffff;
+            "
+          >
+
+            <img
+              src="assets/el-barcito.png"
+              alt="El Barcito tapas and bar"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: block;
+              "
+            >
+
+          </div>
+
+
+          <h3>
+            El Barcito — Digital Marketing Strategy
+          </h3>
+
+
+          <p>
+            A digital marketing strategy developed for a local
+            Spanish tapas bar, focusing on social media, target
+            audience research, content strategy and customer engagement
+          </p>
+
+
+          <div class="project-tags">
+
+            <span class="project-tag">
+              Digital Marketing
+            </span>
+
+            <span class="project-tag">
+              Social Media
+            </span>
+
+            <span class="project-tag">
+              Marketing Strategy
+            </span>
+
+            <span class="project-tag">
+              Content Strategy
+            </span>
+
+          </div>
+
+
+          <a href="el-barcito.html" class="project-link">
+            View full project →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
   </div>
-
-  <div style="
-    width: 100%;
-    height: 180px;
-    border-radius: 18px;
-    overflow: hidden;
-    margin-bottom: 28px;
-    background: #ffffff;
-  ">
-    <img
-      src="assets/el-barcito.png"
-      alt="El Barcito tapas & bar"
-      style="
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        display: block;
-      "
-    >
-  </div>
-
-  <h3>
-    El Barcito — Digital Marketing Strategy
-  </h3>
-
-  <p>
-    A digital marketing strategy developed for a local Spanish tapas bar,
-    focusing on social media, target audience research, content strategy
-    and customer engagement.
-  </p>
-
-  <div class="project-tags">
-
-    <span class="project-tag">
-      Digital Marketing
-    </span>
-
-    <span class="project-tag">
-      Social Media
-    </span>
-
-    <span class="project-tag">
-      Marketing Strategy
-    </span>
-
-    <span class="project-tag">
-      Content Strategy
-    </span>
-
-  </div>
-
-  <a href="el-barcito.html" class="project-link">
-    View full project →
-  </a>
-
-</article>
-
-
-</div>
-
-</div>
 
 </section>
 
@@ -1676,161 +1759,267 @@ and how businesses can turn them into meaningful results.
 
 <section id="skills" class="skills-section">
 
-<div class="container">
+  <div class="container">
 
 
-<div class="section-header">
+    <div class="section-header">
 
-<div>
+      <div>
 
-<div class="section-number">
-    04 / SKILLS
-</div>
+        <div class="section-number">
+          04 / SKILLS
+        </div>
 
-<h2 class="section-title">
-    What I<br>
-    work with.
-</h2>
+        <h2 class="section-title">
+          What I<br>
+          work with
+        </h2>
 
-</div>
+      </div>
 
-<p class="section-intro">
-    A combination of marketing, communication,
-    content and digital tools developed through
-    practical experience.
-</p>
+      <p class="section-intro">
+        A combination of marketing knowledge, communication,
+        content skills and digital tools developed through
+        practical projects and experience
+      </p>
 
-</div>
-
-
-<div class="skills-wrapper">
+    </div>
 
 
-<div class="skills-intro">
-
-<h3>
-    Skills that turn ideas into action.
-</h3>
-
-<p>
-    I combine creative thinking with organization,
-    communication and practical digital tools.
-</p>
-
-</div>
+    <div class="skills-wrapper">
 
 
-<div>
+      <div class="skills-intro">
+
+        <h3>
+          Skills that turn ideas into action
+        </h3>
+
+        <p>
+          I combine creative thinking with research,
+          communication, organisation and practical
+          marketing tools to support business goals
+        </p>
+
+      </div>
 
 
-<div class="skill-category">
-
-<div class="skill-category-name">
-    Marketing
-</div>
-
-<div class="skill-list">
-
-<span class="skill-pill">
-    Social Media Management
-</span>
-
-<span class="skill-pill">
-    Campaign Planning
-</span>
-
-<span class="skill-pill">
-    Community Engagement
-</span>
-
-<span class="skill-pill">
-    Email Marketing
-</span>
-
-<span class="skill-pill">
-    Content Strategy
-</span>
-
-</div>
-
-</div>
+      <div>
 
 
-<div class="skill-category">
+        <!-- MARKETING -->
 
-<div class="skill-category-name">
-    Content & Communication
-</div>
+        <div class="skill-category">
 
-<div class="skill-list">
+          <div class="skill-category-name">
+            Marketing
+          </div>
 
-<span class="skill-pill">
-    Content Creation
-</span>
+          <div class="skill-list">
 
-<span class="skill-pill">
-    Copywriting
-</span>
+            <span class="skill-pill">
+              Social Media Strategy
+            </span>
 
-<span class="skill-pill">
-    Brand Messaging
-</span>
+            <span class="skill-pill">
+              Social Media Management
+            </span>
 
-<span class="skill-pill">
-    Visual Marketing Materials
-</span>
+            <span class="skill-pill">
+              Content Strategy
+            </span>
 
-<span class="skill-pill">
-    Event Promotion
-</span>
+            <span class="skill-pill">
+              Campaign Planning
+            </span>
 
-</div>
+            <span class="skill-pill">
+              Digital Marketing
+            </span>
 
-</div>
+            <span class="skill-pill">
+              Market Research
+            </span>
 
+            <span class="skill-pill">
+              Competitor Analysis
+            </span>
 
-<div class="skill-category">
+            <span class="skill-pill">
+              Target Audience Research
+            </span>
 
-<div class="skill-category-name">
-    Tools
-</div>
+            <span class="skill-pill">
+              Marketing Planning
+            </span>
 
-<div class="skill-list">
+            <span class="skill-pill">
+              KPI Planning
+            </span>
 
-<span class="skill-pill">
-    Canva
-</span>
+          </div>
 
-<span class="skill-pill">
-    Meta Business Suite
-</span>
-
-<span class="skill-pill">
-    Google Analytics
-</span>
-
-<span class="skill-pill">
-    Microsoft 365
-</span>
-
-<span class="skill-pill">
-    PowerPoint
-</span>
-
-<span class="skill-pill">
-    Excel
-</span>
-
-</div>
-
-</div>
+        </div>
 
 
-</div>
+        <!-- CONTENT -->
 
-</div>
+        <div class="skill-category">
 
-</div>
+          <div class="skill-category-name">
+            Content & Communication
+          </div>
+
+          <div class="skill-list">
+
+            <span class="skill-pill">
+              Content Creation
+            </span>
+
+            <span class="skill-pill">
+              Copywriting
+            </span>
+
+            <span class="skill-pill">
+              Brand Messaging
+            </span>
+
+            <span class="skill-pill">
+              Social Media Content
+            </span>
+
+            <span class="skill-pill">
+              Reel Concepts
+            </span>
+
+            <span class="skill-pill">
+              Story Concepts
+            </span>
+
+            <span class="skill-pill">
+              Visual Marketing Materials
+            </span>
+
+            <span class="skill-pill">
+              Event Promotion
+            </span>
+
+            <span class="skill-pill">
+              Community Engagement
+            </span>
+
+            <span class="skill-pill">
+              UGC Ideas
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- BUSINESS -->
+
+        <div class="skill-category">
+
+          <div class="skill-category-name">
+            Business
+          </div>
+
+          <div class="skill-list">
+
+            <span class="skill-pill">
+              Business Development
+            </span>
+
+            <span class="skill-pill">
+              Customer Research
+            </span>
+
+            <span class="skill-pill">
+              Customer Experience
+            </span>
+
+            <span class="skill-pill">
+              Customer Feedback
+            </span>
+
+            <span class="skill-pill">
+              SWOT Analysis
+            </span>
+
+            <span class="skill-pill">
+              Problem Solving
+            </span>
+
+            <span class="skill-pill">
+              Communication
+            </span>
+
+            <span class="skill-pill">
+              Project Planning
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- TOOLS -->
+
+        <div class="skill-category">
+
+          <div class="skill-category-name">
+            Tools & Platforms
+          </div>
+
+          <div class="skill-list">
+
+            <span class="skill-pill">
+              Canva
+            </span>
+
+            <span class="skill-pill">
+              Meta Business Suite
+            </span>
+
+            <span class="skill-pill">
+              Google Analytics
+            </span>
+
+            <span class="skill-pill">
+              Google Trends
+            </span>
+
+            <span class="skill-pill">
+              Mailchimp
+            </span>
+
+            <span class="skill-pill">
+              Microsoft 365
+            </span>
+
+            <span class="skill-pill">
+              PowerPoint
+            </span>
+
+            <span class="skill-pill">
+              Excel
+            </span>
+
+            <span class="skill-pill">
+              Word
+            </span>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -1841,70 +2030,70 @@ and how businesses can turn them into meaningful results.
 
 <section id="education" class="education-section">
 
-<div class="container">
+  <div class="container">
 
 
-<div class="section-header">
+    <div class="section-header">
 
-<div>
+      <div>
 
-<div class="section-number">
-    05 / EDUCATION
-</div>
+        <div class="section-number">
+          05 / EDUCATION
+        </div>
 
-<h2 class="section-title">
-    Education.
-</h2>
+        <h2 class="section-title">
+          Education
+        </h2>
 
-</div>
+      </div>
 
-</div>
-
-
-<div class="education-card">
-
-<div class="education-year">
-    2024 — Present
-</div>
-
-<div>
-
-<h3>
-    Bachelor of Business Administration
-</h3>
-
-<p>
-    International Business · Tampere University
-    of Applied Sciences (TAMK)
-</p>
-
-</div>
-
-</div>
+    </div>
 
 
-<div class="education-card">
+    <div class="education-card">
 
-<div class="education-year">
-    2015 — 2019
-</div>
+      <div class="education-year">
+        2024 — Present
+      </div>
 
-<div>
+      <div>
 
-<h3>
-    Bachelor of Science
-</h3>
+        <h3>
+          Bachelor of Business Administration
+        </h3>
 
-<p>
-    Soil Science Engineering · Guilan University
-</p>
+        <p>
+          International Business · Tampere University
+          of Applied Sciences (TAMK)
+        </p>
 
-</div>
+      </div>
 
-</div>
+    </div>
 
 
-</div>
+    <div class="education-card">
+
+      <div class="education-year">
+        2015 — 2019
+      </div>
+
+      <div>
+
+        <h3>
+          Bachelor of Science
+        </h3>
+
+        <p>
+          Soil Science Engineering · Guilan University
+        </p>
+
+      </div>
+
+    </div>
+
+
+  </div>
 
 </section>
 
@@ -1915,62 +2104,62 @@ and how businesses can turn them into meaningful results.
 
 <section id="contact" class="contact-section">
 
-<div class="container">
+  <div class="container">
 
-<div class="contact-content">
-
-
-<div class="eyebrow">
-    06 / GET IN TOUCH
-</div>
+    <div class="contact-content">
 
 
-<h2 class="contact-title">
-
-Let's make<br>
-
-something
-<span>
-    happen.
-</span>
-
-</h2>
+      <div class="eyebrow">
+        06 / GET IN TOUCH
+      </div>
 
 
-<p class="contact-description">
+      <h2 class="contact-title">
 
-I'm interested in opportunities where I can learn,
-contribute and develop my skills in international
-business, marketing and growth.
+        Let's make<br>
 
-</p>
+        something
+        <span>
+          happen
+        </span>
 
-
-<div class="contact-buttons">
-
-<a
-    href="mailto:shaina.shabani75@gmail.com"
-    class="button"
->
-    Email me
-</a>
+      </h2>
 
 
-<a
-    href="https://www.linkedin.com/in/shainashabani/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="button outline"
->
-    LinkedIn
-</a>
+      <p class="contact-description">
 
-</div>
+        I'm interested in opportunities where I can learn,
+        contribute and develop my skills in international
+        business, marketing and growth
+
+      </p>
 
 
-</div>
+      <div class="contact-buttons">
 
-</div>
+        <a
+          href="mailto:shaina.shabani75@gmail.com"
+          class="button"
+        >
+          Email me
+        </a>
+
+
+        <a
+          href="https://www.linkedin.com/in/shainashabani/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button outline"
+        >
+          LinkedIn
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -1981,24 +2170,25 @@ business, marketing and growth.
 
 <footer>
 
-<div class="container">
+  <div class="container">
 
-<div class="footer-inner">
+    <div class="footer-inner">
 
-<div>
-    © 2026 Shaina
-</div>
+      <div>
+        © 2026 Shaina
+      </div>
 
-<div>
-    International Business · Marketing
-</div>
+      <div>
+        International Business · Marketing
+      </div>
 
-</div>
+    </div>
 
-</div>
+  </div>
 
 </footer>
 
 
 </body>
+
 </html>
